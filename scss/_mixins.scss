@@ -1,0 +1,64 @@
+@mixin NSflexcol {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin NSflexcolrow($row) {
+    display: flex;
+    flex-direction: column;
+    row-gap: $row;
+}
+
+@mixin NSflexrowcol($column) {
+    display: flex;
+    flex-direction: row;
+    column-gap: $column;
+}
+
+@mixin NSflex ($direction, $column, $row) {
+    display: flex;
+    flex-direction: $direction;
+    column-gap: $column;
+    row-gap: $row;
+}
+
+@mixin NSflexwrap($column, $row) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: $column;
+    row-gap: $row;
+}
+
+@mixin NSalignCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin NSsize ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin NSfont ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin NSpadding ($top, $bottom, $left, $right){
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin NSchk {
+    border : 1px red solid;
+}
+
+@mixin NSimgset ($height){
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $height;
+}
