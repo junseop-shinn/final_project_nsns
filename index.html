@@ -9,4 +9,175 @@
 <body>
     
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - HOME - Claire and Junseop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="nshome">
+    <!-- 1.HOME NAV START -->
+    <nav>
+        <section class="nav_ani">
+            <figure>
+                <img src="/img/nav_icon.png" alt="icon">
+            </figure>
+            <h2>Final Project - Team Claire and Junseop</h2>
+        </section>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="kpop.html">kpop</a></li>
+            <li><a href="kfilm.html">kfilm</a></li>
+        </ul>
+        <details>
+            <summary class="fa-solid fa-bars"></summary>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="kpop.html">kpop</a></li>
+                <li><a href="kfilm.html">kfilm</a></li>
+            </ul>
+        </details>
+    </nav>
+    <!-- 1.HOME NAV    END   -->
+    <!-- //////////////////////// -->
+    <!-- 2.HOME HEADER START -->
+    <header class ="head_ani">
+        <section>
+            <h1>Welcome to Korea Culture!</h1>
+            <p>
+                The Korean wave has become an influential global phenomenon since the start of the 21st century, heavily impacting the contemporary cultures, <span>music industry, film industry</span>, and behavioral aspects of various people throughout the world.
+            </p>
+        </section>
+    </header>
+    <!-- 2.HOME HEADER END   -->
+    <!-- //////////////////////// -->
+    <!-- 3.HOME MAIN   START -->
+    <main>
+        <!-- 3-1.HOME MAIN ABOUT -->
+        <section class="about" id="about">
+            <article>
+                <h3>About Korea Culture</h3>
+                <span></span>
+            </article>
+            <section>
+                <figure>
+                    <a href="#about">
+                        <img src="/img/kpop.jpg" alt="kpop">
+                        <aside>
+                            <small>Let's go to</small>
+                            <h5>K-POP World</h5>
+                        </aside>
+                    </a>
+                    <figcaption>
+                        <h4>K POP SECTION</h4>
+                        <p>The Korean wave has become an influential global phenomenon since the start of the 21st century</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="#about">
+                        <img src="/img/kfilm.jpg" alt="kfilm">
+                        <aside>
+                            <small>Let's go to</small>
+                            <h5>K-FILM World</h5>
+                        </aside>
+                    </a>
+                    <figcaption>
+                        <h4>K FILM SECTION</h4>
+                        <p>The Korean wave has become an influential global phenomenon since the start of the 21st century</p>
+                    </figcaption>
+                </figure>
+            </section>
+        </section>
+        <!-- 3-2.HOME MAIN MAP -->
+        <section class="map" id="map">
+            <article>
+                <h3>Direction</h3>
+                <span></span>
+            </article>
+            <figure>
+                <section>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13895.472818653316!2d126.96269565002754!3d37.564604982927335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ee981a5fd3%3A0xfa8fa2abc29d32bb!2sKorea%20Tourism%20Organization%20Seoul%20Center!5e0!3m2!1sen!2sca!4v1668880986791!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <figcaption>
+                    <p>
+                        Imagine your Korea, The more you know, the more you'll love Korea! 
+                    </p>
+                    <span>
+                        <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                        Korea Tourism Organization
+                    </span>
+                    <span>
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                        1330 Korea Travel Helpline Number
+                    </span>
+                    <span>
+                        <i class="fa-sharp fa-solid fa-envelope"></i>
+                        <a href="https://english.visitkorea.or.kr" target="_blank">Visit Our Homepage</a>
+                    </span>
+                </figcaption>
+            </figure>
+        </section>
+        <!-- 3-3.HOME MAIN CONTACT -->
+        <section class="contact" id="contact">
+            <article>
+                <h3>Contact us</h3>
+                <span></span>
+            </article>
+            <form action="#contact">
+                <aside>
+                    <label for="subject1">* Inquiry Type:</label>
+                    <blockquote>
+                        <span>
+                            <input type="radio" name="subject" id="subject1">
+                            <strong>K-pop</strong>
+                        </span>
+                        <span>
+                            <input type="radio" name="subject" id="subject2">
+                            <strong>K-film</strong>
+                        </span>
+                        <span>
+                            <input type="radio" name="subject" id="subject3">
+                            <strong>Etc</strong>
+                        </span>
+                    </blockquote>
+                </aside>
+                <aside>
+                    <label for="name">* Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name here">
+                </aside>
+                <aside>
+                    <label for="email">* Email:</label>
+                    <input type="email" name="email" id="email"  placeholder="Enter your email here">
+                </aside>
+                <aside>
+                    <label for="message">* Content:</label>
+                    <textarea name="message" id="message"  placeholder="Leave your inquiry here"></textarea>
+                </aside>
+                <aside>
+                    <input type="submit" value="send">
+                </aside>
+            </form>
+        </section>
+    </main>
+    <!-- 3.HOME MAIN   END   -->
+    <!-- //////////////////////// -->
+    <!-- 4.HOME FOOTER START -->
+    <footer>
+        <p>Copyright &copy; 2022 Final Project Clarie and Junseop
+            <a href="https://tamwood.com/" target="_blank">Tamwood college</a></p>
+        <blockquote>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        </blockquote>
+    </footer>
+    <!-- 4.HOME FOOTER END -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
 </html>
