@@ -35,12 +35,12 @@ blockquote {
 @keyframes bts-op {
     from {transform: scale(0.98);}
     to {transform: scale(1);}
-    from {transform: rotate(-10deg);}
-    to {transform: rotate(10deg);}        
+    from {transform: rotate(-8deg);}
+    to {transform: rotate(8deg);}        
 }
 
 .nav_ani {
-    // animation-name: bts-color;
+    animation-name: bts-color;
     animation-direction: alternate;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
@@ -48,7 +48,7 @@ blockquote {
 }
 
 .head_ani {
-    // animation-name: bts-op;
+    animation-name: bts-op;
     animation-direction: alternate;
     animation-timing-function: ease;
     animation-iteration-count: infinite;

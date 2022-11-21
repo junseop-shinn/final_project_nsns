@@ -69,10 +69,10 @@ blockquote {
     transform: scale(1);
   }
   from {
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
   }
   to {
-    transform: rotate(10deg);
+    transform: rotate(8deg);
   }
 }
 @keyframes bts-op {
@@ -83,13 +83,15 @@ blockquote {
     transform: scale(1);
   }
   from {
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
   }
   to {
-    transform: rotate(10deg);
+    transform: rotate(8deg);
   }
 }
 .nav_ani {
+  -webkit-animation-name: bts-color;
+          animation-name: bts-color;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: ease;
@@ -101,6 +103,8 @@ blockquote {
 }
 
 .head_ani {
+  -webkit-animation-name: bts-op;
+          animation-name: bts-op;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: ease;
@@ -592,12 +596,16 @@ blockquote {
     width: 100%;
     padding: 3%;
     text-align: center;
+    border-radius: 20px;
     transition: 0.4s;
   }
   nav a:hover {
     background-color: #F297B3;
     color: white;
     border-radius: 20px;
+  }
+  nav h2 {
+    font-size: 20px;
   }
   header {
     background-position: top;
@@ -623,17 +631,17 @@ blockquote {
   .about > article span {
     width: 15vh;
   }
-  .about section h5, .about section small {
+  .about > section h5, .about > section small {
     font-size: 30px;
   }
-  .about section small {
+  .about > section small {
     color: black;
     font-weight: 600;
   }
-  .about section figcaption h4 {
+  .about > section figcaption h4 {
     font-size: 30px;
   }
-  .about section figcaption p {
+  .about > section figcaption p {
     font-size: 20px;
   }
   .map {

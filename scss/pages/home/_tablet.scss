@@ -1,5 +1,5 @@
 @media (min-width:$TabletSize) {
-
+    // 1.HOME TABLET NAV START
     nav > details {
         display: none;
     }
@@ -8,7 +8,7 @@
         align-items: center;
         height:13vh;
 
-        section{
+        section {
             height:5vh;
         }
 
@@ -32,7 +32,7 @@
             width: 100%;
             padding: 3%;
             text-align: center;
-            // border-radius: 20px;
+            border-radius: 20px;
             transition: .4s;
         }
     
@@ -41,102 +41,125 @@
             color: white;
             border-radius: 20px;
         }    
+
+        h2 {
+            font-size: $dFontSize5;
+        }        
     }
-    header{
+    // 1.HOME TABLET NAV END
+    // 2.HOME TABLET HEADER START
+    header {
         @include NSimgset(40vh);
         
-        >section{
-            h1{
+        > section {
+            h1 {
                 font-size:36px;
             }
-            p{
-                font-size:20px;
+
+            p {
+                font-size: $dFontSize5;
             }
         }
     }
+    // 2.HOME TABLET HEADER END
+    // 3.HOME TABLET MAIN START
     .about {
         @include NSpadding(5vh,5vh,2%,2%);
-        >article{
-            h3{
+        > article {
+            h3 {
                 font-size:36px;
             }
-        span{
-            width:15vh;
+        
+            span {
+                width:15vh;
+            }
         }
-        }
-        section {
-            h5,small{
+
+        > section {
+            h5, small {
                 font-size:30px;
             }
-            small{
+
+            small {
                 color:black;
                 font-weight:600;
             }
+
             figcaption {
-                h4{
+                h4 {
                 font-size:30px;
                 }
-                p{
+
+                p {
                 font-size:20px;
                 }
             }
-
         }
     }
-    .map {
 
+    .map {
         @include NSpadding(5vh,5vh,2%,2%);
-        >article{
-            h3{
+        > article {
+            h3 {
                 font-size:36px;
             }
         
-        span{
-            width:15vh;
+            span {
+                width:15vh;
+            }
         }
-        }
-        figure{
+
+        figure {
             width:90%;
         }
-        figcaption{
+
+        figcaption {
             width:100%;
-            p,span,a{
+
+            p, span, a {
                 font-size:20px;
             }
         }
     }
-    .contact {
 
+    .contact {
         @include NSpadding(5vh,5vh,2%,2%);
-        >article{
-            h3{
+        
+        > article {
+            h3 {
                 font-size:36px;
             }
         
-        span{
-            width:15vh;
+            span {
+                width:15vh;
+            }
         }
-        }
+
         form {
-            label{
+            label {
             font-size:25px;
             }
-            strong{
+
+            strong {
                 font-size:22px;
             }
-            ::placeholder{
+
+            ::placeholder {
                 font-size:20px;
             }
+
             > aside:last-child > input {
                 font-size:23px;
                 padding:1%;
             }
         }
     }
-    footer{
-        p,p>a{
+    // 3.HOME TABLET MAIN END
+    // 4.HOME TABLET FOOTER START
+    footer {
+        p, p > a {
             font-size:25px;
         }
-       
     }
+    // 4.HOME TABLET FOOTER END
 }
