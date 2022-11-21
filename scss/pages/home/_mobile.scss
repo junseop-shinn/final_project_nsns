@@ -1,7 +1,7 @@
 @media (min-width:$MobileSize) {
 
     // 1.HOME NAV START
-    nav {
+    .home_nav {
         @include NSflexcol;
         position: relative;
         align-items: center;
@@ -84,7 +84,7 @@
     // 1.HOME NAV END
     //////////////////////
     // 2.HOME HEADER START
-    header {
+    .home_header {
         display: flex;
         background-image: url("/img/bg-header.png");
         @include NSimgset(60vh);
@@ -123,7 +123,7 @@
     //////////////////////
     // 3.HOME MAIN START
     // 3.1 MAIN ABOUT SECTION
-    .about {
+    .home_about {
         background-color: $dPink1;
         @include NSpadding(10vh,10vh,5%,5%);
         @include NSflexcolrow(10vh);
@@ -202,7 +202,7 @@
         }
     }
     // 3.2 MAIN MAP SECTION
-    .map {
+    .home_map {
         background-color: white;
         @include NSpadding(10vh,10vh,5%,5%);
         @include NSflexcolrow(10vh);
@@ -269,7 +269,7 @@
         }
     }
     // 3.3 MAIN COMTACT SECTION
-    .contact {
+    .home_contact {
         background-color: $dPink1;
         @include NSpadding(10vh,10vh,5%,5%);
         @include NSflexcolrow(10vh);
@@ -359,7 +359,7 @@
     // 3.HOME MAIN END
     //////////////////////
     // 4.HOME FOOTER START
-    footer {
+    .home_footer {
         @include NSflexcolrow(1vh);
         padding: 2%;
         align-items: center;

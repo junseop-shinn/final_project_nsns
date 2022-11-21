@@ -102,9 +102,7 @@ blockquote, p {
           animation-duration: 5s;
 }
 
-.head_ani {
-  -webkit-animation-name: bts-op;
-          animation-name: bts-op;
+.home_header {
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: ease;
@@ -116,17 +114,17 @@ blockquote, p {
 }
 
 @media (min-width: 300px) {
-  nav {
+  .home_nav {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
     height: 16vh;
   }
-  nav > ul {
+  .home_nav > ul {
     display: none;
   }
-  nav > section {
+  .home_nav > section {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 1vh;
@@ -137,21 +135,21 @@ blockquote, p {
     height: 8vh;
     width: 100%;
   }
-  nav img {
+  .home_nav img {
     width: 3vh;
     height: 3vh;
     border: 3px #F297B3 solid;
     border-radius: 50%;
   }
-  nav figure {
+  .home_nav figure {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  nav h2 {
+  .home_nav h2 {
     font-size: 14px;
   }
-  nav details {
+  .home_nav details {
     position: fixed;
     text-align: right;
     width: 98%;
@@ -160,7 +158,7 @@ blockquote, p {
     padding-right: 1%;
     height: 8vh;
   }
-  nav summary {
+  .home_nav summary {
     font-size: 28px;
     color: #F297B3;
     padding-top: 2vh;
@@ -169,14 +167,14 @@ blockquote, p {
     padding-right: 0;
     z-index: 1;
   }
-  nav details > ul {
+  .home_nav details > ul {
     position: fixed;
     width: 98%;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  nav details > ul li {
+  .home_nav details > ul li {
     display: flex;
     width: 100%;
     border-bottom: 1px whitesmoke solid;
@@ -184,7 +182,7 @@ blockquote, p {
     background-color: rgba(50, 50, 50, 0.4);
     border-radius: 4px;
   }
-  nav details > ul a {
+  .home_nav details > ul a {
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
@@ -193,11 +191,11 @@ blockquote, p {
     padding: 2%;
     color: whitesmoke;
   }
-  nav details > ul a:hover {
+  .home_nav details > ul a:hover {
     background-color: #FCEEF3;
     color: #F297B3;
   }
-  header {
+  .home_header {
     display: flex;
     background-image: url("/img/bg-header.png");
     background-position: top;
@@ -207,7 +205,7 @@ blockquote, p {
     justify-content: center;
     align-items: center;
   }
-  header > section {
+  .home_header > section {
     background-color: rgba(244, 219, 232, 0.5);
     border-radius: 20px;
     width: 90%;
@@ -218,7 +216,7 @@ blockquote, p {
     align-items: center;
     justify-content: flex-end;
   }
-  header > section h1 {
+  .home_header > section h1 {
     font-size: 26px;
     font-weight: 600;
     padding-top: 2%;
@@ -228,18 +226,18 @@ blockquote, p {
     width: 70%;
     text-align: center;
   }
-  header > section p {
+  .home_header > section p {
     font-size: 14px;
     width: 70%;
     text-align: justify;
   }
-  header > section p span {
+  .home_header > section p span {
     font-size: 14px;
     font-weight: 400;
     color: hotpink;
     text-transform: uppercase;
   }
-  .about {
+  .home_about {
     background-color: #FCEEF3;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -250,18 +248,18 @@ blockquote, p {
     row-gap: 10vh;
     align-items: center;
   }
-  .about > article {
+  .home_about > article {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
     align-items: center;
   }
-  .about > article h3 {
+  .home_about > article h3 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
   }
-  .about > article span {
+  .home_about > article span {
     width: 20%;
     color: #F297B3;
     height: 1vh;
@@ -269,13 +267,13 @@ blockquote, p {
     border: 1vh solid #F297B3;
     border-radius: 10px;
   }
-  .about > section {
+  .home_about > section {
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
     align-items: center;
   }
-  .about > section > figure {
+  .home_about > section > figure {
     background-color: #FBDFE6;
     display: flex;
     flex-direction: column;
@@ -284,13 +282,13 @@ blockquote, p {
     align-items: center;
     padding: 5%;
   }
-  .about > section a {
+  .home_about > section a {
     position: relative;
     width: 30vh;
     height: 30vh;
     transition: 0.4s;
   }
-  .about > section aside {
+  .home_about > section aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,12 +297,12 @@ blockquote, p {
     height: 100%;
     border-radius: 50%;
   }
-  .about > section a:hover > aside {
+  .home_about > section a:hover > aside {
     position: absolute;
     background-color: rgba(255, 105, 180, 0.5);
     color: yellow;
   }
-  .about > section figcaption {
+  .home_about > section figcaption {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
@@ -313,22 +311,22 @@ blockquote, p {
     width: 80%;
     text-align: center;
   }
-  .about > section h4 {
+  .home_about > section h4 {
     font-size: 20px;
     font-weight: 700;
   }
-  .about > section p {
+  .home_about > section p {
     font-size: 14px;
     font-weight: 300;
     color: dimgray;
   }
-  .about > section img {
+  .home_about > section img {
     width: 30vh;
     height: 30vh;
     position: absolute;
     border-radius: 50%;
   }
-  .map {
+  .home_map {
     background-color: white;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -339,18 +337,18 @@ blockquote, p {
     row-gap: 10vh;
     align-items: center;
   }
-  .map > article {
+  .home_map > article {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
     align-items: center;
   }
-  .map > article h3 {
+  .home_map > article h3 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
   }
-  .map > article span {
+  .home_map > article span {
     width: 20%;
     color: #F297B3;
     height: 1vh;
@@ -358,33 +356,33 @@ blockquote, p {
     border: 1vh solid #F297B3;
     border-radius: 10px;
   }
-  .map figure {
+  .home_map figure {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
     align-items: center;
   }
-  .map figure section {
+  .home_map figure section {
     width: 100%;
     height: 40vh;
     padding: 1%;
     border: 1px solid lightgray;
   }
-  .map figure iframe {
+  .home_map figure iframe {
     width: 100%;
     height: 100%;
   }
-  .map figure figcaption {
+  .home_map figure figcaption {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  .map figure p {
+  .home_map figure p {
     color: dimgray;
     font-size: 16px;
     font-weight: 400;
   }
-  .map figure span {
+  .home_map figure span {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 2vh;
@@ -394,16 +392,16 @@ blockquote, p {
     font-size: 14px;
     font-weight: 300;
   }
-  .map figure a {
+  .home_map figure a {
     color: hotpink;
     font-size: 14px;
     font-weight: 500;
   }
-  .map figure a:hover {
+  .home_map figure a:hover {
     color: royalblue;
     text-decoration: underline;
   }
-  .contact {
+  .home_contact {
     background-color: #FCEEF3;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -414,18 +412,18 @@ blockquote, p {
     row-gap: 10vh;
     align-items: center;
   }
-  .contact > article {
+  .home_contact > article {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
     align-items: center;
   }
-  .contact > article h3 {
+  .home_contact > article h3 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
   }
-  .contact > article span {
+  .home_contact > article span {
     width: 20%;
     color: #F297B3;
     height: 1vh;
@@ -433,7 +431,7 @@ blockquote, p {
     border: 1vh solid #F297B3;
     border-radius: 10px;
   }
-  .contact > form {
+  .home_contact > form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -441,29 +439,29 @@ blockquote, p {
          column-gap: 2vh;
     row-gap: 2vh;
   }
-  .contact > form aside {
+  .home_contact > form aside {
     width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 0.5vh;
   }
-  .contact > form label {
+  .home_contact > form label {
     color: dimgray;
     text-transform: capitalize;
     font-size: 14px;
     font-weight: 400;
   }
-  .contact > form input {
+  .home_contact > form input {
     border: 1px lightgray solid;
     padding: 1%;
   }
-  .contact > form textarea {
+  .home_contact > form textarea {
     border: 1px lightgray solid;
     height: 20vh;
     resize: none;
     padding: 1%;
   }
-  .contact > form > aside:last-child > input {
+  .home_contact > form > aside:last-child > input {
     background-color: #F297B3;
     color: whitesmoke;
     font-size: 12px;
@@ -473,37 +471,37 @@ blockquote, p {
     padding: 2%;
     border: none;
   }
-  .contact > form > aside:last-child > input:hover {
+  .home_contact > form > aside:last-child > input:hover {
     background-color: #62B3D1;
     color: whitesmoke;
   }
-  .contact > form ::-moz-placeholder {
+  .home_contact > form ::-moz-placeholder {
     font-size: 12px;
     font-weight: 300;
     color: lightgray;
   }
-  .contact > form :-ms-input-placeholder {
+  .home_contact > form :-ms-input-placeholder {
     font-size: 12px;
     font-weight: 300;
     color: lightgray;
   }
-  .contact > form ::placeholder {
+  .home_contact > form ::placeholder {
     font-size: 12px;
     font-weight: 300;
     color: lightgray;
   }
-  .contact > form aside:first-child {
+  .home_contact > form aside:first-child {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-  .contact > form blockquote {
+  .home_contact > form blockquote {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 2.2vh;
          column-gap: 2.2vh;
   }
-  .contact > form blockquote > span {
+  .home_contact > form blockquote > span {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 0.3vh;
@@ -513,7 +511,7 @@ blockquote, p {
     color: dimgray;
     text-transform: uppercase;
   }
-  footer {
+  .home_footer {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
@@ -522,28 +520,28 @@ blockquote, p {
     justify-content: center;
     background-color: black;
   }
-  footer p {
+  .home_footer p {
     font-size: 12px;
     font-weight: 300;
     color: whitesmoke;
     text-align: center;
   }
-  footer p > a {
+  .home_footer p > a {
     color: royalblue;
     font-weight: 500;
     font-size: 14px;
   }
-  footer p > a:hover {
+  .home_footer p > a:hover {
     text-decoration: underline;
     color: yellow;
   }
-  footer blockquote {
+  .home_footer blockquote {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
   }
-  footer blockquote > a {
+  .home_footer blockquote > a {
     font-size: 22px;
     border-radius: 50%;
     border: 3px solid #F5B9C9;
@@ -555,23 +553,23 @@ blockquote, p {
     align-items: center;
     color: #F5B9C9;
   }
-  footer blockquote > a:hover {
+  .home_footer blockquote > a:hover {
     background-color: #F5B9C9;
     color: whitesmoke;
   }
 }
 @media (min-width: 700px) {
-  nav > details {
+  .home_nav > details {
     display: none;
   }
-  nav {
+  .home_nav {
     align-items: center;
     height: 13vh;
   }
-  nav section {
+  .home_nav section {
     height: 5vh;
   }
-  nav > ul {
+  .home_nav > ul {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 5vh;
@@ -581,13 +579,13 @@ blockquote, p {
     width: 50%;
     height: 8vh;
   }
-  nav li {
+  .home_nav li {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  nav a {
+  .home_nav a {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 500;
@@ -599,136 +597,136 @@ blockquote, p {
     border-radius: 20px;
     transition: 0.4s;
   }
-  nav a:hover {
+  .home_nav a:hover {
     background-color: #F297B3;
     color: white;
     border-radius: 20px;
   }
-  nav h2 {
+  .home_nav h2 {
     font-size: 20px;
   }
-  header {
+  .home_header {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
   }
-  header > section h1 {
+  .home_header > section h1 {
     font-size: 36px;
   }
-  header > section p {
+  .home_header > section p {
     font-size: 20px;
   }
-  .about {
+  .home_about {
     padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 2%;
     padding-right: 2%;
   }
-  .about > article h3 {
+  .home_about > article h3 {
     font-size: 36px;
   }
-  .about > article span {
+  .home_about > article span {
     width: 15vh;
   }
-  .about > section h5, .about > section small {
+  .home_about > section h5, .home_about > section small {
     font-size: 30px;
   }
-  .about > section small {
+  .home_about > section small {
     color: black;
     font-weight: 600;
   }
-  .about > section figcaption h4 {
+  .home_about > section figcaption h4 {
     font-size: 30px;
   }
-  .about > section figcaption p {
+  .home_about > section figcaption p {
     font-size: 20px;
   }
-  .map {
+  .home_map {
     padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 2%;
     padding-right: 2%;
   }
-  .map > article h3 {
+  .home_map > article h3 {
     font-size: 36px;
   }
-  .map > article span {
+  .home_map > article span {
     width: 15vh;
   }
-  .map figure {
+  .home_map figure {
     width: 90%;
   }
-  .map figcaption {
+  .home_map figcaption {
     width: 100%;
   }
-  .map figcaption p, .map figcaption span, .map figcaption a {
+  .home_map figcaption p, .home_map figcaption span, .home_map figcaption a {
     font-size: 20px;
   }
-  .contact {
+  .home_contact {
     padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 2%;
     padding-right: 2%;
   }
-  .contact > article h3 {
+  .home_contact > article h3 {
     font-size: 36px;
   }
-  .contact > article span {
+  .home_contact > article span {
     width: 15vh;
   }
-  .contact form label {
+  .home_contact form label {
     font-size: 25px;
   }
-  .contact form strong {
+  .home_contact form strong {
     font-size: 22px;
   }
-  .contact form ::-moz-placeholder {
+  .home_contact form ::-moz-placeholder {
     font-size: 20px;
   }
-  .contact form :-ms-input-placeholder {
+  .home_contact form :-ms-input-placeholder {
     font-size: 20px;
   }
-  .contact form ::placeholder {
+  .home_contact form ::placeholder {
     font-size: 20px;
   }
-  .contact form > aside:last-child > input {
+  .home_contact form > aside:last-child > input {
     font-size: 23px;
     padding: 1%;
   }
-  footer p, footer p > a {
+  .home_footer p, .home_footer p > a {
     font-size: 25px;
   }
 }
 @media (min-width: 1000px) {
-  .head_ani {
+  .home_header {
     -webkit-animation-name: unset;
             animation-name: unset;
   }
-  nav {
+  .home_nav {
     height: 26vh;
   }
-  nav section {
+  .home_nav section {
     height: 10vh;
   }
-  nav ul {
+  .home_nav ul {
     height: 16vh;
   }
-  nav a {
+  .home_nav a {
     padding: 1%;
   }
-  header {
+  .home_header {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
     background-position: center;
   }
-  header > section {
+  .home_header > section {
     background-color: rgba(244, 219, 232, 0.7);
     justify-content: center;
   }
-  .about {
+  .home_about {
     padding-top: 8vh;
     padding-bottom: 8vh;
     padding-left: 2%;
@@ -737,33 +735,33 @@ blockquote, p {
     flex-direction: column;
     row-gap: 8vh;
   }
-  .about > article h3 {
+  .home_about > article h3 {
     font-size: 26px;
   }
-  .about > article span {
+  .home_about > article span {
     width: 20vh;
   }
-  .about > section {
+  .home_about > section {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
   }
-  .about > section > figure {
+  .home_about > section > figure {
     width: 100%;
     height: 60vh;
     padding: 1%;
   }
-  .about > section figcaption h4 {
+  .home_about > section figcaption h4 {
     font-size: 26px;
   }
-  .about > section figcaption p {
+  .home_about > section figcaption p {
     font-size: 16px;
   }
-  .about > section h5, .about > section small {
+  .home_about > section h5, .home_about > section small {
     font-size: 26px;
   }
-  .map {
+  .home_map {
     padding-top: 8vh;
     padding-bottom: 8vh;
     padding-left: 2%;
@@ -772,26 +770,26 @@ blockquote, p {
     flex-direction: column;
     row-gap: 8vh;
   }
-  .map > article h3 {
+  .home_map > article h3 {
     font-size: 26px;
   }
-  .map > article span {
+  .home_map > article span {
     width: 20vh;
   }
-  .map figure {
+  .home_map figure {
     width: 100%;
   }
-  .map figure section {
+  .home_map figure section {
     width: 100%;
     height: 80vh;
   }
-  .map figure figcaption {
+  .home_map figure figcaption {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 5%;
     padding-right: 5%;
   }
-  .contact {
+  .home_contact {
     padding-top: 8vh;
     padding-bottom: 8vh;
     padding-left: 2%;
@@ -800,55 +798,55 @@ blockquote, p {
     flex-direction: column;
     row-gap: 8vh;
   }
-  .contact > article h3 {
+  .home_contact > article h3 {
     font-size: 26px;
   }
-  .contact > article span {
+  .home_contact > article span {
     width: 20vh;
   }
-  .contact form {
+  .home_contact form {
     justify-content: space-between;
     row-gap: 4vh;
   }
-  .contact form label {
+  .home_contact form label {
     font-size: 18px;
   }
-  .contact form aside {
+  .home_contact form aside {
     width: 49%;
   }
-  .contact form aside:first-child,
-.contact form aside:nth-child(4),
-.contact form aside:last-child {
+  .home_contact form aside:first-child,
+.home_contact form aside:nth-child(4),
+.home_contact form aside:last-child {
     width: 100%;
   }
-  .contact form textarea {
+  .home_contact form textarea {
     height: 30vh;
   }
-  .contact form strong {
+  .home_contact form strong {
     font-size: 16px;
   }
-  .contact form ::-moz-placeholder {
+  .home_contact form ::-moz-placeholder {
     font-size: 16px;
   }
-  .contact form :-ms-input-placeholder {
+  .home_contact form :-ms-input-placeholder {
     font-size: 16px;
   }
-  .contact form ::placeholder {
+  .home_contact form ::placeholder {
     font-size: 16px;
   }
-  .contact form > aside:last-child > input {
+  .home_contact form > aside:last-child > input {
     font-size: 18px;
     padding: 1%;
     width: 16%;
   }
-  footer {
+  .home_footer {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
     justify-content: space-evenly;
   }
-  footer p, footer p > a {
+  .home_footer p, .home_footer p > a {
     font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
