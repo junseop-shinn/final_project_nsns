@@ -134,8 +134,15 @@ blockquote {
     width: 100%;
   }
   nav img {
-    width: 2vh;
-    height: 2vh;
+    width: 3vh;
+    height: 3vh;
+    border: 3px #F297B3 solid;
+    border-radius: 50%;
+  }
+  nav figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   nav h2 {
     font-size: 14px;

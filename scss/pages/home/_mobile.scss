@@ -20,7 +20,14 @@
         }
 
         img {
-            @include NSsize(2vh, 2vh);
+            @include NSsize(3vh, 3vh);
+            border : 3px $dPink4 solid;
+            border-radius: 50%;
+        }
+        
+        figure {
+            display: flex;
+            @include NSalignCenter;
         }
 
         h2 {
