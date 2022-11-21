@@ -21,7 +21,7 @@ a {
 
 h1, h2, h3, h4,
 h5, h6, ul, figure,
-blockquote {
+blockquote, p {
   margin: 0;
   padding: 0;
 }
@@ -698,5 +698,157 @@ blockquote {
   }
   footer p, footer p > a {
     font-size: 25px;
+  }
+}
+@media (min-width: 1000px) {
+  .head_ani {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+  }
+  nav {
+    height: 26vh;
+  }
+  nav section {
+    height: 10vh;
+  }
+  nav ul {
+    height: 16vh;
+  }
+  nav a {
+    padding: 1%;
+  }
+  header {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+  }
+  header > section {
+    background-color: rgba(244, 219, 232, 0.7);
+    justify-content: center;
+  }
+  .about {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vh;
+  }
+  .about > article h3 {
+    font-size: 26px;
+  }
+  .about > article span {
+    width: 20vh;
+  }
+  .about > section {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .about > section > figure {
+    width: 100%;
+    height: 60vh;
+    padding: 1%;
+  }
+  .about > section figcaption h4 {
+    font-size: 26px;
+  }
+  .about > section figcaption p {
+    font-size: 16px;
+  }
+  .about > section h5, .about > section small {
+    font-size: 26px;
+  }
+  .map {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vh;
+  }
+  .map > article h3 {
+    font-size: 26px;
+  }
+  .map > article span {
+    width: 20vh;
+  }
+  .map figure {
+    width: 100%;
+  }
+  .map figure section {
+    width: 100%;
+    height: 80vh;
+  }
+  .map figure figcaption {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .contact {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vh;
+  }
+  .contact > article h3 {
+    font-size: 26px;
+  }
+  .contact > article span {
+    width: 20vh;
+  }
+  .contact form {
+    justify-content: space-between;
+    row-gap: 4vh;
+  }
+  .contact form label {
+    font-size: 18px;
+  }
+  .contact form aside {
+    width: 49%;
+  }
+  .contact form aside:first-child,
+.contact form aside:nth-child(4),
+.contact form aside:last-child {
+    width: 100%;
+  }
+  .contact form textarea {
+    height: 30vh;
+  }
+  .contact form strong {
+    font-size: 16px;
+  }
+  .contact form ::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contact form :-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .contact form ::placeholder {
+    font-size: 16px;
+  }
+  .contact form > aside:last-child > input {
+    font-size: 18px;
+    padding: 1%;
+    width: 16%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    justify-content: space-evenly;
+  }
+  footer p, footer p > a {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
