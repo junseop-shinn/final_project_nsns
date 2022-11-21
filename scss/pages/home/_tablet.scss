@@ -1,10 +1,10 @@
 @media (min-width:$TabletSize) {
     // 1.HOME TABLET NAV START
-    nav > details {
+    .home_nav > details {
         display: none;
     }
     
-    nav {
+    .home_nav {
         align-items: center;
         height:13vh;
 
@@ -48,7 +48,7 @@
     }
     // 1.HOME TABLET NAV END
     // 2.HOME TABLET HEADER START
-    header {
+    .home_header {
         @include NSimgset(40vh);
         
         > section {
@@ -63,7 +63,7 @@
     }
     // 2.HOME TABLET HEADER END
     // 3.HOME TABLET MAIN START
-    .about {
+    .home_about {
         @include NSpadding(5vh,5vh,2%,2%);
         > article {
             h3 {
@@ -97,7 +97,7 @@
         }
     }
 
-    .map {
+    .home_map {
         @include NSpadding(5vh,5vh,2%,2%);
         > article {
             h3 {
@@ -122,7 +122,7 @@
         }
     }
 
-    .contact {
+    .home_contact {
         @include NSpadding(5vh,5vh,2%,2%);
         
         > article {
@@ -156,7 +156,7 @@
     }
     // 3.HOME TABLET MAIN END
     // 4.HOME TABLET FOOTER START
-    footer {
+    .home_footer {
         p, p > a {
             font-size:25px;
         }
