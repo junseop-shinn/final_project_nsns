@@ -1,0 +1,7 @@
+@media (min-width:$MobileSize) {
+
+    .kfilm_header {
+        @include NSimgset(50vh);
+        background-image: url(/img/header_kfilm.jpg);
+    }
+}

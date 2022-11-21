@@ -849,4 +849,13 @@ blockquote, p {
   .home_footer p, .home_footer p > a {
     font-size: 16px;
   }
+}
+@media (min-width: 300px) {
+  .kfilm_header {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-image: url(/img/header_kfilm.jpg);
+  }
 }/*# sourceMappingURL=style.css.map */
