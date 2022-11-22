@@ -1,14 +1,131 @@
 .kfilm_nav {
-    img {
-        width: 10vh;
-        height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2%;
+
+    > figure {
+        @include NSflexrowcol(0.5vh);
+        align-items: center;
     }
-    background-color: yellow;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 24px;
+        color: $dBlue5;
+        font-weight: 700;
+    }
+
+    img {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        border: 3px black solid;
+    }
+
+    > ul {
+        display: none;
+    }
+
+    details > summary {
+        font-size: 24px;
+        color: $dBlue5;
+    }
+
+    details {
+        position: fixed;
+        width: 96%;
+        text-align: right;
+        z-index: 1;
+    }
+
+    details > ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 96%;
+        text-align: right;
+        z-index: 1;
+    }
+
+    details li {
+        display: flex;
+        width: 100%;
+    }
+
+    details a {
+        width: 100%;
+        background-color: rgba(30,30,30,.8);
+        color: $dBlue5;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+
+    details a:hover {
+        background-color: $dBlue5;
+        color: white;
+    }    
 }
 
 .kfilm_header {
+    @include NSflexcol;
     @include NSimgset(50vh);
     background-image: url(/img/header_kfilm.jpg);
+    align-items: flex-end;
+
+    aside {
+        @include NSflexrowcol(1vh);
+        width: 100%;
+        height: 4vh;
+        justify-content: flex-end;
+        padding-right: 2%;
+        background-color: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-top: 1px $dBlue5 dotted;
+        border-bottom: 1px $dBlue5 dotted;
+
+        > a {
+            @include NSfont(9px,600);
+            color: white;
+            border: 1px $dBlue5 solid;
+            border-radius: 20px;
+            background-color: $dBlue5;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        > a:hover {
+            background-color: white;
+            color: $dBlue5;
+        }
+    }
+
+    > article {
+        @include NSflexcolrow(3vh);
+        @include NSalignCenter;
+        justify-content: space-around;
+        width: 30%;
+        height: 46vh;
+        background-color: rgba(30,30,30,.75);
+        color: whitesmoke;
+
+        h2 {
+            text-transform: capitalize;
+            @include NSfont(18px,600);
+            text-align: right;
+            width: 80%;
+        }
+
+        p {
+            width: 80%;
+            text-align: left;
+            @include NSfont(12px,300);
+        }
+
+    }
 
 }
 
@@ -20,4 +137,9 @@ table {
     td {
     border : 2px red solid;
     }
+}
+
+img {
+    width: 20vh;
+    height: 20vh;
 }
