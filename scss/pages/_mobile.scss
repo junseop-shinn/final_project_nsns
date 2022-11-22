@@ -1,5 +1,5 @@
 @media (min-width:$MobileSize){
-@import 'pages/home/mobile';
-// @import 'pages/kpop/mobile';
-// @import 'pages/kfilm/mobile';
+@import 'home/mobile';
+@import 'kpop/mobile';
+@import 'kfilm/mobile';
 }
