@@ -1,7 +1,13 @@
-@media (min-width:$MobileSize) {
-
-    .kfilm_header {
-        @include NSimgset(50vh);
-        background-image: url(/img/header_kfilm.jpg);
+.kfilm_nav {
+    img {
+        width: 10vh;
+        height: 10vh;
     }
+    background-color: yellow;
+}
+
+.kfilm_header {
+    @include NSimgset(50vh);
+    background-image: url(/img/header_kfilm.jpg);
+
 }
