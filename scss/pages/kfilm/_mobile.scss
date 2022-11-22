@@ -82,6 +82,7 @@
         width: 100%;
         height: 4vh;
         justify-content: flex-end;
+        align-items: center;
         padding-right: 2%;
         background-color: white;
         padding-top: 1%;
@@ -164,6 +165,7 @@
     }
 }
 
+// 3.1(mobile) KFILM MAIN INTRO
 .kfilm_intro {
     > section {
         @include NSflexcolrow(2vh);
@@ -268,6 +270,7 @@
     }
 }
 
+// 3.2(mobile) KFILM MAIN ARTIST
 .kfilm_artist {
     > section {
         width: 100%;
@@ -307,7 +310,6 @@
                 display: flex;
             }
         }
-
 
         .r1d2, .r1d3, .r1d4, .r2d1, .r3d1, .r3d2, .r3d3 {
             @include NSimgset(20vh);
@@ -349,15 +351,150 @@
         .r3d3 {
             background-image: url("/img/kfilm_star9.jpg");
         }
-
     }
+}
+
+// 3.1(mobile) KFILM MAIN DIRECTOR
+.kfilm_director {
+
+    > section {
+        width: 100%;
+        height: 100%;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: aliceblue;
+        @include NSflexcolrow(5vh);
+
+        > figure {
+            @include NSflexcolrow(1vh);
+            @include NSalignCenter;
+
+            img {
+                width: 30vh;
+                height: 30vh;
+                border-radius: 50%;
+                border: 5px solid $dBlue1;
+                position: absolute;
+            }
+
+            a {
+                position: relative;
+                height: 30vh;
+                width: 30vh;
+                display: flex;
+                @include NSalignCenter;
+                border-radius: 50%;
+            }
+            
+            a:hover > aside {
+                display: flex;
+                position: absolute;
+                @include NSalignCenter;
+                background-color: rgba(50, 50, 50, .6);
+                width: 30vh;
+                height: 30vh;
+                border-radius: 50%;
+                border: 5px dimgray solid;
+            }
+            
+            a:hover i {
+                background-color: gray;
+                color: whitesmoke;
+                font-size: 18px;
+                width: 4vh;
+                height: 4vh;
+                text-align: center;
+                display: flex;
+                @include NSalignCenter;
+                border-right: 1px solid rgba(50, 50, 50, .8);
+            }    
         
+            a:hover i:hover {
+                color: yellow;
+                font-size: 20px;
+            }              
+
+            figcaption {
+                @include NSflexcol;
+                @include NSalignCenter;
+            }
+
+            small {
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: royalblue;
+            }
+
+            p {
+                font-size: 12px;
+                font-weight: 300;
+                color: $dBlue4;
+                width: 50%;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.kfilm_movie {
 
 }
 
+.kfilm_footer {
+    background-color: $dBlue5;
+    color: whitesmoke;
+    padding: 2%;
+    font-size: 12px;
 
+    p:first-child {
+        text-align: right;    
+
+        a {
+            color:gold;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+    }
+
+    p:nth-child(2) {
+        text-align: center;    
+    }
+
+    blockquote {
+        display: flex;
+        column-gap: 1vh;
+        justify-content: flex-end;
+
+        a {
+            border: 2px solid yellow;
+            border-radius: 50%;
+            width: 4vh;
+            height: 4vh;
+            display: flex;
+            @include NSalignCenter;
+        }
+
+        a:hover {
+            background-color: yellow;
+            i {
+                color: royalblue;
+            }
+        }
+
+        i {
+            color: yellow;
+            font-size: 12px;
+        }
+    }
+    
+}
 
 img {
-    width: 20vh;
-    height: 20vh;
+    width: 50vh;
+    height: 50vh;
 }

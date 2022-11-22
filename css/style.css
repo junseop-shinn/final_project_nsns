@@ -642,6 +642,7 @@ blockquote, p {
     width: 100%;
     height: 4vh;
     justify-content: flex-end;
+    align-items: center;
     padding-right: 2%;
     background-color: white;
     padding-top: 1%;
@@ -903,9 +904,137 @@ blockquote, p {
   }
 }
 @media (min-width: 200px) {
+  .kfilm_director > section {
+    width: 100%;
+    height: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .kfilm_director > section > figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .kfilm_director > section > figure img {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: 5px solid #C9EAF3;
+    position: absolute;
+  }
+  .kfilm_director > section > figure a {
+    position: relative;
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .kfilm_director > section > figure a:hover > aside {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.6);
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: 5px dimgray solid;
+  }
+  .kfilm_director > section > figure a:hover i {
+    background-color: gray;
+    color: whitesmoke;
+    font-size: 18px;
+    width: 4vh;
+    height: 4vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(50, 50, 50, 0.8);
+  }
+  .kfilm_director > section > figure a:hover i:hover {
+    color: yellow;
+    font-size: 20px;
+  }
+  .kfilm_director > section > figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .kfilm_director > section > figure small {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: royalblue;
+  }
+  .kfilm_director > section > figure p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #62B3D1;
+    width: 50%;
+    text-align: justify;
+  }
+}
+@media (min-width: 200px) {
+  .kfilm_footer {
+    background-color: royalblue;
+    color: whitesmoke;
+    padding: 2%;
+    font-size: 12px;
+  }
+  .kfilm_footer p:first-child {
+    text-align: right;
+  }
+  .kfilm_footer p:first-child a {
+    color: gold;
+    font-weight: 500;
+  }
+  .kfilm_footer p:first-child a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  .kfilm_footer p:nth-child(2) {
+    text-align: center;
+  }
+  .kfilm_footer blockquote {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    justify-content: flex-end;
+  }
+  .kfilm_footer blockquote a {
+    border: 2px solid yellow;
+    border-radius: 50%;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .kfilm_footer blockquote a:hover {
+    background-color: yellow;
+  }
+  .kfilm_footer blockquote a:hover i {
+    color: royalblue;
+  }
+  .kfilm_footer blockquote i {
+    color: yellow;
+    font-size: 12px;
+  }
+}
+@media (min-width: 200px) {
   img {
-    width: 20vh;
-    height: 20vh;
+    width: 50vh;
+    height: 50vh;
   }
 }
 @media (min-width: 600px) and (min-width: 600px) {
