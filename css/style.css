@@ -128,6 +128,14 @@ blockquote, p {
     height: 50vh;
     background-image: url(/img/header_kfilm.jpg);
   }
+  table {
+    border: 2px red solid;
+    width: 40vh;
+    height: 40vh;
+  }
+  table td {
+    border: 2px red solid;
+  }
 }
 @media (min-width: 600px) and (min-width: 600px) {
   .home_nav > details {
