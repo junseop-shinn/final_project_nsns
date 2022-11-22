@@ -560,13 +560,13 @@ blockquote, p {
 }
 @media (min-width: 200px) {
   header img {
-    height: 30vh;
+    height: 50vh;
     border: 10px solid rebeccapurple;
   }
 }
 @media (min-width: 200px) {
   .w-100 {
-    height: 30vh !important;
+    height: 50vh !important;
   }
 }
 @media (min-width: 600px) and (min-width: 600px) {
