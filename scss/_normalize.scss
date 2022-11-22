@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $defFont;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @include NSflexcol;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, 
+h5, h6, ul, figure,
+blockquote, p {
+    margin : 0;
+    padding: 0;
+}
+
+@keyframes bts-color {
+    0% {background-color :$dPink1;}
+   25% {background-color :$dPink2;}
+   50% {background-color :$dPink3;}
+   75% {background-color :$dPink4;}
+   100% {background-color:$dPink5;}
+}
+
+@keyframes bts-op {
+    from {transform: scale(0.98);}
+    to {transform: scale(1);}
+    from {transform: rotate(-8deg);}
+    to {transform: rotate(8deg);}        
+}
+
+.nav_ani {
+    animation-name: bts-color;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+.home_header {
+    // animation-name: bts-op;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+
