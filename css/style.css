@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 200px) {
+  header img {
+    height: 30vh;
+    border: 10px solid rebeccapurple;
+  }
+  .w-100 {
+    height: 30vh !important;
+  }
+}/*# sourceMappingURL=style.css.map */

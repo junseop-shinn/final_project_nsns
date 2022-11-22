@@ -1,1 +1,9 @@
-@media (min-width:$MobileSize) {}
+header img{
+    height:30vh;
+    border: 10px solid rebeccapurple;
+}
+
+.w-100 {
+    // width: unset !important;
+    height: 30vh !important;
+}
