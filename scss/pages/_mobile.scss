@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-@media (min-width: 200px) {
-    //@import 'home/mobile';
-    //@import 'kfilm/mobile';
-    @import 'kpop/mobile';
-=======
 @media (min-width:$MobileSize){
-@import 'pages/home/mobile';
-// @import 'pages/kpop/mobile';
-// @import 'pages/kfilm/mobile';
->>>>>>> 8370ff56b2c8e5d5ad4c0894d2ad9dd157e94ef1
+@import 'home/mobile';
+@import 'kpop/mobile';
+@import 'kfilm/mobile';
 }

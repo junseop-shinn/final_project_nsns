@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 @import "variables";
 @import 'mixins';
 @import 'normalize';
+
 @import 'pages/mobile';
-=======
-// Common SCSS
-@import 'variables';
-@import 'mixins';
-@import 'normalize';
+@import 'pages/tablet';
+@import 'pages/desktop';
 
-
-
->>>>>>> 8370ff56b2c8e5d5ad4c0894d2ad9dd157e94ef1
