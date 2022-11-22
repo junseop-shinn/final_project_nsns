@@ -1,3 +1,4 @@
+// 1.(mobile) KFILM NAV START
 .kfilm_nav {
     display: flex;
     justify-content: space-between;
@@ -68,7 +69,8 @@
         color: white;
     }    
 }
-
+// 1.(mobile) KFILM NAV END
+// 2.(mobile) KFILM HEADER START
 .kfilm_header {
     @include NSflexcol;
     @include NSimgset(50vh);
@@ -124,20 +126,236 @@
             text-align: left;
             @include NSfont(12px,300);
         }
+    }
+}
+// 2.(mobile) KFILM HEADER END
+// 2.(mobile) KFILM MAIN START
+.kfilm_main {
+    padding-top: 5vh;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    > section {
+        @include NSflexcolrow(5vh);
+        @include NSalignCenter;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+        > article {
+            @include NSflexrowcol(1%);
+            @include NSalignCenter;
+            width: 100%;
+
+            > span {
+                width: 1.5vh;
+                height: 1.5vh;
+                background-color: $dBlue3;
+                border: 1px solid $dBlue3;
+                border-radius: 1px;
+            }
+
+            h3 {
+                @include NSfont($dFontSize4,600);
+                text-transform: uppercase;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+    }
+}
+
+.kfilm_intro {
+    > section {
+        @include NSflexcolrow(2vh);
+    }    
+
+    h4 {
+        @include NSfont($dFontSize3,500);
+        border-bottom: 3px double black;
+        width: fit-content;
+    }
+
+    .kfilm_intro_left {
+        @include NSflexcolrow(2vh);
+
+        img {
+            width: 24vh;
+            height: 24vh;
+            border: 1px solid lightgray;
+            padding: 0.5%;
+            float: left;
+            margin-right: 2vh;
+        }
+
+        figure:last-child img {
+            float: right;
+            margin-left: 2vh;
+        }
+
+        figure {
+            background-color: rgb(247, 249, 250);
+            padding: 1%;
+        }
+
+        p {
+            @include NSfont($dFontSize2,400);
+        }
+
+        span {
+            @include NSfont($dFontSize3,500);
+            color: blue;
+            text-decoration: underline;
+        }
+
+        aside {
+            display: flex;
+            justify-content: right;
+            padding: 2%;
+        }
+
+        a {
+            @include NSfont($dFontSize1,500);
+            background-color: $dBlue3;
+            color: whitesmoke;
+            @include NSpadding(1%,1%,2%,2%);
+        }
+
+        a:hover {
+            background-color: blue;
+            color: yellow;
+        }
+    }
+
+    .kfilm_intro_right {
+        @include NSflexcolrow(2vh);
+        
+        blockquote {
+            @include NSflexcolrow(2vh);
+            background-color: rgb(247, 249, 250);
+            padding: 4%;
+
+            h5 {
+                @include NSfont($dFontSize2,500);
+                background-color: gainsboro;
+                width: 100%;
+                border-radius: 7px;
+                text-align: center;
+            }
+            
+            span {
+                background-color: $dBlue2;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            h5:first-child span {
+                width: 90%;
+            }
+
+            h5:nth-child(2) span {
+                width: 75%;
+            }
+
+            h5:nth-child(3) span {
+                width: 85%;
+            }
+
+            h5:last-child span {
+                width: 95%;
+            }
+        }
+    }
+}
+
+.kfilm_artist {
+    > section {
+        width: 100%;
+        height: 100%;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: aliceblue;
+    }
+
+    table {
+        width: 100%;
+
+        small {
+            display: none;
+            background-color:rgba(blue,.4);
+            border: 4px blue solid;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        td {
+            border : 3px aliceblue solid;
+        }
+
+        .r1d1, .r2d2 {
+            @include NSimgset(40vh);
+            width: 40%;
+        }
+
+        td:hover {
+            small {
+                display: flex;
+            }
+        }
+
+
+        .r1d2, .r1d3, .r1d4, .r2d1, .r3d1, .r3d2, .r3d3 {
+            @include NSimgset(20vh);
+            width: 20%;            
+        }
+
+        .r1d1 {
+            background-image: url("/img/kfilm_star1.jpg");
+        }
+
+        .r1d2 {
+            background-image: url("/img/kfilm_star2.jpg");
+        }
+
+        .r1d3 {
+            background-image: url("/img/kfilm_star3.jpg");
+        }
+
+        .r1d4 {
+            background-image: url("/img/kfilm_star5.jpg");
+        }
+
+        .r2d1 {
+            background-image: url("/img/kfilm_star6.jpg");
+        }
+
+        .r2d2 {
+            background-image: url("/img/kfilm_star4.jpg");
+        }
+
+        .r3d1 {
+            background-image: url("/img/kfilm_star7.jpg");
+        }
+
+        .r3d2 {
+            background-image: url("/img/kfilm_star8.jpg");
+        }
+
+        .r3d3 {
+            background-image: url("/img/kfilm_star9.jpg");
+        }
 
     }
+        
 
 }
 
-table {
-    border : 2px red solid;
-    width: 40vh;
-    height: 40vh;
 
-    td {
-    border : 2px red solid;
-    }
-}
 
 img {
     width: 20vh;
