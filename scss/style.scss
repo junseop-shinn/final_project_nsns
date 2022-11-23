@@ -1,11 +1,7 @@
-// Common SCSS
-@import 'variables';
+@import "variables";
 @import 'mixins';
 @import 'normalize';
 
 @import 'pages/mobile';
 @import 'pages/tablet';
 @import 'pages/desktop';
-
-
-

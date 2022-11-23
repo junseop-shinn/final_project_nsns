@@ -201,7 +201,38 @@
             }
         }
     }
-    // 3.2 MAIN MAP SECTION
+    // 3.2 MAIN HIT SECTION
+    .home_hit {
+        background-color: $dPink1;
+        @include NSpadding(10vh,10vh,5%,5%);
+        @include NSflexcolrow(10vh);
+        align-items: center;
+
+        > article {
+            @include NSflexcolrow(1vh);
+            align-items: center;
+
+            h3 {
+                text-transform: uppercase;
+                @include NSfont($dFontSize7,600);
+            }
+    
+            span {
+                width: 20%;
+                color: $dPink4;
+                height: 1vh;
+                background-color: $dPink4;
+                border: 1vh solid $dPink4;
+                border-radius: 10px;
+            } 
+        }
+
+        > section {
+            @include NSflexcolrow(5vh);
+            align-items: center;
+        }
+    }
+    // 3.3 MAIN MAP SECTION
     .home_map {
         background-color: white;
         @include NSpadding(10vh,10vh,5%,5%);
@@ -268,7 +299,7 @@
             }
         }
     }
-    // 3.3 MAIN COMTACT SECTION
+    // 3.4 MAIN COMTACT SECTION
     .home_contact {
         background-color: $dPink1;
         @include NSpadding(10vh,10vh,5%,5%);
