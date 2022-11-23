@@ -10,7 +10,7 @@
     <title>kpop</title>
 </head>
 <body>
-    <section class="fix" id="fix">
+    <section class="kpopfix" id="kpopfix">
         <aside>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
@@ -19,11 +19,11 @@
         </aside>
     </section>
     <nav>
-        <section class="title page">
+        <section class="kpoptitlepage">
             <figure>
                 <img src="/img/k.png" alt="icon">
             </figure>
-            <h1>Korean Pop</h1>
+            <h1>pop</h1>
         </section>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -87,36 +87,39 @@
     </header>
     <main>
             <section class="about" id="about">
-                <h2>About</h2>
+                <h2><i class="fa-regular fa-face-smile"></i>About</h2>
                 <span></span>
                 <article>
                     <p>
-                        Kpop which is known as <span>'Korean pop'</span> is a musical genre consisting of pop, dance, electropop, hiphop and etc originating in South Korea
-                        <a href="#">Read More</a>
+                        Kpop which is known as <span>'Korean pop'</span> is a musical genre consisting of pop, dance, electropop, hiphop and etc originating in South Korea   
                     </p>
+                    <a href="#">Read More</a>
                 </article>
             </section>
             <section class="calendar" id="calendar">
-                <h2>Concert Calendar</h2>
+                <h2>Concert Schedule</h2>
                 <span></span>
                 <article>
                     <figure>
                         <img src="/img/bi_Calendar.jpg" alt="bi">
                         <figcaption>
-                            <small>B.I will be hosting show for fans in December</small>
+                            <h3>B.I</h3>
+                            <small>Show for fans in December</small>
                             <p>The show will be a fanmeeting and will be a concert</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="/img/CIX_Calendar.jpg" alt="cix">
                         <figcaption>
-                            <small>CIX will have a world tour starting in December 2022</small>
+                            <h3>CIX</h3>
+                            <small>World tour</small>
                             <p>The tour will be starting in Seoul, will be heading to 16 different cities</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="/img/kangdaniel_Calendar.jpg" alt="kangdaniel">
                         <figcaption>
+                            <h3>Kang Daniel</h3>
                             <small>First Parade World Tour 2023</small>
                             <p>Kang Daniel will be performing in Europe and North America in his world tour</p>
                         </figcaption>
@@ -124,7 +127,8 @@
                     <figure>
                         <img src="/img/nflying_Calendar.jpg" alt="nflying">
                         <figcaption>
-                            <small>N.Flying will be heading on a tour to the USA</small>
+                            <h3>N.Flying</h3>
+                            <small>tour to the USA</small>
                             <p>The tour will be starting in New York and to the different 6 cities </p>
                         </figcaption>
                     </figure>
@@ -204,30 +208,28 @@
                         <img src="/img/jinsolo_onsale.jpg" alt="jinalbum">
                         <figcaption>
                             <small>$32.40</small>
+                            <p>$28.00</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="/img/itzy_onsale.jpg" alt="itzyalbum">
                         <figcaption>
                             <small>$10.50</small>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/img/jinsolo_onsale.jpg" alt="jinalbum">
-                        <figcaption>
-                            <small>$32.40</small>
+                            <p>$8.00</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="/img/dreamcatcher_onsale.jpg" alt="dreamcatcher">
                         <figcaption>
                             <small>$32.90</small>
+                            <p>$27.00</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="/img/rm_onsale.jpg" alt="rm">
                         <figcaption>
                             <small>$27.60</small>
+                            <p>$25.00</p>
                         </figcaption>
                     </figure>
                 </article>
@@ -235,7 +237,6 @@
             <section class="audition" id="audition">
                 <h3>Audition</h3>
                 <span></span>
-                <section>
                     <section class="form">
                         <h4>
                             Be part of us
@@ -246,8 +247,10 @@
                                 <label for="nationality">Nationality:</label>
                                 <aside>
                                    <input type="radio" name="nationality" id="radio-southkorea" value="South Korea"> South Korea
+                                   <aside>
                                    <input type="radio" name="nationality" id="radio-othercountries" value="Other countries"> Other countries
-                                   <input type="radio" name="nationality" id="nationality" value="not-mentioned"> I prefer not to say it
+                                   <input type="text" name="nationality" id="nationality">
+                                   </aside>
                                 </aside>
                                 <label for="gender">Gender:</label>
                                 <aside>
@@ -255,19 +258,20 @@
                                    <input type="radio" name="gender" id="gender-male" value="male"> Male
                                    <input type="radio" name="gender" id="gender" value="not-mentioned"> I prefer not to say it
                                 </aside>
-                                <label for="name">Your Name:</label>
-                                <input type="text" name="name" id="name">
-                                <label for="email">Email:</label>
-                                <input type="email" name="email" id="email">
-                                <label for="date">Birthday:</label>
-                                <input type="date" name="date" id="date">
-                                <label for="message">Message:</label>
-                                <textarea name="message" id="message"></textarea>
-                                <input type="submit" value="send message">
+                                <aside>
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" name="name" id="name">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                    <label for="date">Birthday:</label>
+                                    <input type="date" name="date" id="date">
+                                    <label for="message">Message:</label>
+                                    <textarea name="message" id="message"></textarea>
+                                    <input type="submit" value="send message">
+                                </aside>
                             </fieldset>
                         </form>
                     </section>
-            </section>
     </main>
     <footer>
             <p>
