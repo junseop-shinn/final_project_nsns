@@ -585,7 +585,7 @@ blockquote, p {
     border-radius: 50%;
     border: 3px black solid;
   }
-  .kfilm_nav > ul {
+  .kfilm_nav > section {
     display: none;
   }
   .kfilm_nav details > summary {
@@ -1362,23 +1362,24 @@ blockquote, p {
 }
 @media (min-width: 600px) {
   .kfilm_movie > section {
+    width: 100%;
     height: 45vh;
   }
   .kfilm_movie > section h5 {
     color: blue;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border: 2px rgba(240, 248, 255, 0.85) solid;
     background-color: rgba(240, 248, 255, 0.85);
     font-weight: 600;
+    padding-top: 1%;
   }
   .kfilm_movie > section p {
     color: royalblue;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: rgba(240, 248, 255, 0.85);
-    border: 2px rgba(240, 248, 255, 0.85) solid;
     font-weight: 500;
+    padding-bottom: 1%;
   }
   .kfilm_movie img {
     height: 45vh;
@@ -1578,5 +1579,169 @@ blockquote, p {
   }
   .home_footer p, .home_footer p > a {
     font-size: 16px;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_nav > details {
+    display: none;
+  }
+  .kfilm_nav > section {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .kfilm_nav > section .dropdown-item {
+    text-transform: uppercase;
+  }
+  .kfilm_nav > section aside:last-child li {
+    text-align: right;
+  }
+  .kfilm_nav > section aside > a {
+    background-color: royalblue;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_header {
+    height: 70vh;
+  }
+  .kfilm_header > aside {
+    display: none;
+  }
+  .kfilm_header > article {
+    height: 70vh;
+  }
+  .kfilm_header > article h2 {
+    font-size: 32px;
+  }
+  .kfilm_header > article p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_main {
+    padding-top: 8vh;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .kfilm_main > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .kfilm_main > section > article h3 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_intro h4 {
+    width: 100%;
+    font-size: 20px;
+    border-bottom: none;
+    background-color: #62B3D1;
+    color: whitesmoke;
+    padding: 1%;
+  }
+  .kfilm_intro > section {
+    row-gap: 4vh;
+  }
+  .kfilm_intro .kfilm_intro_left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    row-gap: 0vh;
+    justify-content: space-between;
+  }
+  .kfilm_intro .kfilm_intro_left figure {
+    width: 49%;
+  }
+  .kfilm_intro .kfilm_intro_left img {
+    width: 28vh;
+    height: 28vh;
+  }
+  .kfilm_intro .kfilm_intro_left p {
+    font-size: 16px;
+  }
+  .kfilm_intro .kfilm_intro_left span {
+    font-size: 20px;
+  }
+  .kfilm_intro .kfilm_intro_left a {
+    font-size: 14px;
+  }
+  .kfilm_intro .kfilm_intro_right blockquote h5 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_artist table small {
+    font-size: 28px;
+  }
+  .kfilm_artist table .r1d1, .kfilm_artist table .r2d2 {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+  .kfilm_artist table .r1d2, .kfilm_artist table .r1d3, .kfilm_artist table .r1d4, .kfilm_artist table .r2d1, .kfilm_artist table .r3d1, .kfilm_artist table .r3d2, .kfilm_artist table .r3d3 {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_director > section {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+  .kfilm_director > section > figure a, .kfilm_director > section > figure img,
+.kfilm_director > section > figure a:hover > aside {
+    width: 32vh;
+    height: 32vh;
+  }
+  .kfilm_director > section > figure small {
+    font-size: 22px;
+  }
+  .kfilm_director > section > figure p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_movie > section {
+    height: 80vh;
+  }
+  .kfilm_movie img {
+    height: 80vh;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_drama img {
+    height: 80vh;
+  }
+  .kfilm_drama blockquote {
+    font-size: 16px;
+  }
+  .kfilm_drama button {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .kfilm_footer > article {
+    width: 5%;
+  }
+  .kfilm_footer > section {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .kfilm_footer > section blockquote a {
+    width: 5vh;
+    height: 5vh;
+  }
+  .kfilm_footer > section blockquote i {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */
