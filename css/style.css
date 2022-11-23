@@ -985,33 +985,84 @@ blockquote, p {
   }
 }
 @media (min-width: 200px) {
+  .kfilm_movie > section {
+    height: 60vh;
+  }
+  .kfilm_movie img {
+    width: 100%;
+    height: 60vh;
+  }
+  .kfilm_movie .carousel-indicators > button {
+    border: royalblue 2px solid;
+    width: 50px;
+    height: 5px;
+    background-color: royalblue;
+    border-radius: 4px;
+  }
+  .kfilm_movie .carousel slide > button {
+    border: royalblue 2px solid;
+    width: 50px;
+    height: 5px;
+    background-color: royalblue;
+    border-radius: 4px;
+  }
+  .kfilm_movie span {
+    border: royalblue 3px solid;
+    background-color: royalblue;
+    border-radius: 50%;
+  }
+  .kfilm_movie span:hover {
+    border: white 2px solid;
+  }
+}
+@media (min-width: 200px) {
+  .kfilm_drama img {
+    width: 100%;
+    height: 50vh;
+  }
+  .kfilm_drama blockquote {
+    font-size: 14px;
+    background-color: aliceblue;
+  }
+  .kfilm_drama > section {
+    width: 100%;
+  }
+}
+@media (min-width: 200px) {
   .kfilm_footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    align-items: flex-end;
+  }
+  .kfilm_footer > section {
     background-color: royalblue;
     color: whitesmoke;
     padding: 2%;
     font-size: 12px;
+    width: 100%;
   }
-  .kfilm_footer p:first-child {
+  .kfilm_footer > section p:first-child {
     text-align: right;
   }
-  .kfilm_footer p:first-child a {
+  .kfilm_footer > section p:first-child a {
     color: gold;
     font-weight: 500;
   }
-  .kfilm_footer p:first-child a:hover {
+  .kfilm_footer > section p:first-child a:hover {
     color: blue;
     text-decoration: underline;
   }
-  .kfilm_footer p:nth-child(2) {
+  .kfilm_footer > section p:nth-child(2) {
     text-align: center;
   }
-  .kfilm_footer blockquote {
+  .kfilm_footer > section blockquote {
     display: flex;
     -moz-column-gap: 1vh;
          column-gap: 1vh;
     justify-content: flex-end;
   }
-  .kfilm_footer blockquote a {
+  .kfilm_footer > section blockquote a {
     border: 2px solid yellow;
     border-radius: 50%;
     width: 4vh;
@@ -1020,21 +1071,44 @@ blockquote, p {
     justify-content: center;
     align-items: center;
   }
-  .kfilm_footer blockquote a:hover {
+  .kfilm_footer > section blockquote a:hover {
     background-color: yellow;
   }
-  .kfilm_footer blockquote a:hover i {
+  .kfilm_footer > section blockquote a:hover i {
     color: royalblue;
   }
-  .kfilm_footer blockquote i {
+  .kfilm_footer > section blockquote i {
     color: yellow;
     font-size: 12px;
   }
-}
-@media (min-width: 200px) {
-  img {
-    width: 50vh;
-    height: 50vh;
+  .kfilm_footer > article {
+    border: 3px royalblue solid;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 1vh;
+  }
+  .kfilm_footer > article a {
+    display: flex;
+    flex-direction: column;
+  }
+  .kfilm_footer > article a span {
+    color: royalblue;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .kfilm_footer > article a i {
+    color: royalblue;
+    font-size: 16px;
+  }
+  .kfilm_footer > article a:hover {
+    background-color: royalblue;
+  }
+  .kfilm_footer > article a:hover span, .kfilm_footer > article a:hover i {
+    color: yellow;
   }
 }
 @media (min-width: 600px) and (min-width: 600px) {
