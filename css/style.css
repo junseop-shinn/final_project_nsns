@@ -653,6 +653,7 @@ blockquote, p {
   .kfilm_header aside > a {
     font-size: 9px;
     font-weight: 600;
+    text-transform: uppercase;
     color: white;
     border: 1px royalblue solid;
     border-radius: 20px;
@@ -1035,6 +1036,35 @@ blockquote, p {
     row-gap: 1vh;
     align-items: flex-end;
   }
+  .kfilm_footer > article {
+    border: 3px royalblue solid;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 1vh;
+  }
+  .kfilm_footer > article a {
+    display: flex;
+    flex-direction: column;
+  }
+  .kfilm_footer > article a span {
+    color: royalblue;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .kfilm_footer > article a i {
+    color: royalblue;
+    font-size: 16px;
+  }
+  .kfilm_footer > article a:hover {
+    background-color: royalblue;
+  }
+  .kfilm_footer > article a:hover span, .kfilm_footer > article a:hover i {
+    color: yellow;
+  }
   .kfilm_footer > section {
     background-color: royalblue;
     color: whitesmoke;
@@ -1080,35 +1110,6 @@ blockquote, p {
   .kfilm_footer > section blockquote i {
     color: yellow;
     font-size: 12px;
-  }
-  .kfilm_footer > article {
-    border: 3px royalblue solid;
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-right: 1vh;
-  }
-  .kfilm_footer > article a {
-    display: flex;
-    flex-direction: column;
-  }
-  .kfilm_footer > article a span {
-    color: royalblue;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  .kfilm_footer > article a i {
-    color: royalblue;
-    font-size: 16px;
-  }
-  .kfilm_footer > article a:hover {
-    background-color: royalblue;
-  }
-  .kfilm_footer > article a:hover span, .kfilm_footer > article a:hover i {
-    color: yellow;
   }
 }
 @media (min-width: 600px) and (min-width: 600px) {
@@ -1249,6 +1250,182 @@ blockquote, p {
   }
   .home_footer p, .home_footer p > a {
     font-size: 25px;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_nav h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+  }
+  .kfilm_nav img {
+    width: 6vh;
+    height: 6vh;
+    border: 4px black solid;
+  }
+  .kfilm_nav details > summary {
+    font-size: 38px;
+  }
+  .kfilm_nav details a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_header {
+    height: 46vh;
+  }
+  .kfilm_header aside {
+    height: 6vh;
+  }
+  .kfilm_header aside > a {
+    font-size: 18px;
+  }
+  .kfilm_header > article {
+    height: 40vh;
+  }
+  .kfilm_header > article h2 {
+    font-size: 28px;
+  }
+  .kfilm_header > article p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_main {
+    padding-top: 3vh;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .kfilm_main > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .kfilm_main > section > article h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_intro h4 {
+    font-size: 24px;
+  }
+  .kfilm_intro .kfilm_intro_left img {
+    width: 20vh;
+    height: 20vh;
+  }
+  .kfilm_intro .kfilm_intro_left p {
+    font-size: 18px;
+  }
+  .kfilm_intro .kfilm_intro_left span {
+    font-size: 20px;
+  }
+  .kfilm_intro .kfilm_intro_left a {
+    font-size: 16px;
+  }
+  .kfilm_intro .kfilm_intro_right blockquote {
+    row-gap: 3vh;
+  }
+  .kfilm_intro .kfilm_intro_right blockquote h5 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_artist table small {
+    font-size: 28px;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_director > section {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    justify-content: space-evenly;
+  }
+  .kfilm_director > section > figure {
+    width: 32%;
+    justify-content: flex-start;
+  }
+  .kfilm_director > section > figure a, .kfilm_director > section > figure img,
+.kfilm_director > section > figure a:hover > aside {
+    width: 18vh;
+    height: 18vh;
+  }
+  .kfilm_director > section > figure small {
+    font-size: 20px;
+  }
+  .kfilm_director > section > figure p {
+    font-size: 16px;
+    width: 75%;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_movie > section {
+    height: 45vh;
+  }
+  .kfilm_movie > section h5 {
+    color: blue;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 2px rgba(240, 248, 255, 0.85) solid;
+    background-color: rgba(240, 248, 255, 0.85);
+    font-weight: 600;
+  }
+  .kfilm_movie > section p {
+    color: royalblue;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(240, 248, 255, 0.85);
+    border: 2px rgba(240, 248, 255, 0.85) solid;
+    font-weight: 500;
+  }
+  .kfilm_movie img {
+    height: 45vh;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_drama img {
+    height: 40vh;
+  }
+  .kfilm_drama blockquote {
+    font-size: 18px;
+  }
+  .kfilm_drama button {
+    font-size: 22px;
+  }
+}
+@media (min-width: 600px) {
+  .kfilm_footer > article {
+    width: 7%;
+  }
+  .kfilm_footer > article a span {
+    font-size: 16px;
+  }
+  .kfilm_footer > article a i {
+    font-size: 20px;
+  }
+  .kfilm_footer > section {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    row-gap: 1vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .kfilm_footer > section blockquote {
+    width: 100%;
+  }
+  .kfilm_footer > section blockquote a {
+    border: 3px solid yellow;
+    width: 3vh;
+    height: 3vh;
+  }
+  .kfilm_footer > section blockquote i {
+    font-size: 16px;
   }
 }
 @media (min-width: 1000px) and (min-width: 1000px) {

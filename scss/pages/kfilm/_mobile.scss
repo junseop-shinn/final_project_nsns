@@ -92,6 +92,7 @@
 
         > a {
             @include NSfont(9px,600);
+            text-transform: uppercase;
             color: white;
             border: 1px $dBlue5 solid;
             border-radius: 20px;
@@ -499,7 +500,39 @@
     @include NSflexcol;
     row-gap: 1vh;
     align-items: flex-end;
-    
+
+    > article {
+        border: 3px royalblue solid;
+        width: 10%;
+        @include NSflexcol;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1vh;
+
+        a {
+            @include NSflexcol;
+
+            span {
+                color: royalblue;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            i {
+                color:  royalblue;
+                font-size: 16px;
+            }
+        }
+
+        a:hover {
+            background-color: royalblue;
+            span, i {
+                color: yellow;
+            }
+        }
+    }    
+
     > section {
         background-color: $dBlue5;
         color: whitesmoke;
@@ -549,38 +582,6 @@
             i {
                 color: yellow;
                 font-size: 12px;
-            }
-        }
-    }
-
-    > article {
-        border: 3px royalblue solid;
-        width: 10%;
-        @include NSflexcol;
-        justify-content: center;
-        text-align: center;
-        margin-right: 1vh;
-
-        a {
-            @include NSflexcol;
-
-            span {
-                color: royalblue;
-                font-size: 12px;
-                text-transform: uppercase;
-                text-align: center;
-            }
-        
-            i {
-                color:  royalblue;
-                font-size: 16px;
-            }
-        }
-
-        a:hover {
-            background-color: royalblue;
-            span, i {
-                color: yellow;
             }
         }
     }

@@ -1,0 +1,221 @@
+// 1.(tablet) KFILM NAV START
+.kfilm_nav {
+
+    h1 {
+        font-size: 42px;
+        letter-spacing: 3px;
+    }
+
+    img {
+        width: 6vh;
+        height: 6vh;
+        border: 4px black solid;
+    }
+
+    details > summary {
+        font-size: 38px;
+    }
+
+    details a {
+        font-size: 24px;
+    }
+}
+// 1.(tablet) KFILM NAV END
+// 2.(tablet) KFILM HEADER START
+.kfilm_header {
+    height: 46vh;
+
+    aside {
+        height: 6vh;
+
+        > a {
+            font-size: 18px;
+        } 
+    }
+
+    > article {
+        height: 40vh;
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+// 2.(tablet) KFILM HEADER END
+// 2.(tablet) KFILM MAIN START
+.kfilm_main {
+    padding-top: 3vh;
+    padding-left: 4%;
+    padding-right: 4%;
+
+    > section {
+        @include NSflexcolrow(3vh);
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+
+        > article {        
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+// 3.1(tablet) KFILM MAIN INTRO
+.kfilm_intro {
+    h4 {
+        font-size: 24px;
+    }
+
+    .kfilm_intro_left {
+        img {
+            width: 20vh;
+            height: 20vh;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .kfilm_intro_right {
+        blockquote {
+            row-gap: 3vh;
+
+            h5 {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// 3.2(tablet) KFILM MAIN ARTIST
+.kfilm_artist {
+    table {
+        small {
+            font-size: 28px;
+        }
+    }
+}
+
+// 3.3(tablet) KFILM MAIN DIRECTOR
+.kfilm_director {
+    > section {
+        @include NSflexrowcol(0vh);
+        justify-content: space-evenly;
+
+        > figure {
+            width: 32%;
+            justify-content: flex-start;
+            
+            a, img,
+            a:hover > aside {
+                width: 18vh;
+                height: 18vh;
+            }
+
+            small {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 75%;
+            }
+        }
+    }
+}
+
+// 3.4(tablet) KFILM MAIN MOVIE
+.kfilm_movie {
+    > section {
+        height: 45vh;
+
+        h5 {
+            color: blue;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border: 2px rgba(aliceblue,.85) solid;
+            background-color: rgba(aliceblue,.85);
+            font-weight: 600;
+        }
+        
+        p {
+            color: $dBlue5;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            background-color: rgba(aliceblue,.85);
+            border: 2px rgba(aliceblue,.85) solid;
+            font-weight: 500;
+        }
+    }
+
+    img {
+        height: 45vh;
+    }
+}
+
+// 3.5(tablet) KFILM MAIN DRAMA
+.kfilm_drama {
+    img {
+        height: 40vh;
+    }
+
+    blockquote {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 22px;
+    }
+}
+// 3.(tablet) KFILM MAIN END
+
+// 4.(tablet) KFILM FOOTER START
+.kfilm_footer {
+
+    > article {
+        width: 7%;
+        a {
+            span {
+                font-size: 16px;
+            }
+        
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    > section {
+        font-size: 16px;
+        @include NSflexwrap(1vh,1vh);
+        @include NSalignCenter;
+
+        blockquote {
+            width: 100%;
+            a {
+                border: 3px solid yellow;
+                width: 3vh;
+                height: 3vh;
+            }
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }   
+}
+
