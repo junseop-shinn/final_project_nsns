@@ -59,7 +59,7 @@
             width: 100%;
             border-bottom: 1px whitesmoke solid;
             border-right: 1px whitesmoke solid;
-            background-color: $dPink1;
+            background-color: rgba(dimgray,.6);
             border-radius: 4px;
         }
 
@@ -69,7 +69,7 @@
             text-align: center;
             width: 100%;
             padding: 2%;
-            color: $dPink5;
+            color: white;
         }
 
         a:hover {
@@ -82,10 +82,42 @@
 //////////////////////
 // 2.HOME HEADER START
 .home_header {
-    display: flex;
-    background-image: url("/img/bg-header.png");
+    @include NSflexcol;
     @include NSimgset(60vh);
-    @include NSalignCenter;
+    background-image: url("/img/bg-header.png");
+    align-items: center;
+    row-gap: 2vh;
+    padding-bottom: 2vh;
+
+    aside {
+        @include NSflexrowcol(1vh);
+        width: 100%;
+        height: 4vh;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 2%;
+        background-color: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-top: 1px lightgray dotted;
+        border-bottom: 1px lightgray dotted;
+
+        > a {
+            @include NSfont(9px,600);
+            text-transform: uppercase;
+            color: white;
+            border: 1px $dPink5 solid;
+            border-radius: 20px;
+            background-color: $dPink5;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        > a:hover {
+            background-color: white;
+            color: $dPink5;
+        }
+    }
 
     > section {
         background-color: rgba(244, 219, 232, 0.5);
@@ -93,7 +125,7 @@
         @include NSsize(90%,90%);
         @include NSflexcolrow(3vh);
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         
         h1 {
             @include NSfont($dFontSize8,600);
@@ -108,8 +140,8 @@
             text-align: justify;
 
             span {
-                @include NSfont($dFontSize2,400);
-                color: $dPink5;
+                @include NSfont($dFontSize2,500);
+                color: royalblue;
                 text-transform: uppercase;
             }
         }
@@ -118,31 +150,36 @@
 // 2.HOME HEADER END
 //////////////////////
 // 3.HOME MAIN START
+.home_main {
+    > section {
+        @include NSpadding(10vh,10vh,5%,5%);
+        @include NSflexcolrow(10vh);
+        align-items: center;
+
+        > article {
+            @include NSflexcolrow(1vh);
+            align-items: center;
+    
+            h3 {
+                text-transform: uppercase;
+                @include NSfont($dFontSize7,600);
+            }
+    
+            span {
+                width: 10vh;
+                color: $dPink4;
+                height: 1vh;
+                background-color: $dPink4;
+                border: 1vh solid $dPink4;
+                border-radius: 10px;
+            } 
+        }
+    }
+}
+
 // 3.1 MAIN ABOUT SECTION
 .home_about {
     background-color: $dPink1;
-    @include NSpadding(10vh,10vh,5%,5%);
-    @include NSflexcolrow(10vh);
-    align-items: center;
-
-    > article {
-        @include NSflexcolrow(1vh);
-        align-items: center;
-
-        h3 {
-            text-transform: uppercase;
-            @include NSfont($dFontSize7,600);
-        }
-
-        span {
-            width: 20%;
-            color: $dPink4;
-            height: 1vh;
-            background-color: $dPink4;
-            border: 1vh solid $dPink4;
-            border-radius: 10px;
-        } 
-    }
 
     > section {
         @include NSflexcolrow(5vh);
@@ -200,28 +237,6 @@
 // 3.2 MAIN HIT SECTION
 .home_hit {
     background-color: white;
-    @include NSpadding(10vh,10vh,5%,5%);
-    @include NSflexcolrow(10vh);
-    align-items: center;
-
-    > article {
-        @include NSflexcolrow(1vh);
-        align-items: center;
-
-        h3 {
-            text-transform: uppercase;
-            @include NSfont($dFontSize7,600);
-        }
-
-        span {
-            width: 20%;
-            color: $dPink4;
-            height: 1vh;
-            background-color: $dPink4;
-            border: 1vh solid $dPink4;
-            border-radius: 10px;
-        } 
-    }
 
     > section {
         width: 100%;
@@ -291,28 +306,6 @@
 // 3.3 MAIN MAP SECTION
 .home_map {
     background-color: $dPink1;
-    @include NSpadding(10vh,10vh,5%,5%);
-    @include NSflexcolrow(10vh);
-    align-items: center;
-
-    > article {
-        @include NSflexcolrow(1vh);
-        align-items: center;
-
-        h3 {
-            text-transform: uppercase;
-            @include NSfont($dFontSize7,600);
-        }
-
-        span {
-            width: 20%;
-            color: $dPink4;
-            height: 1vh;
-            background-color: $dPink4;
-            border: 1vh solid $dPink4;
-            border-radius: 10px;
-        } 
-    }
 
     figure {
         @include NSflexcolrow(3vh);
@@ -358,28 +351,6 @@
 // 3.4 MAIN COMTACT SECTION
 .home_contact {
     background-color: white;
-    @include NSpadding(10vh,10vh,5%,5%);
-    @include NSflexcolrow(10vh);
-    align-items: center;
-
-    > article {
-        @include NSflexcolrow(1vh);
-        align-items: center;
-
-        h3 {
-            text-transform: uppercase;
-            @include NSfont($dFontSize7,600);
-        }
-
-        span {
-            width: 20%;
-            color: $dPink4;
-            height: 1vh;
-            background-color: $dPink4;
-            border: 1vh solid $dPink4;
-            border-radius: 10px;
-        } 
-    }
 
     > form {
         @include NSflexwrap(2vh,2vh);
