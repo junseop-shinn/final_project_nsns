@@ -5,7 +5,7 @@
     align-items: center;
     height: 16vh;
 
-    > ul {
+    > article {
         display: none;
     }
 
@@ -52,11 +52,11 @@
         position: fixed;
         width: 98%;
         @include NSflexcol;
-        text-align: center;
+        align-items: flex-end;
 
         li {
             display: flex;
-            width: 100%;
+            width: 45%;
             border-bottom: 1px whitesmoke solid;
             border-right: 1px whitesmoke solid;
             background-color: rgba(dimgray,.6);

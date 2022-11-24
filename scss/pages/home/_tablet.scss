@@ -1,45 +1,21 @@
 // 1.HOME TABLET NAV START
-.home_nav > details {
-    display: none;
-}
-
 .home_nav {
     align-items: center;
-    height:13vh;
+    height:12vh;
 
-    section {
-        height:5vh;
+    > section {
+        height:6vh;
     }
 
-    > ul {
-        @include NSflexrowcol(5vh);
-        @include NSalignCenter;
-        @include NSsize(50%,8vh);
+    details {
+        height:6vh;
+        padding-top: 6vh;
     }
 
-    li {
-        display: flex;
-        width: 100%;
-        @include NSalignCenter;
+    summary {
+        font-size: 36px;
+        @include NSpadding(1vh,1vh,0,0);
     }
-
-    a {
-        text-transform: uppercase;
-        @include NSfont($dFontSize7,500);
-        background-color: rgba($dPink3,.2);
-        color: $dPink5;
-        width: 100%;
-        padding: 3%;
-        text-align: center;
-        border-radius: 20px;
-        transition: .4s;
-    }
-
-    a:hover {
-        background-color: $dPink4;
-        color: white;
-        border-radius: 20px;
-    }    
 
     h2 {
         font-size: $dFontSize5;
@@ -50,6 +26,14 @@
 .home_header {
     @include NSimgset(40vh);
     
+    aside {
+        height: 6vh;
+
+        > a {
+            font-size: 18px;
+        } 
+    }
+
     > section {
         h1 {
             font-size:36px;
