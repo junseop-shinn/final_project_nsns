@@ -1,0 +1,589 @@
+// 1.(mobile) KFILM NAV START
+.kfilm_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2%;
+
+    > figure {
+        @include NSflexrowcol(0.5vh);
+        align-items: center;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 24px;
+        color: $dBlue5;
+        font-weight: 700;
+    }
+
+    img {
+        width: 5vh;
+        height: 5vh;
+        border-radius: 50%;
+        border: 3px black solid;
+    }
+
+    > section {
+        display: none;
+    }
+
+    details > summary {
+        font-size: 24px;
+        color: $dBlue5;
+    }
+
+    details {
+        position: fixed;
+        width: 96%;
+        text-align: right;
+        z-index: 1;
+    }
+
+    details > ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 96%;
+        text-align: right;
+        z-index: 1;
+    }
+
+    details li {
+        display: flex;
+        width: 100%;
+    }
+
+    details a {
+        width: 100%;
+        background-color: rgba(30,30,30,.8);
+        color: $dBlue5;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1%;
+    }
+
+    details a:hover {
+        background-color: $dBlue5;
+        color: white;
+    }    
+}
+// 1.(mobile) KFILM NAV END
+// 2.(mobile) KFILM HEADER START
+.kfilm_header {
+    @include NSflexcol;
+    @include NSimgset(50vh);
+    background-image: url(/img/header_kfilm.jpg);
+    align-items: flex-end;
+
+    aside {
+        @include NSflexrowcol(1vh);
+        width: 100%;
+        height: 4vh;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 2%;
+        background-color: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-top: 1px $dBlue5 dotted;
+        border-bottom: 1px $dBlue5 dotted;
+
+        > a {
+            @include NSfont(9px,600);
+            text-transform: uppercase;
+            color: white;
+            border: 1px $dBlue5 solid;
+            border-radius: 20px;
+            background-color: $dBlue5;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        > a:hover {
+            background-color: white;
+            color: $dBlue5;
+        }
+    }
+
+    > article {
+        @include NSflexcolrow(3vh);
+        @include NSalignCenter;
+        justify-content: space-around;
+        width: 30%;
+        height: 46vh;
+        background-color: rgba(30,30,30,.75);
+        color: whitesmoke;
+
+        h2 {
+            text-transform: capitalize;
+            @include NSfont(18px,600);
+            text-align: right;
+            width: 80%;
+        }
+
+        p {
+            width: 80%;
+            text-align: left;
+            @include NSfont(12px,300);
+        }
+    }
+}
+// 2.(mobile) KFILM HEADER END
+// 2.(mobile) KFILM MAIN START
+.kfilm_main {
+    padding-top: 5vh;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    > section {
+        @include NSflexcolrow(5vh);
+        @include NSalignCenter;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+        > article {
+            @include NSflexrowcol(1%);
+            @include NSalignCenter;
+            width: 100%;
+
+            > span {
+                width: 1.5vh;
+                height: 1.5vh;
+                background-color: $dBlue3;
+                border: 1px solid $dBlue3;
+                border-radius: 1px;
+            }
+
+            h3 {
+                @include NSfont($dFontSize4,600);
+                text-transform: uppercase;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+    }
+}
+
+// 3.1(mobile) KFILM MAIN INTRO
+.kfilm_intro {
+    > section {
+        @include NSflexcolrow(2vh);
+    }    
+
+    h4 {
+        @include NSfont($dFontSize3,500);
+        border-bottom: 3px double black;
+        width: fit-content;
+    }
+
+    .kfilm_intro_left {
+        @include NSflexcolrow(2vh);
+
+        img {
+            width: 24vh;
+            height: 24vh;
+            border: 1px solid lightgray;
+            padding: 0.5%;
+            float: left;
+            margin-right: 2vh;
+        }
+
+        figure:last-child img {
+            float: right;
+            margin-left: 2vh;
+        }
+
+        figure {
+            background-color: rgb(247, 249, 250);
+            padding: 1%;
+        }
+
+        p {
+            @include NSfont($dFontSize2,400);
+        }
+
+        span {
+            @include NSfont($dFontSize3,500);
+            color: blue;
+            text-decoration: underline;
+        }
+
+        aside {
+            display: flex;
+            justify-content: right;
+            padding: 2%;
+        }
+
+        a {
+            @include NSfont($dFontSize1,500);
+            background-color: $dBlue3;
+            color: whitesmoke;
+            @include NSpadding(1%,1%,2%,2%);
+        }
+
+        a:hover {
+            background-color: blue;
+            color: yellow;
+        }
+    }
+
+    .kfilm_intro_right {
+        @include NSflexcolrow(2vh);
+        
+        blockquote {
+            @include NSflexcolrow(2vh);
+            background-color: rgb(247, 249, 250);
+            padding: 4%;
+
+            h5 {
+                @include NSfont($dFontSize2,500);
+                background-color: gainsboro;
+                width: 100%;
+                border-radius: 7px;
+                text-align: center;
+            }
+            
+            span {
+                background-color: $dBlue2;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+            }
+            
+            h5:first-child span {
+                width: 90%;
+            }
+
+            h5:nth-child(2) span {
+                width: 75%;
+            }
+
+            h5:nth-child(3) span {
+                width: 85%;
+            }
+
+            h5:last-child span {
+                width: 95%;
+            }
+        }
+    }
+}
+
+// 3.2(mobile) KFILM MAIN ARTIST
+.kfilm_artist {
+    > section {
+        width: 100%;
+        height: 100%;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: aliceblue;
+    }
+
+    table {
+        width: 100%;
+
+        small {
+            display: none;
+            background-color:rgba(blue,.4);
+            border: 4px blue solid;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        td {
+            border : 3px aliceblue solid;
+        }
+
+        .r1d1, .r2d2 {
+            @include NSimgset(40vh);
+            width: 40%;
+        }
+
+        td:hover {
+            small {
+                display: flex;
+            }
+        }
+
+        .r1d2, .r1d3, .r1d4, .r2d1, .r3d1, .r3d2, .r3d3 {
+            @include NSimgset(20vh);
+            width: 20%;            
+        }
+
+        .r1d1 {
+            background-image: url("/img/kfilm_star1.jpg");
+        }
+
+        .r1d2 {
+            background-image: url("/img/kfilm_star2.jpg");
+        }
+
+        .r1d3 {
+            background-image: url("/img/kfilm_star3.jpg");
+        }
+
+        .r1d4 {
+            background-image: url("/img/kfilm_star5.jpg");
+        }
+
+        .r2d1 {
+            background-image: url("/img/kfilm_star6.jpg");
+        }
+
+        .r2d2 {
+            background-image: url("/img/kfilm_star4.jpg");
+        }
+
+        .r3d1 {
+            background-image: url("/img/kfilm_star7.jpg");
+        }
+
+        .r3d2 {
+            background-image: url("/img/kfilm_star8.jpg");
+        }
+
+        .r3d3 {
+            background-image: url("/img/kfilm_star9.jpg");
+        }
+    }
+}
+
+// 3.3(mobile) KFILM MAIN DIRECTOR
+.kfilm_director {
+
+    > section {
+        width: 100%;
+        height: 100%;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: aliceblue;
+        @include NSflexcolrow(5vh);
+
+        > figure {
+            @include NSflexcolrow(1vh);
+            @include NSalignCenter;
+
+            img {
+                width: 30vh;
+                height: 30vh;
+                border-radius: 50%;
+                border: 5px solid $dBlue1;
+                position: absolute;
+            }
+
+            a {
+                position: relative;
+                height: 30vh;
+                width: 30vh;
+                display: flex;
+                @include NSalignCenter;
+                border-radius: 50%;
+            }
+            
+            a:hover > aside {
+                display: flex;
+                position: absolute;
+                @include NSalignCenter;
+                background-color: rgba(50, 50, 50, .6);
+                width: 30vh;
+                height: 30vh;
+                border-radius: 50%;
+                border: 5px dimgray solid;
+            }
+            
+            a:hover i {
+                background-color: gray;
+                color: whitesmoke;
+                font-size: 18px;
+                width: 4vh;
+                height: 4vh;
+                text-align: center;
+                display: flex;
+                @include NSalignCenter;
+                border-right: 1px solid rgba(50, 50, 50, .8);
+            }    
+        
+            a:hover i:hover {
+                color: yellow;
+                font-size: 20px;
+            }              
+
+            figcaption {
+                @include NSflexcol;
+                @include NSalignCenter;
+            }
+
+            small {
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: royalblue;
+            }
+
+            p {
+                font-size: 12px;
+                font-weight: 300;
+                color: $dBlue4;
+                width: 50%;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+// 3.4(mobile) KFILM MAIN MOVIE
+.kfilm_movie {
+    > section {
+        height: 60vh;
+    }
+
+    img {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .carousel-indicators > button {
+        border: royalblue 2px solid;
+        width: 50px;
+        height: 5px;
+        background-color: royalblue;
+        border-radius: 4px;
+    }
+
+    .carousel slide > button {
+        border: royalblue 2px solid;
+        width: 50px;
+        height: 5px;
+        background-color: royalblue;
+        border-radius: 4px;
+    }
+
+    span {
+        border: royalblue 3px solid;
+        background-color: royalblue;
+        border-radius: 50%;
+    }
+
+    span:hover {
+        border: white 2px solid;
+    }
+}
+
+// 3.5(mobile) KFILM MAIN DRAMA
+.kfilm_drama {
+
+    img {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    blockquote {
+        font-size: 14px;
+        background-color: aliceblue;
+    }
+
+    > section {
+        width: 100%;
+    }
+}
+// 3.(mobile) KFILM MAIN END
+
+// 4.(mobile) KFILM FOOTER START
+.kfilm_footer {
+    @include NSflexcol;
+    row-gap: 1vh;
+    align-items: flex-end;
+
+    > article {
+        border: 3px royalblue solid;
+        width: 10%;
+        @include NSflexcol;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1vh;
+
+        a {
+            @include NSflexcol;
+
+            span {
+                color: royalblue;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            i {
+                color:  royalblue;
+                font-size: 16px;
+            }
+        }
+
+        a:hover {
+            background-color: royalblue;
+            span, i {
+                color: yellow;
+            }
+        }
+    }    
+
+    > section {
+        background-color: $dBlue5;
+        color: whitesmoke;
+        padding: 2%;
+        font-size: 12px;
+        width: 100%;
+    
+        p:first-child {
+            text-align: right;    
+    
+            a {
+                color:gold;
+                font-weight: 500;
+            }
+    
+            a:hover {
+                color: blue;
+                text-decoration: underline;
+            }
+        }
+    
+        p:nth-child(2) {
+            text-align: center;    
+        }
+    
+        blockquote {
+            display: flex;
+            column-gap: 1vh;
+            justify-content: flex-end;
+    
+            a {
+                border: 2px solid yellow;
+                border-radius: 50%;
+                width: 4vh;
+                height: 4vh;
+                display: flex;
+                @include NSalignCenter;
+            }
+    
+            a:hover {
+                background-color: yellow;
+                i {
+                    color: royalblue;
+                }
+            }
+    
+            i {
+                color: yellow;
+                font-size: 12px;
+            }
+        }
+    }
+}
+// 4.(mobile) KFILM FOOTER END

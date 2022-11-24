@@ -1,163 +1,235 @@
-@media (min-width:$DesktopSize) {
-    // 1.HOME DESKTOP NAV START
-    .home_header {
-        animation-name: unset;
+// 1.HOME DESKTOP NAV START
+.home_header {
+    animation-name: unset;
+}
+
+.home_nav {
+    height:24vh;
+
+    details {
+        display: none;
     }
 
-    .home_nav {
-        height:26vh;
+    > article {
+        @include NSflexrowcol(3vh);
+        width: 95%;
+        justify-content: flex-end;
+        align-items: center;
+        height: 12vh;
 
-        section {
-            height:10vh;
+        .dropdown-item {
+            text-transform: uppercase;
         }
 
-        ul {
-            height: 16vh;
+        aside:last-child li {
+            text-align: right;
         }
-        
-        a {
+
+        aside > a {
+            background-color: $dPink4;
+            border: transparent;
+        }
+
+        ul a:hover {
+            background-color: $dPink4;
+            color: white;
+        }
+    }
+
+    section {
+        height:12vh;
+
+        img {
+            @include NSsize(6vh, 6vh);
+        }        
+    }
+}
+// 1.HOME DESKTOP NAV END
+// 2.HOME DESKTOP HEADER START
+.home_header {
+
+    aside {
+        display: none;
+    }
+
+    @include NSimgset(60vh);
+    background-position: center;
+
+    > section {
+        background-color: rgba(244, 219, 232, 0.7);
+        justify-content: center;
+    }
+}
+// 2.HOME DESKTOP HEADER END
+// 3.HOME DESKTOP MAIN START
+.home_about {
+    @include NSpadding(8vh,8vh,2%,2%);
+    @include NSflexcolrow(8vh);
+    
+    > article {
+        h3 {
+            font-size: 26px;
+        }
+
+        span {
+            width: 20vh;
+        }
+    }
+
+    > section {
+        @include NSflexrowcol(1vh);
+
+        > figure {
+            width: 100%;
+            height: 60vh;
             padding: 1%;
         }
-    }
-    // 1.HOME DESKTOP NAV END
-    // 2.HOME DESKTOP HEADER START
-    .home_header {
-        @include NSimgset(60vh);
-        background-position: center;
 
-        > section {
-            background-color: rgba(244, 219, 232, 0.7);
-            justify-content: center;
-        }
-    }
-    // 2.HOME DESKTOP HEADER END
-    // 3.HOME DESKTOP MAIN START
-    .home_about {
-        @include NSpadding(8vh,8vh,2%,2%);
-        @include NSflexcolrow(8vh);
-        
-        > article {
-            h3 {
-                font-size: 26px;
+        a, img {
+            @include NSsize(32vh,32vh);
+        }        
+
+        figcaption {
+            h4 {
+            font-size:26px;
             }
 
-            span {
-                width: 20vh;
+            p {
+            font-size:16px;
             }
         }
 
-        > section {
-            @include NSflexrowcol(1vh);
+        h5, small {
+            font-size:26px;
+        }            
+    }
+}
 
-            > figure {
-                width: 100%;
-                height: 60vh;
-                padding: 1%;
-            }
+.home_hit {
+    @include NSpadding(8vh,8vh,2%,2%);
+    @include NSflexcolrow(8vh);
 
-            figcaption {
-                h4 {
-                font-size:26px;
+    > article {
+        h3 {
+            font-size: 26px;
+        }
+
+        span {
+            width: 20vh;
+        }
+    }
+
+    > section {
+        @include NSflexwrap(2vh,2vh);
+
+        p {
+            font-size: 18px;
+        }
+
+        details {
+            width: 48%;
+
+            summary {
+                img {
+                    height: 24vh;
                 }
-
-                p {
-                font-size:16px;
-                }
             }
 
-            h5, small {
-                font-size:26px;
-            }            
+            ul {
+                img {
+                    height: 36vh;
+                }
+            }
+        }
+    }
+}
+
+.home_map {
+    @include NSpadding(8vh,8vh,2%,2%);
+    @include NSflexcolrow(8vh);
+    
+    > article {
+        h3 {
+            font-size: 26px;
+        }
+
+        span {
+            width: 20vh;
+        }
+    }
+    
+    figure {
+        width: 100%;
+
+        section {
+            @include NSsize(100%,80vh);
+        }
+
+        figcaption {
+            @include NSpadding(0,0,5%,5%);
+        }
+    }
+}
+
+.home_contact {
+    @include NSpadding(8vh,8vh,2%,2%);
+    @include NSflexcolrow(8vh);
+    
+    > article {
+        h3 {
+            font-size: 26px;
+        }
+
+        span {
+            width: 20vh;
         }
     }
 
-    .home_map {
-        @include NSpadding(8vh,8vh,2%,2%);
-        @include NSflexcolrow(8vh);
-        
-        > article {
-            h3 {
-                font-size: 26px;
-            }
+    form {
+        justify-content: space-between;
+        row-gap: 4vh;
 
-            span {
-                width: 20vh;
-            }
+        label {
+        font-size:18px;
         }
-        
-        figure {
+
+        aside {
+            width: 49%;
+        }
+
+        aside:first-child,
+        aside:nth-child(4),
+        aside:last-child {
             width: 100%;
-
-            section {
-                @include NSsize(100%,80vh);
-            }
-
-            figcaption {
-                @include NSpadding(0,0,5%,5%);
-            }
         }
-    }
 
-    .home_contact {
-        @include NSpadding(8vh,8vh,2%,2%);
-        @include NSflexcolrow(8vh);
+        textarea {
+            height: 30vh;
+        }
         
-        > article {
-            h3 {
-                font-size: 26px;
-            }
-
-            span {
-                width: 20vh;
-            }
-        }
-
-        form {
-            justify-content: space-between;
-            row-gap: 4vh;
-
-            label {
-            font-size:18px;
-            }
-
-            aside {
-                width: 49%;
-            }
-
-            aside:first-child,
-            aside:nth-child(4),
-            aside:last-child {
-                width: 100%;
-            }
-
-            textarea {
-                height: 30vh;
-            }
-            
-            strong {
-                font-size:16px;
-            }
-
-            ::placeholder {
-                font-size:16px;
-            }
-
-            > aside:last-child > input {
-                font-size:18px;
-                padding:1%;
-                width: 16%;
-            }
-        }
-    }
-    // 3.HOME DESKTOP MAIN END
-    // 4.HOME DESKTOP FOOTER START
-    .home_footer {
-        @include NSflexrowcol(2vh);
-        justify-content: space-evenly;
-
-        p, p > a {
+        strong {
             font-size:16px;
         }
+
+        ::placeholder {
+            font-size:16px;
+        }
+
+        > aside:last-child > input {
+            font-size:18px;
+            padding:1%;
+            width: 16%;
+        }
     }
-    // 4.HOME DESKTOP FOOTER END
 }
+// 3.HOME DESKTOP MAIN END
+// 4.HOME DESKTOP FOOTER START
+.home_footer {
+    @include NSflexrowcol(2vh);
+    justify-content: space-evenly;
+
+    p, p > a {
+        font-size:16px;
+    }
+}
+// 4.HOME DESKTOP FOOTER END

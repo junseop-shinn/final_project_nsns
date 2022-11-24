@@ -18,17 +18,50 @@
             </figure>
             <h2>Final Project - Team Claire and Junseop</h2>
         </section>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="kpop.html">kpop</a></li>
-            <li><a href="kfilm.html">kfilm</a></li>
-        </ul>
+        <article>
+            <aside class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HOME
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html#about">about korea</a></li>
+                    <li><a class="dropdown-item" href="index.html#hit">greatest hits</a></li>
+                    <li><a class="dropdown-item" href="index.html#map">direction</a></li>
+                    <li><a class="dropdown-item" href="index.html#contact">contact us</a></li>
+                </ul>
+            </aside>
+            <aside class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                K-POP
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="kpop.html#about">about</a></li>
+                    <li><a class="dropdown-item" href="kpop.html#calendar">calendar</a></li>
+                    <li><a class="dropdown-item" href="kpop.html#artists">artists</a></li>
+                    <li><a class="dropdown-item" href="kpop.html#onsale">sale</a></li>
+                    <li><a class="dropdown-item" href="kpop.html#audition">audition</a></li>
+                </ul>
+            </aside>
+            <aside class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                K-FILM
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="kfilm.html#kfilm_intro">intro</a></li>
+                    <li><a class="dropdown-item" href="kfilm.html#kfilm_artist">artists</a></li>
+                    <li><a class="dropdown-item" href="kfilm.html#kfilm_director">directors</a></li>
+                    <li><a class="dropdown-item" href="kfilm.html#kfilm_movie">movies</a></li>
+                    <li><a class="dropdown-item" href="kfilm.html#kfilm_drama">dramas</a></li>
+                </ul>
+            </aside>
+        </article>        
         <details>
             <summary class="fa-solid fa-bars"></summary>
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="kpop.html">kpop</a></li>
-                <li><a href="kfilm.html">kfilm</a></li>
+                <li><a href="#about">about korea</a></li>
+                <li><a href="#hit">greatest hits</a></li>
+                <li><a href="#map">direction</a></li>
+                <li><a href="#contact">contact us</a></li>                
             </ul>
         </details>
     </nav>
@@ -36,6 +69,10 @@
     <!-- //////////////////////// -->
     <!-- 2.HOME HEADER START -->
     <header class ="home_header">
+        <aside>
+            <a href="kpop.html">K-pop</a>
+            <a href="kfilm.html">K-film</a>
+        </aside>    
         <section>
             <h1>Welcome to Korea Culture!</h1>
             <p>
@@ -82,7 +119,115 @@
                 </figure>
             </section>
         </section>
-        <!-- 3-2.HOME MAIN MAP -->
+        <!-- 3-2.HOME MAIN HIT -->
+        <section class="home_hit" id="hit">
+            <article>
+                <h3>Greatest Hits</h3>
+                <span></span>
+            </article>
+            <section>
+                <p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                     Click the year to see details!
+                    <i class="fa-solid fa-arrow-down"></i>
+                </p>
+                <details>
+                    <summary>
+                        <img src="/img/2022.jpg" alt="2022">
+                    </summary>
+                    <ul>
+                        <li>
+                            <figure>
+                                <small>Pink Venom - BlackPink</small>
+                                <p>
+                                    Before the release of their album BORN PINK, BLACKPINK released a pre-single called Pink Venom on August 19. The K-pop music video garnered over 90.4 million views in just a day, taking the top spot on the list of 2022 releases. 
+                                </p>
+                                <img src="/img/2022_song.jpg" alt="2022-song">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <small>All of Us Are Dead (2022)</small>
+                                <p>
+                                    All of Us Are Dead is a South Korean coming-of-age zombie apocalypse horror streaming television series. It stars Park Ji-hu, Yoon Chan-young, Cho Yi-hyun.
+                                </p>
+                                <img src="/img/2022_drama.jpg" alt="2022-drama">
+                            </figure>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary><img src="/img/2021.jpg" alt="2021"></summary>
+                    <ul>
+                        <li>
+                            <figure>
+                                <small>Butter - BTS</small>
+                                <p>
+                                    Through “Butter”, BTS broke the records for “the most viewed YouTube music video in 24 hours by a K-pop group” and “the most viewed YouTube music video in 24 hours” by any artist.
+                                </p>
+                                <img src="/img/2021_song.webp" alt="2021-song">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <small>Squid Game(2021)</small>
+                                <p>
+                                    All of Us Are Dead is a South Korean coming-of-age zombie apocalypse horror streaming television series. It stars Park Ji-hu, Yoon Chan-young, Cho Yi-hyun.
+                                </p>
+                                <img src="/img/2021_drama.webp" alt="2021-drama">
+                            </figure>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary><img src="/img/2020.jpg" alt="2020"></summary>
+                    <ul>
+                        <li>
+                            <figure>
+                                <small>Dynamite - BTS</small>
+                                <p>
+                                    BTS has also become the only Korean artist to cross over 1.4 billion views with three different music videos, following the group's videos for 'Boy With Luv' and 'DNA'. BTS' first English track 'Dynamite' gathered over 3 million viewers during its premiere.
+                                </p>
+                                <img src="/img/2020_song.webp" alt="2020-song">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <small>Itaewon Class (2020)</small>
+                                <p>
+                                    Itaewon Class: With Park Seo-joon, Kim Da-Mi, Yoo Jae-myung, Nara. An ex-con opens a street bar in Itaewon, while also seeking revenge on the family who was 
+                                </p>
+                                <img src="/img/2020_drama.jpg" alt="2020-drama">
+                            </figure>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary><img src="/img/2019.jpg" alt="2019"></summary>
+                    <ul>
+                        <li>
+                            <figure>
+                                <small>Cheer Up - Twice</small>
+                                <p>
+                                    Cheer Up" is the group's fifth song that has garnered over half a billion views. The others include: “TT” (2016), “Likey” (2017) “What is Love” (2018), and “Fancy” (2019). Meanwhile, Nayeon has also released her debut solo single “Pop” on June 27, 2022. If playback doesn't begin shortly, try restarting your device.
+                                </p>
+                                <img src="/img/2019_song.jpg" alt="2019-song">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <small>Hotel del Luna(2019)</small>
+                                <p>
+                                    "Hotel del luna" was buzzworthy due to its cast and the visuals. They did a really really really great job with the costumes, especially with IU who was stunning. The make up of the ghost was good as well.
+                                </p>
+                                <img src="/img/2019_drama.webp" alt="2019-drama">
+                            </figure>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </section>
+        <!-- 3-3.HOME MAIN MAP -->
         <section class="home_map" id="map">
             <article>
                 <h3>Direction</h3>
@@ -111,7 +256,7 @@
                 </figcaption>
             </figure>
         </section>
-        <!-- 3-3.HOME MAIN CONTACT -->
+        <!-- 3-4.HOME MAIN CONTACT -->
         <section class="home_contact" id="contact">
             <article>
                 <h3>Contact us</h3>

@@ -25,11 +25,11 @@ blockquote, p {
 }
 
 @keyframes bts-color {
-    0% {background-color :$dPink1;}
-   25% {background-color :$dPink2;}
-   50% {background-color :$dPink3;}
-   75% {background-color :$dPink4;}
-   100% {background-color:$dPink5;}
+    0% {border-top :10px solid $dPink1;}
+   25% {border-top :10px solid $dPink2;}
+   50% {border-top :10px solid $dPink3;}
+   75% {border-top :10px solid $dPink4;}
+  100% {border-top :10px solid $dPink5;}
 }
 
 @keyframes bts-op {
@@ -44,7 +44,7 @@ blockquote, p {
     animation-direction: alternate;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 .home_header {
