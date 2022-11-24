@@ -462,7 +462,12 @@ footer{
         font-size:$dFontSize1;
         text-align: center;
     }
-
+    >article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width:95%;
+    }
     a{
         color:gray;
         font-weight:600;

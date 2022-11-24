@@ -1017,6 +1017,12 @@ blockquote, p {
     font-size: 12px;
     text-align: center;
   }
+  footer > article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 95%;
+  }
   footer a {
     color: gray;
     font-weight: 600;
