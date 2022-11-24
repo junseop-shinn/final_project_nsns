@@ -41,8 +41,8 @@ blockquote, p {
 }
 
 @keyframes bts-op {
-    from {transform: scale(1.0);}
-    to {transform: scale(0.8);}
+    from {transform: scale(1.0) rotate(-5deg);}
+    to {transform: scale(0.8) rotate(5deg);}
 }
 
 .nav_ani {
@@ -64,8 +64,7 @@ blockquote, p {
 .title_ani {
     animation-name: bts-op;
     animation-timing-function: ease-out;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-duration: 1s;
 }
-
-

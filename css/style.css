@@ -97,18 +97,18 @@ blockquote, p {
 }
 @-webkit-keyframes bts-op {
   from {
-    transform: scale(1);
+    transform: scale(1) rotate(-5deg);
   }
   to {
-    transform: scale(0.8);
+    transform: scale(0.8) rotate(5deg);
   }
 }
 @keyframes bts-op {
   from {
-    transform: scale(1);
+    transform: scale(1) rotate(-5deg);
   }
   to {
-    transform: scale(0.8);
+    transform: scale(0.8) rotate(5deg);
   }
 }
 .nav_ani {
@@ -142,6 +142,8 @@ blockquote, p {
           animation-name: bts-op;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-duration: 1s;
@@ -240,8 +242,6 @@ blockquote, p {
     height: 60vh;
     background-image: url("/img/bg-header.png");
     align-items: center;
-    row-gap: 2vh;
-    padding-bottom: 2vh;
   }
   .home_header aside {
     display: flex;
@@ -275,17 +275,20 @@ blockquote, p {
     color: hotpink;
   }
   .home_header > section {
-    background-color: rgba(244, 219, 232, 0.5);
-    border-radius: 20px;
-    width: 90%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 3vh;
+    row-gap: 0vh;
     align-items: center;
     justify-content: center;
   }
-  .home_header > section h1 {
+  .home_header > section blockquote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home_header > section blockquote h1 {
     font-size: 26px;
     font-weight: 600;
     padding-top: 2%;
@@ -294,17 +297,32 @@ blockquote, p {
     padding-right: 0;
     width: 70%;
     text-align: center;
+    background-color: rgba(211, 211, 211, 0.7);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
-  .home_header > section p {
+  .home_header > section blockquote p {
+    background-color: rgba(211, 211, 211, 0.7);
     font-size: 14px;
+    color: dimgray;
     width: 70%;
     text-align: justify;
+    padding: 2%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
-  .home_header > section p span {
+  .home_header > section blockquote p span {
     font-size: 14px;
     font-weight: 500;
     color: royalblue;
     text-transform: uppercase;
+  }
+  .home_header > section:hover {
+    background-image: url("/img/bg-header-black.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
   }
   .home_main > section {
     padding-top: 10vh;
@@ -1522,6 +1540,12 @@ blockquote, p {
   .home_header > section p {
     font-size: 20px;
   }
+  .home_header > section:hover {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+  }
   .home_about {
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -1868,8 +1892,14 @@ blockquote, p {
     display: none;
   }
   .home_header > section {
-    background-color: rgba(244, 219, 232, 0.7);
     justify-content: center;
+  }
+  .home_header > section:hover {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
   }
   .home_about {
     padding-top: 8vh;
