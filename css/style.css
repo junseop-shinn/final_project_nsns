@@ -28,37 +28,37 @@ blockquote, p {
 
 @-webkit-keyframes bts-color {
   0% {
-    background-color: #FCEEF3;
+    border-top: 10px solid #FCEEF3;
   }
   25% {
-    background-color: #FBDFE6;
+    border-top: 10px solid #FBDFE6;
   }
   50% {
-    background-color: #F5B9C9;
+    border-top: 10px solid #F5B9C9;
   }
   75% {
-    background-color: #F297B3;
+    border-top: 10px solid #F297B3;
   }
   100% {
-    background-color: hotpink;
+    border-top: 10px solid hotpink;
   }
 }
 
 @keyframes bts-color {
   0% {
-    background-color: #FCEEF3;
+    border-top: 10px solid #FCEEF3;
   }
   25% {
-    background-color: #FBDFE6;
+    border-top: 10px solid #FBDFE6;
   }
   50% {
-    background-color: #F5B9C9;
+    border-top: 10px solid #F5B9C9;
   }
   75% {
-    background-color: #F297B3;
+    border-top: 10px solid #F297B3;
   }
   100% {
-    background-color: hotpink;
+    border-top: 10px solid hotpink;
   }
 }
 @-webkit-keyframes bts-op {
@@ -113,7 +113,7 @@ blockquote, p {
           animation-duration: 10s;
 }
 
-@media (min-width: 200px) and (min-width: 200px) {
+@media (min-width: 200px) {
   .home_nav {
     display: flex;
     flex-direction: column;
@@ -131,14 +131,13 @@ blockquote, p {
          column-gap: 1vh;
     justify-content: center;
     align-items: center;
-    background-color: #FBDFE6;
     height: 8vh;
     width: 100%;
   }
   .home_nav img {
     width: 3vh;
     height: 3vh;
-    border: 3px #F297B3 solid;
+    border: 3px dimgray solid;
     border-radius: 50%;
   }
   .home_nav figure {
@@ -364,6 +363,8 @@ blockquote, p {
   }
   .home_hit > section p {
     font-size: 12px;
+    text-align: center;
+    width: 100%;
   }
   .home_hit > section details {
     display: flex;
@@ -373,29 +374,44 @@ blockquote, p {
   }
   .home_hit > section details summary img {
     width: 100%;
-    height: 25vh;
-    border: 1px solid dimgray;
+    height: 20vh;
+    border: 1px solid lightgray;
     padding: 1%;
   }
   .home_hit > section details ul {
     display: flex;
     flex-direction: column;
-    row-gap: 2vh;
+    row-gap: 5vh;
     background-color: #FCEEF3;
-    padding: 10%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   .home_hit > section details ul li {
     display: flex;
+    background-color: #FBDFE6;
   }
   .home_hit > section details ul img {
     width: 100%;
     height: 40vh;
   }
+  .home_hit > section details ul figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .home_hit > section details ul small {
     font-size: 22px;
+    padding: 1%;
+    color: hotpink;
   }
   .home_hit > section details ul p {
     font-size: 14px;
+    padding: 2%;
+    text-align: center;
+    color: dimgray;
   }
   .home_map {
     background-color: #FCEEF3;
@@ -629,7 +645,7 @@ blockquote, p {
     color: whitesmoke;
   }
 }
-@media (min-width: 600px) and (min-width: 600px) {
+@media (min-width: 600px) {
   .home_nav > details {
     display: none;
   }
@@ -689,38 +705,87 @@ blockquote, p {
     font-size: 20px;
   }
   .home_about {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     padding-left: 2%;
     padding-right: 2%;
+    row-gap: 5vh;
   }
   .home_about > article h3 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .home_about > article span {
     width: 15vh;
   }
+  .home_about > section {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    justify-content: space-between;
+  }
+  .home_about > section figure {
+    width: 48%;
+  }
+  .home_about > section a, .home_about > section img {
+    width: 20vh;
+    height: 20vh;
+  }
   .home_about > section h5, .home_about > section small {
-    font-size: 30px;
+    font-size: 26px;
   }
   .home_about > section small {
     color: black;
     font-weight: 600;
   }
   .home_about > section figcaption h4 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .home_about > section figcaption p {
     font-size: 20px;
   }
-  .home_map {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+  .home_hit {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     padding-left: 2%;
     padding-right: 2%;
+    row-gap: 5vh;
+  }
+  .home_hit > article h3 {
+    font-size: 30px;
+  }
+  .home_hit > article span {
+    width: 15vh;
+  }
+  .home_hit > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    row-gap: 2vh;
+  }
+  .home_hit > section p {
+    font-size: 18px;
+  }
+  .home_hit > section details {
+    width: 48%;
+  }
+  .home_hit > section details summary img {
+    height: 15vh;
+  }
+  .home_hit > section details ul img {
+    height: 25vh;
+  }
+  .home_map {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    row-gap: 5vh;
   }
   .home_map > article h3 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .home_map > article span {
     width: 15vh;
@@ -735,31 +800,32 @@ blockquote, p {
     font-size: 20px;
   }
   .home_contact {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     padding-left: 2%;
     padding-right: 2%;
+    row-gap: 5vh;
   }
   .home_contact > article h3 {
-    font-size: 36px;
+    font-size: 30px;
   }
   .home_contact > article span {
     width: 15vh;
   }
   .home_contact form label {
-    font-size: 25px;
-  }
-  .home_contact form strong {
     font-size: 22px;
   }
-  .home_contact form ::-moz-placeholder {
+  .home_contact form strong {
     font-size: 20px;
+  }
+  .home_contact form ::-moz-placeholder {
+    font: size 20px;
   }
   .home_contact form :-ms-input-placeholder {
-    font-size: 20px;
+    font: size 20px;
   }
   .home_contact form ::placeholder {
-    font-size: 20px;
+    font: size 20px;
   }
   .home_contact form > aside:last-child > input {
     font-size: 23px;
@@ -769,7 +835,7 @@ blockquote, p {
     font-size: 25px;
   }
 }
-@media (min-width: 1000px) and (min-width: 1000px) {
+@media (min-width: 1000px) {
   .home_header {
     -webkit-animation-name: unset;
             animation-name: unset;
@@ -779,6 +845,10 @@ blockquote, p {
   }
   .home_nav section {
     height: 10vh;
+  }
+  .home_nav section img {
+    width: 6vh;
+    height: 6vh;
   }
   .home_nav ul {
     height: 16vh;
@@ -823,6 +893,10 @@ blockquote, p {
     height: 60vh;
     padding: 1%;
   }
+  .home_about > section a, .home_about > section img {
+    width: 32vh;
+    height: 32vh;
+  }
   .home_about > section figcaption h4 {
     font-size: 26px;
   }
@@ -831,6 +905,41 @@ blockquote, p {
   }
   .home_about > section h5, .home_about > section small {
     font-size: 26px;
+  }
+  .home_hit {
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vh;
+  }
+  .home_hit > article h3 {
+    font-size: 26px;
+  }
+  .home_hit > article span {
+    width: 20vh;
+  }
+  .home_hit > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    row-gap: 2vh;
+  }
+  .home_hit > section p {
+    font-size: 18px;
+  }
+  .home_hit > section details {
+    width: 48%;
+  }
+  .home_hit > section details summary img {
+    height: 24vh;
+  }
+  .home_hit > section details ul img {
+    height: 36vh;
   }
   .home_map {
     padding-top: 8vh;
