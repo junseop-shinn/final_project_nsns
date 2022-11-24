@@ -32,6 +32,14 @@ blockquote, p {
   100% {border-top :10px solid $dPink5;}
 }
 
+@keyframes kfilm-color {
+    0% {border-top :5px solid $dBlue1;}
+   25% {border-top :5px solid $dBlue2;}
+   50% {border-top :5px solid $dBlue3;}
+   75% {border-top :5px solid $dBlue4;}
+  100% {border-top :5px solid $dBlue5;}
+}
+
 @keyframes bts-op {
     from {transform: scale(0.98);}
     to {transform: scale(1);}
@@ -46,6 +54,15 @@ blockquote, p {
     animation-iteration-count: infinite;
     animation-duration: 2s;
 }
+
+.kfilm_ani {
+    animation-name: kfilm-color;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
 
 .home_header {
     // animation-name: bts-op;
