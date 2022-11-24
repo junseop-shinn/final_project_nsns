@@ -1,5 +1,7 @@
+// kpop fix scss
 .kpopfix{
     background-color: #386150;
+
     aside{
         width:95%;
        @include NSflexrowcol(3vh);
@@ -13,13 +15,13 @@
     }
 }
 
+// kpop title page scss
 .kpoptitlepage{
     display:flex;
-    // flex-direction: column;
+    justify-content: center;
     height:10vh;
-    padding-top:5%;
+    padding-top:3%;
     column-gap: 2vh;
-    // justify-content: center;
 
     
     img{
@@ -31,22 +33,21 @@
         font-size:$dFontSize9;
     }
 }
-
+// kpop nav scss
 .kpopnav{
     display: flex;
     padding-left:2%;
     position:relative;
     justify-content: space-between;
     align-items: center;
-    // height:20vh;
-    // width:100%;
-}
 
-.kpopnav>article{
+
+    >article{
     display: none;
-}
+    }
 
-.kpopnav details {
+
+    details {
         color:#386150;
         text-align: right;
         width:95%;
@@ -54,32 +55,38 @@
         position:fixed;
         z-index:3;
     
-    ul{
-        @include NSflexcol;
-        width:100%;
-        // z-index:3;
-        background-color:#386150;
-        @include NSalignCenter;
-        position:absolute;
-     
-    }
+            ul{
+                @include NSflexcol;
+                width:100%;
+                // z-index:3;
+                background-color:#386150;
+                @include NSalignCenter;
+                position:absolute;
+            
+            }
 
-    li{
-        display: flex;
-        width:100%;
-        // z-index:3;
-        border-bottom:1px solid white;
-    }
+            li{
+                display: flex;
+                width:100%;
+                // z-index:3;
+                border-bottom:1px solid white;
+            }
 
-    a{
-        font-size:$dFontSize2;
-        color:whitesmoke;
-        text-align: right;
-        width:100%;
-        padding:1%;
-        // z-index:3;
+            a{
+                font-size:$dFontSize2;
+                color:whitesmoke;
+                text-align: right;
+                width:100%;
+                padding:1%;
+                // z-index:3;
+            }
+            a:hover{
+                color:#386150;
+                background-color: white;
+            }
     }
 }
+// kpop header scss
 .kpopheader{
     aside{
         display: flex;
@@ -93,7 +100,7 @@
             padding:1%;
             color:white;
             background-color: #386150;
-            ;
+            
         }
     }
 }
@@ -103,85 +110,99 @@
 //     height:30vh;
 // }
 
+
+// bootstrap carousel scss changes
 .w-100 {
     // width: unset !important;
     height: 50vh !important;
 }
 
-    .carousel-inner {
-        h5{
-            color:black; 
-            font-weight: 600;
-        }
-        p{
-            color:black;
-            border:1px solid grau;
-            background-color: antiquewhite;
-            border-radius: 5%;
-        }
+.carousel-inner {
+    h5{
+        color:black; 
+        font-weight: 600;
+        font-size:$dFontSize5;
     }
+    p{
+        color:white;
+        font-size: $dFontSize1;
+        border:1px solid gray;
+        background-color:rgba(#789589,0.8);
+        padding:2%;
+        border-radius: 10px;
+    }
+}
      
 
-    .d-none {
-        display: flex!important;
-        flex-direction: column;
-    }
-
-
-    .kpopabout {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 1vh;
-        background-color:#4E6E58;
-        padding-bottom: 5%;
-        padding-top: 10%;
-        h2{
-            font-size: $dFontSize8;
-            text-align:center;
-            text-transform: uppercase;
-            display: flex;
-            column-gap: 1vh;
-            // padding-top:5%;
-        }
-        >span{
-            width:15vh;
-            height:1vh;
-            background-color: #CDE6F5;
-            display: inline-block;
-        }
-        article{
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            row-gap: 2vh;
-            span{
-                color:white;
-                text-transform: uppercase;
-            }
-          
-            a{
-                background-color: #CDE6F5;
-                padding: 1%;
-                color:black;
-                font-size: $dFontSize1;
-                width:20%;
-
-            }
-            
-            a:hover{
-                color:#554640;
-                background-color: white;
-            }
-        }
-    }
-.kpopcalendar {
-    display: flex;
+.d-none {
+    display: flex!important;
     flex-direction: column;
-    justify-content: center;
+}
+
+
+// kpopabout scss starts
+.kpopabout {
+    @include NSflexcol;
     align-items: center;
+    row-gap: 1vh;
+    background-color:#4E6E58;
+    padding-bottom: 5%;
+    padding-top: 10%;
+
+    h2{
+        font-size: $dFontSize8;
+        text-align:center;
+        text-transform: uppercase;
+        display: flex;
+        column-gap: 1vh;
+        // padding-top:5%;
+        i{
+            color:whitesmoke;
+        }
+    }
+    >span{
+        width:15vh;
+        height:1vh;
+        background-color: #CDE6F5;
+        display: inline-block;
+    }
+    article{
+        @include NSflexcol;
+        @include NSalignCenter;
+        text-align: center;
+        row-gap: 2vh;
+        
+        span{
+            color:white;
+            text-transform: uppercase;
+            font-style:normal;
+        }
+        p{
+            line-height:1.5;
+            font-size:$dFontSize1;
+            font-style: italic;
+        }
+        
+        a{
+            background-color: #CDE6F5;
+            padding: 1%;
+            color:black;
+            font-size: $dFontSize1;
+            width:20%;
+
+        }
+        
+        a:hover{
+            color:#554640;
+            background-color: white;
+        }
+    }
+}
+
+// kpop scss starts
+.kpopcalendar {
+    @include NSflexcol;
+    @include NSalignCenter;
     // text-align: center;
     row-gap: 2vh;
     padding-top:10%;
@@ -195,59 +216,56 @@
         }
         h2{
             text-transform: uppercase;
+            color:#413C58;
         }
-            article{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                row-gap: 5vh;
-                width:80%;
+        article{
+            @include NSflexcol;
+            @include NSalignCenter;
+            row-gap: 5vh;
+            width:80%;
                
-              
-            
-                figure{
-                    background-color: #CDE6F5;
-                    padding-bottom:10%;
-                    border: 2px solid #554640;
-                    img{
-                        width:100%;
+            figure{
+                background-color: #CDE6F5;
+                padding-bottom:10%;
+                border: 2px solid #554640;
+
+                img{
+                    width:100%;
+                }
+                figcaption{
+                    padding-top:10%;
+                    @include NSflexcol;
+                    @include NSalignCenter;
+                    text-align: left;
+                    row-gap: 1vh;
+                    width:95%;
+
+                    h3,small,p{
+                        width:85%;
                     }
-                    figcaption{
-                        padding-top:10%;
-                        justify-content: center;
-                        align-items: center;
-                        display: flex;
-                        flex-direction: column;
-                        text-align: left;
-                        row-gap: 1vh;
-                        width:95%;
-                        h3,small,p{
-                            width:85%;
-                        }
-                        h3{
-                            color:#4A442D;
-                            font-weight: 600;
-                            text-transform: uppercase;
-                        }
-                        small{
-                            font-size:10px;
-                            color:#4E6E58;
-                        }
+                    h3{
+                        color:#4A442D;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    small{
+                        font-size:10px;
+                        color:#4E6E58;
                     }
                 }
             }
+        }
 }
 
+// kpop artists scss
 .kpopartists{
-        display: flex;
-        flex-direction: column;
+        @include NSflexcol;
+        @include NSalignCenter;
         padding-top: 10%;
         padding-bottom:10%;
-        align-items: center;
         row-gap: 2vh;
-        justify-content: center;
         background-color:#386150;
+
         >span{
             width:15vh;
             height:1vh;
@@ -256,23 +274,18 @@
         }
         h2{
             text-transform: uppercase;
+            color:whitesmoke;
         }
         article{
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include NSflexcol;
+            @include NSalignCenter;
             width:90%;
             row-gap: 10vh;
 
-           
-        
             figure{
                 // position:relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center; 
+                @include NSflexcol;
+                @include NSalignCenter;
                 width:100%;
                 img{
                     width:100%;
@@ -283,8 +296,6 @@
                 // img:hover{
                 //     background-color: rgba(50,50,50, 1);
                 // }
-            
-            
             
                 aside,figcaption{
                     display: none;
@@ -304,8 +315,7 @@
                     position:absolute;
                 }
                 blockquote{
-                    display: flex;
-                    justify-content: center;
+                    @include NSflexcol;
                     align-items: center;
                     color:#ECEBF3;
                     font-size:$dFontSize4;
@@ -314,100 +324,126 @@
                 img{
                     position:absolute;
                 }
+            }
         }
-    }
        
 }
+// kpop sale scss
+.kpoponsale{
+    @include NSflexcol;
+    @include NSalignCenter;
+    padding-top:10%;
+    padding-bottom:5%;
+    row-gap: 2vh;
+    
 
-    .kpoponsale{
-        display: flex;
-        flex-direction: column;
-        padding-top:10%;
+    >span{
+        width:15vh;
+        height:1vh;
+        background-color:#386150;
+        display: inline-block;
+    }
+    h2{
+        text-transform: uppercase;
+    }
+    >article{
+        @include NSflexcol;
+        row-gap: 3vh;
+    }
+    figure{
+        @include NSflexcol;
+        @include NSalignCenter;
         padding-bottom:5%;
-        justify-content: center;
-        align-items: center;
-        row-gap: 2vh;
-     
+        background-color: cadetblue;
 
-        >span{
-            width:15vh;
-            height:1vh;
-            background-color:#386150;
-            display: inline-block;
-        }
-        h2{
-            text-transform: uppercase;
-        }
-        >article{
-            display: flex;
-            flex-direction: column;
-            row-gap: 3vh;
-        }
-        figure{
-            display: flex;
-            padding-bottom:5%;
-            flex-direction: column;
-            background-color: cadetblue;
-            justify-content: center;
-            align-items: center;
-            figcaption{
-                text-align: center;
-                small{
-                    color:rgb(199, 42, 14);
-                    text-decoration: line-through;
-                }
-                p{
-                    font-size:$dFontSize4;
-                    font-weight: 600;
-                }
-            }
-            h6{
-                font-size:$dFontSize1;
-                color:dimgray;
-            }
-        }
         img{
             height:40vh;
         }
+
+        figcaption{
+            text-align: center;
+            small{
+                color:rgb(106, 20, 5);
+                text-decoration: line-through;
+            }
+            p{
+                font-size:$dFontSize4;
+                font-weight: 600;
+            }
+        }
+        h6{
+            font-size:$dFontSize1;
+            color:dimgray;
+        }
     }
+    .progress{
+        width:90%;
+    }
+    
+}
+// kpop audition scss 
 .kpopaudition{
-        display: flex;
-        flex-direction: column;
+        @include NSflexcol;
+        @include NSalignCenter;
         width:100%;
         column-gap: 2vh;
-        justify-content: center;
-        align-items: center;
         background-color:#8F91A2;
         padding-top:5%;
         padding-bottom:5%;
+
+        h3{
+            color:#363222;
+            text-transform: uppercase;
+        }
+
         form{
             width:90%;
-            display: flex;
-            flex-direction: column;
+            @include NSflexcol;
             row-gap: 1vh;
             // align-items: center;
-                
 
+            input,textarea{
+                border:3px solid #BFD7B5;
+
+            }
+
+            label{
+                color:#363222;
+                text-transform: uppercase;
+            }
+
+            h4{
+                color:#363222;
+                font-size: $dFontSize3;
+            }
+                
                 ::placeholder{
                     font-size:12px;
+                    text-align: center;
+                    text-transform: uppercase;
                 }
-                textarea{
-                    height:20vh;
-                  
 
-                }
-                [type="submit"]{
-                    width:35%;
-                    font-size:$dFontSize1;
-                    // padding-top:2%;
-                    
+            textarea{
+                height:20vh;
+                
 
-                }
-               
+            }
+            [type="submit"]{
+                border:transparent;
+                width:35%;
+                text-transform: uppercase;
+                padding:1%;
+                font-size:$dFontSize1;
+            }
+
+            [type="submit"]:hover{
+                color:whitesmoke;
+                background-color:#386150;
+            }
+            
             
             >section{
-                display: flex;
-                flex-direction: column;
+                @include NSflexcol
             }
         }   
             
@@ -415,10 +451,10 @@
     
 footer{
     background-color:#4E6E58;
-    display: flex;
-    justify-content: center;
+    @include NSflexcol;
     padding-top:5%;
     padding-bottom:5%;
+
     p{
         width:80%;
         color:white;
@@ -426,10 +462,14 @@ footer{
         font-size:$dFontSize1;
         text-align: center;
     }
+
+    a{
+        color:gray;
+        font-weight:600;
+    }
 }
-.progress{
-    width:90%;
-}
+
+
        
     
 

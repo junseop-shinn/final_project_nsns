@@ -617,8 +617,9 @@ blockquote, p {
   }
   .kpoptitlepage {
     display: flex;
+    justify-content: center;
     height: 10vh;
-    padding-top: 5%;
+    padding-top: 3%;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
   }
@@ -669,6 +670,10 @@ blockquote, p {
     width: 100%;
     padding: 1%;
   }
+  .kpopnav details a:hover {
+    color: #386150;
+    background-color: white;
+  }
   .kpopheader aside {
     display: flex;
     width: 100%;
@@ -688,12 +693,15 @@ blockquote, p {
   .carousel-inner h5 {
     color: black;
     font-weight: 600;
+    font-size: 20px;
   }
   .carousel-inner p {
-    color: black;
-    border: 1px solid grau;
-    background-color: antiquewhite;
-    border-radius: 5%;
+    color: white;
+    font-size: 12px;
+    border: 1px solid gray;
+    background-color: rgba(120, 149, 137, 0.8);
+    padding: 2%;
+    border-radius: 10px;
   }
   .d-none {
     display: flex !important;
@@ -716,6 +724,9 @@ blockquote, p {
     -moz-column-gap: 1vh;
          column-gap: 1vh;
   }
+  .kpopabout h2 i {
+    color: whitesmoke;
+  }
   .kpopabout > span {
     width: 15vh;
     height: 1vh;
@@ -723,16 +734,22 @@ blockquote, p {
     display: inline-block;
   }
   .kpopabout article {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     row-gap: 2vh;
   }
   .kpopabout article span {
     color: white;
     text-transform: uppercase;
+    font-style: normal;
+  }
+  .kpopabout article p {
+    line-height: 1.5;
+    font-size: 12px;
+    font-style: italic;
   }
   .kpopabout article a {
     background-color: #CDE6F5;
@@ -762,6 +779,7 @@ blockquote, p {
   }
   .kpopcalendar h2 {
     text-transform: uppercase;
+    color: #413C58;
   }
   .kpopcalendar article {
     display: flex;
@@ -781,10 +799,10 @@ blockquote, p {
   }
   .kpopcalendar article figure figcaption {
     padding-top: 10%;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     row-gap: 1vh;
     width: 95%;
@@ -804,11 +822,11 @@ blockquote, p {
   .kpopartists {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 10%;
     padding-bottom: 10%;
-    align-items: center;
     row-gap: 2vh;
-    justify-content: center;
     background-color: #386150;
   }
   .kpopartists > span {
@@ -819,6 +837,7 @@ blockquote, p {
   }
   .kpopartists h2 {
     text-transform: uppercase;
+    color: whitesmoke;
   }
   .kpopartists article {
     display: flex;
@@ -831,8 +850,8 @@ blockquote, p {
   .kpopartists article figure {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
   .kpopartists article figure img {
@@ -857,7 +876,7 @@ blockquote, p {
   }
   .kpopartists article figure blockquote {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: #ECEBF3;
     font-size: 18px;
@@ -869,10 +888,10 @@ blockquote, p {
   .kpoponsale {
     display: flex;
     flex-direction: column;
-    padding-top: 10%;
-    padding-bottom: 5%;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
     row-gap: 2vh;
   }
   .kpoponsale > span {
@@ -891,17 +910,20 @@ blockquote, p {
   }
   .kpoponsale figure {
     display: flex;
-    padding-bottom: 5%;
     flex-direction: column;
-    background-color: cadetblue;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
+    background-color: cadetblue;
+  }
+  .kpoponsale figure img {
+    height: 40vh;
   }
   .kpoponsale figure figcaption {
     text-align: center;
   }
   .kpoponsale figure figcaption small {
-    color: rgb(199, 42, 14);
+    color: rgb(106, 20, 5);
     text-decoration: line-through;
   }
   .kpoponsale figure figcaption p {
@@ -912,20 +934,24 @@ blockquote, p {
     font-size: 12px;
     color: dimgray;
   }
-  .kpoponsale img {
-    height: 40vh;
+  .kpoponsale .progress {
+    width: 90%;
   }
   .kpopaudition {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
-    justify-content: center;
-    align-items: center;
     background-color: #8F91A2;
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+  .kpopaudition h3 {
+    color: #363222;
+    text-transform: uppercase;
   }
   .kpopaudition form {
     width: 90%;
@@ -933,21 +959,45 @@ blockquote, p {
     flex-direction: column;
     row-gap: 1vh;
   }
+  .kpopaudition form input, .kpopaudition form textarea {
+    border: 3px solid #BFD7B5;
+  }
+  .kpopaudition form label {
+    color: #363222;
+    text-transform: uppercase;
+  }
+  .kpopaudition form h4 {
+    color: #363222;
+    font-size: 16px;
+  }
   .kpopaudition form ::-moz-placeholder {
     font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .kpopaudition form :-ms-input-placeholder {
     font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .kpopaudition form ::placeholder {
     font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .kpopaudition form textarea {
     height: 20vh;
   }
   .kpopaudition form [type=submit] {
+    border: transparent;
     width: 35%;
+    text-transform: uppercase;
+    padding: 1%;
     font-size: 12px;
+  }
+  .kpopaudition form [type=submit]:hover {
+    color: whitesmoke;
+    background-color: #386150;
   }
   .kpopaudition form > section {
     display: flex;
@@ -956,7 +1006,7 @@ blockquote, p {
   footer {
     background-color: #4E6E58;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -967,8 +1017,9 @@ blockquote, p {
     font-size: 12px;
     text-align: center;
   }
-  .progress {
-    width: 90%;
+  footer a {
+    color: gray;
+    font-weight: 600;
   }
   .kfilm_nav {
     display: flex;
@@ -2055,6 +2106,9 @@ blockquote, p {
   .home_footer p, .home_footer p > a {
     font-size: 16px;
   }
+  .kpopnav {
+    height: 25vh;
+  }
   .kpopnav details {
     display: none;
   }
@@ -2075,7 +2129,7 @@ blockquote, p {
     text-align: right;
   }
   .kpopnav > article aside > a {
-    background-color: #F297B3;
+    background-color: #386150;
     border: transparent;
   }
   .kpopnav > article ul a:hover {
