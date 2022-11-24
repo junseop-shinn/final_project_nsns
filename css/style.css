@@ -958,6 +958,7 @@ blockquote, p {
     -moz-column-gap: 0.5vh;
          column-gap: 0.5vh;
     align-items: center;
+    padding-bottom: 1vh;
   }
   .kfilm_nav h1 {
     text-transform: uppercase;
@@ -1668,7 +1669,7 @@ blockquote, p {
     letter-spacing: 3px;
   }
   .kfilm_nav h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .kfilm_nav img {
     width: 6vh;

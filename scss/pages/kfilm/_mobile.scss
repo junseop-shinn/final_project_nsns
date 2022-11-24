@@ -9,6 +9,7 @@
     > figure {
         @include NSflexrowcol(0.5vh);
         align-items: center;
+        padding-bottom: 1vh;
     }
 
     h1 {
