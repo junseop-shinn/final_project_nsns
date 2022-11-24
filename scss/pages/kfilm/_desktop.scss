@@ -1,6 +1,6 @@
 // 1.(desktop) KFILM NAV START
 .kfilm_nav {
-    height:20vh;
+    height:24vh;
     align-items: flex-start;
     
     > details {
@@ -12,7 +12,7 @@
         width: 100%;
         justify-content: flex-end;
         align-items: center;
-        height: 10vh;
+        height: 12vh;
 
         .dropdown-item {
             text-transform: uppercase;
@@ -33,7 +33,7 @@
     }
 
     figure {
-        height: 10vh;
+        height: 12vh;
         width: 80%;
         align-items: center;
         padding-bottom: 1vh;
@@ -52,7 +52,6 @@
         font-size: 18px;
         border-top: 4px solid $dBlue5;
         width: 100%;
-        padding-top: 1vh;
     }
 }
 // 1.(desktop) KFILM NAV END

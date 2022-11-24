@@ -916,6 +916,10 @@ blockquote, p {
     color: royalblue;
     font-weight: 700;
   }
+  .kfilm_nav h2 {
+    font-size: 14px;
+    padding-top: 1vh;
+  }
   .kfilm_nav img {
     width: 5vh;
     height: 5vh;
@@ -942,6 +946,7 @@ blockquote, p {
     width: 96%;
     text-align: right;
     z-index: 1;
+    background-color: transparent;
   }
   .kfilm_nav details li {
     display: flex;
@@ -1607,6 +1612,9 @@ blockquote, p {
     font-size: 42px;
     letter-spacing: 3px;
   }
+  .kfilm_nav h2 {
+    font-size: 18px;
+  }
   .kfilm_nav img {
     width: 6vh;
     height: 6vh;
@@ -1982,7 +1990,7 @@ blockquote, p {
     font-size: 16px;
   }
   .kfilm_nav {
-    height: 20vh;
+    height: 24vh;
     align-items: flex-start;
   }
   .kfilm_nav > details {
@@ -1996,7 +2004,7 @@ blockquote, p {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
+    height: 12vh;
   }
   .kfilm_nav > section .dropdown-item {
     text-transform: uppercase;
@@ -2012,7 +2020,7 @@ blockquote, p {
     color: white;
   }
   .kfilm_nav figure {
-    height: 10vh;
+    height: 12vh;
     width: 80%;
     align-items: center;
     padding-bottom: 1vh;
@@ -2029,7 +2037,6 @@ blockquote, p {
     font-size: 18px;
     border-top: 4px solid royalblue;
     width: 100%;
-    padding-top: 1vh;
   }
   .kfilm_header {
     height: 70vh;
