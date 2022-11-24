@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>kpop</title>
 </head>
 <body>
-    <section class="fix" id="fix">
+    <section class="kpopfix" id="kpopfix">
         <aside>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
@@ -16,14 +19,15 @@
         </aside>
     </section>
     <nav>
-        <section class="title page">
+        <section class="kpoptitlepage">
             <figure>
-                <img src="/img/k logo.PNG" alt="kpop logo">
+                <img src="/img/k.png" alt="icon">
             </figure>
-            <h1>Korean Pop</h1>
+            <h1>pop</h1>
         </section>
         <ul>
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#calendar">Calendar</a></li>
             <li><a href="#artists">Artists</a></li>
             <li><a href="#onsale">Sale</a></li>
@@ -33,6 +37,7 @@
             <summary class="fa-solid fa-bars"></summary>
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#calendar">Calendar</a></li>
                 <li><a href="#artists">Artists</a></li>
                 <li><a href="#onsale">Sale</a></li>
@@ -41,21 +46,238 @@
         </details>
     </nav>
     <header>
-        <!-- header should have background image file -->
-        <h1>Black Pink</h1>
-        <h3>New Album release</h3>
-        <p>
-            <span>BLACK PINK</span> released 2nd album "Pink Venom"
-        </p>
-        <a href="https://www.youtube.com/watch?v=POe9SOEKotk">Watch Music Video</a>
+        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <article class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </article>
+            <article class="carousel-inner">
+                    <article class="carousel-item active">
+                        <img src="/img/bigbang.png" class="d-block w-100" alt="bigbang">
+                        <article class="carousel-caption d-none d-md-block">
+                        <h5>BIG BANG</h5>
+                        <p>BIGBANG released their last single <span>'Flower road'</span></p>
+                        </article>
+                    </article>
+                <article class="carousel-item">
+                    <img src="/img/pink venom.jpg" class="d-block w-100" alt="blackpink">
+                    <article class="carousel-caption d-none d-md-block">
+                    <h5>BLACK PINK</h5>
+                    <p>BLACK PINK is back with their single album <span>'Pink Venom'</span></p>
+                    </article>
+                </article>
+                <article class="carousel-item">
+                    <img src="/img/winner.img" class="d-block w-100" alt="winners">
+                    <article class="carousel-caption d-none d-md-block">
+                    <h5>WINNERS</h5>
+                    <p>WINNER has comeback as a whole group with 4th mini-album <span>'Holiday'</span></p>
+                    </article>
+                </article>
+            </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </section>
     </header>
-
-
     <main>
-
+            <section class="about" id="about">
+                <h2><i class="fa-regular fa-face-smile"></i>About</h2>
+                <span></span>
+                <article>
+                    <p>
+                        Kpop which is known as <span>'Korean pop'</span> is a musical genre consisting of pop, dance, electropop, hiphop and etc originating in South Korea   
+                    </p>
+                    <a href="#">Read More</a>
+                </article>
+            </section>
+            <section class="calendar" id="calendar">
+                <h2>Concert Schedule</h2>
+                <span></span>
+                <article>
+                    <figure>
+                        <img src="/img/bi_Calendar.jpg" alt="bi">
+                        <figcaption>
+                            <h3>B.I</h3>
+                            <small>Show for fans in December</small>
+                            <p>The show will be a fanmeeting and will be a concert</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/CIX_Calendar.jpg" alt="cix">
+                        <figcaption>
+                            <h3>CIX</h3>
+                            <small>World tour</small>
+                            <p>The tour will be starting in Seoul, will be heading to 16 different cities</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/kangdaniel_Calendar.jpg" alt="kangdaniel">
+                        <figcaption>
+                            <h3>Kang Daniel</h3>
+                            <small>First Parade World Tour 2023</small>
+                            <p>Kang Daniel will be performing in Europe and North America in his world tour</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/nflying_Calendar.jpg" alt="nflying">
+                        <figcaption>
+                            <h3>N.Flying</h3>
+                            <small>tour to the USA</small>
+                            <p>The tour will be starting in New York and to the different 6 cities </p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section class="artists" id="artists">
+                <h2>Artists</h2>
+                <span></span>
+                <article>
+                    <figure>
+                        <img src="/img/akmu_artists.PNG" alt="akmu">
+                        <aside>
+                            <a href=https://www.facebook.com/officialAKMU><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=https://twitter.com/official_akmu><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/officialAKMU"><i class="fa-brands fa-youtube"></i></a>
+                        </aside>
+                        <figcaption>
+                            <small>'AKMU' is back with their first collaboration album</small>
+                            <p>AKMU has been presenting with a broad spectrum regardless of genres, we look forward to the release AKMU's new upcoming album</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/blackpink_artists.jpg" alt="blackpink">
+                        <aside>
+                            <a href=https://www.facebook.com/BLACKPINKOFFICIAL><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=https://twitter.com/BLACKPINK><i class="fa-brands fa-twitter"></i></a>
+                            <a href=https://www.youtube.com/BLACKPINKOFFICIAL><i class="fa-brands fa-youtube"></i></a>
+                        </aside>
+                        <figcaption>
+                            <small>'BLACKPINK' now plans to take over the listerners' hearts with their title song 'pink venom'</small>
+                            <p>The world tour will be held on 7-8 January 2023</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/mino_artists.png" alt="mino">
+                        <aside>
+                            <a href=https://www.facebook.com/OfficialYGWINNER><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=https://twitter.com/official_mino_><i class="fa-brands fa-twitter"></i></a>
+                            <a href=https://www.youtube.com/OfficialYGWINNER><i class="fa-brands fa-youtube"></i></a>
+                        </aside>
+                        <figcaption>
+                            <small>'Mino' came back with 3rd album, 'To Infinity'</small>
+                            <p>He has built up his own career in unconventional way in the field of music, art, and fashion</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/ikon_artists.jpg" alt="ikon">
+                        <aside>
+                            <a href=https://www.facebook.com/OfficialYGiKON><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=https://twitter.com/YG_iKONIC><i class="fa-brands fa-twitter"></i></a>
+                            <a href=https://www.youtube.com/OfficialYGiKON><i class="fa-brands fa-youtube"></i></a>
+                        </aside>
+                        <figcaption>
+                            <small>'iKon' has come back with their 4th mini-album</small>
+                            <p>They have been releasing music with full of different colors over the last 8 years</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/winners_artists.jpg" alt="winners">
+                        <aside>
+                            <a href=https://www.facebook.com/OfficialYGWINNER><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=https://twitter.com/yginnercircle><i class="fa-brands fa-twitter"></i></a>
+                            <a href=https://www.youtube.com/OfficialYGWINNER><i class="fa-brands fa-youtube"></i></a>
+                        </aside>
+                        <figcaption>
+                            <small>'WINNER' is back with 4th mini-album</small>
+                            <p>The album willl have a total of 6 songs of various generes</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section class="onsale" id="onsale">
+                <h2>On Sale</h2>
+                <span></span>
+                <article>
+                    <figure>
+                        <img src="/img/jinsolo_onsale.jpg" alt="jinalbum">
+                        <figcaption>
+                            <small>$32.40</small>
+                            <p>$28.00</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/itzy_onsale.jpg" alt="itzyalbum">
+                        <figcaption>
+                            <small>$10.50</small>
+                            <p>$8.00</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/dreamcatcher_onsale.jpg" alt="dreamcatcher">
+                        <figcaption>
+                            <small>$32.90</small>
+                            <p>$27.00</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/img/rm_onsale.jpg" alt="rm">
+                        <figcaption>
+                            <small>$27.60</small>
+                            <p>$25.00</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section class="audition" id="audition">
+                <h3>Audition</h3>
+                <span></span>
+                    <section class="form">
+                        <h4>
+                            Be part of us
+                        </h4>
+                        <form action="thankyou.html">
+                            <fieldset>
+                                <legend>Required information <span>*</span></legend>
+                                <label for="nationality">Nationality:</label>
+                                <aside>
+                                   <input type="radio" name="nationality" id="radio-southkorea" value="South Korea"> South Korea
+                                   <aside>
+                                   <input type="radio" name="nationality" id="radio-othercountries" value="Other countries"> Other countries
+                                   <input type="text" name="nationality" id="nationality">
+                                   </aside>
+                                </aside>
+                                <label for="gender">Gender:</label>
+                                <aside>
+                                   <input type="radio" name="gender" id="gender-female" value="female"> Female
+                                   <input type="radio" name="gender" id="gender-male" value="male"> Male
+                                   <input type="radio" name="gender" id="gender" value="not-mentioned"> I prefer not to say it
+                                </aside>
+                                <aside>
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" name="name" id="name">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                    <label for="date">Birthday:</label>
+                                    <input type="date" name="date" id="date">
+                                    <label for="message">Message:</label>
+                                    <textarea name="message" id="message"></textarea>
+                                    <input type="submit" value="send message">
+                                </aside>
+                            </fieldset>
+                        </form>
+                    </section>
     </main>
     <footer>
-
+            <p>
+                Copyright &copy; Claire Na All rights reserved
+            </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>   
 </body>
 </html>

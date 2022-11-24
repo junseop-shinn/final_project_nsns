@@ -1,165 +1,202 @@
-@media (min-width:$TabletSize) {
-    // 1.HOME TABLET NAV START
-    .home_nav > details {
-        display: none;
+// 1.HOME TABLET NAV START
+.home_nav {
+    align-items: center;
+    height:12vh;
+
+    > section {
+        height:6vh;
     }
-    
-    .home_nav {
-        align-items: center;
-        height:13vh;
 
-        section {
-            height:5vh;
+    details {
+        height:6vh;
+        padding-top: 6vh;
+    }
+
+    summary {
+        font-size: 36px;
+        @include NSpadding(1vh,1vh,0,0);
+    }
+
+    h2 {
+        font-size: $dFontSize5;
+    }        
+}
+// 1.HOME TABLET NAV END
+// 2.HOME TABLET HEADER START
+.home_header {
+    @include NSimgset(40vh);
+    
+    aside {
+        height: 6vh;
+
+        > a {
+            font-size: 18px;
+        } 
+    }
+
+    > section {
+        h1 {
+            font-size:36px;
         }
 
-        > ul {
-            @include NSflexrowcol(5vh);
-            @include NSalignCenter;
-            @include NSsize(50%,8vh);
-        }
-    
-        li {
-            display: flex;
-            width: 100%;
-            @include NSalignCenter;
-        }
-    
-        a {
-            text-transform: uppercase;
-            @include NSfont($dFontSize7,500);
-            background-color: rgba($dPink3,.2);
-            color: $dPink5;
-            width: 100%;
-            padding: 3%;
-            text-align: center;
-            border-radius: 20px;
-            transition: .4s;
-        }
-    
-        a:hover {
-            background-color: $dPink4;
-            color: white;
-            border-radius: 20px;
-        }    
-
-        h2 {
+        p {
             font-size: $dFontSize5;
-        }        
-    }
-    // 1.HOME TABLET NAV END
-    // 2.HOME TABLET HEADER START
-    .home_header {
-        @include NSimgset(40vh);
-        
-        > section {
-            h1 {
-                font-size:36px;
-            }
-
-            p {
-                font-size: $dFontSize5;
-            }
         }
     }
-    // 2.HOME TABLET HEADER END
-    // 3.HOME TABLET MAIN START
-    .home_about {
-        @include NSpadding(5vh,5vh,2%,2%);
-        > article {
-            h3 {
-                font-size:36px;
-            }
-        
-            span {
-                width:15vh;
-            }
+}
+// 2.HOME TABLET HEADER END
+// 3.HOME TABLET MAIN START
+.home_about {
+    @include NSpadding(3vh,3vh,2%,2%);
+    row-gap: 5vh;
+
+    > article {
+        h3 {
+            font-size:30px;
         }
-
-        > section {
-            h5, small {
-                font-size:30px;
-            }
-
-            small {
-                color:black;
-                font-weight:600;
-            }
-
-            figcaption {
-                h4 {
-                font-size:30px;
-                }
-
-                p {
-                font-size:20px;
-                }
-            }
+    
+        span {
+            width:15vh;
         }
     }
 
-    .home_map {
-        @include NSpadding(5vh,5vh,2%,2%);
-        > article {
-            h3 {
-                font-size:36px;
-            }
-        
-            span {
-                width:15vh;
-            }
-        }
+    > section {
+        @include NSflexrowcol(1vh);
+        justify-content: space-between;
 
         figure {
-            width:90%;
+            width: 48%;
+        }
+
+        a, img {
+            @include NSsize(20vh,20vh);
+        }
+
+        h5, small {
+            font-size:26px;
+        }
+
+        small {
+            color:black;
+            font-weight:600;
         }
 
         figcaption {
-            width:100%;
+            h4 {
+            font-size:26px;
+            }
 
-            p, span, a {
-                font-size:20px;
+            p {
+            font-size:20px;
             }
         }
     }
-
-    .home_contact {
-        @include NSpadding(5vh,5vh,2%,2%);
-        
-        > article {
-            h3 {
-                font-size:36px;
-            }
-        
-            span {
-                width:15vh;
-            }
-        }
-
-        form {
-            label {
-            font-size:25px;
-            }
-
-            strong {
-                font-size:22px;
-            }
-
-            ::placeholder {
-                font-size:20px;
-            }
-
-            > aside:last-child > input {
-                font-size:23px;
-                padding:1%;
-            }
-        }
-    }
-    // 3.HOME TABLET MAIN END
-    // 4.HOME TABLET FOOTER START
-    .home_footer {
-        p, p > a {
-            font-size:25px;
-        }
-    }
-    // 4.HOME TABLET FOOTER END
 }
+
+.home_hit {
+    @include NSpadding(3vh,3vh,2%,2%);
+    row-gap: 5vh;
+
+    > article {
+        h3 {
+            font-size:30px;
+        }
+    
+        span {
+            width:15vh;
+        }
+    }
+
+    > section {
+        @include NSflexwrap(2vh,2vh);
+
+        p {
+            font-size: 18px;
+        }
+
+        details {
+            width: 48%;
+
+            summary {
+                img {
+                    height: 15vh;
+                }
+            }
+
+            ul {
+                img {
+                    height: 25vh;
+                }
+            }
+        }
+    }
+}
+
+.home_map {
+    @include NSpadding(3vh,3vh,2%,2%);
+    row-gap: 5vh;
+
+    > article {
+        h3 {
+            font-size:30px;
+        }
+    
+        span {
+            width:15vh;
+        }
+    }
+
+    figure {
+        width:90%;
+    }
+
+    figcaption {
+        width:100%;
+
+        p, span, a {
+            font-size:20px;
+        }
+    }
+}
+
+.home_contact {
+    @include NSpadding(3vh,3vh,2%,2%);
+    row-gap: 5vh;
+    
+    > article {
+        h3 {
+            font-size:30px;
+        }
+    
+        span {
+            width:15vh;
+        }
+    }
+
+    form {
+        label {
+        font-size:22px;
+        }
+
+        strong {
+            font-size:20px;
+        }
+
+        ::placeholder {
+            font: size 20px;
+        }
+
+        > aside:last-child > input {
+            font-size:23px;
+            padding:1%;
+        }
+    }
+}
+// 3.HOME TABLET MAIN END
+// 4.HOME TABLET FOOTER START
+.home_footer {
+    p, p > a {
+        font-size:25px;
+    }
+}
+// 4.HOME TABLET FOOTER END
