@@ -574,7 +574,7 @@ blockquote, p {
     color: white;
   }
   .kpopfix aside a :hover {
-    color: #8F91A2;
+    color: black;
   }
 }
 @media (min-width: 200px) {
@@ -584,7 +584,6 @@ blockquote, p {
     padding-top: 5%;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
-    justify-content: center;
   }
   .kpoptitlepage img {
     width: 5vh;
@@ -596,49 +595,68 @@ blockquote, p {
   }
 }
 @media (min-width: 200px) {
-  .w-100 {
-    height: 50vh !important;
+  .kpopnav {
+    display: flex;
+    padding-left: 2%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media (min-width: 200px) {
-  nav > ul {
+  .kpopnav > ul {
     display: none;
   }
 }
 @media (min-width: 200px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 200px) {
-  details {
+  .kpopnav details {
     color: #386150;
     text-align: right;
     width: 95%;
     display: flex;
+    position: fixed;
+    z-index: 3;
   }
-  details ul {
+  .kpopnav details ul {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #386150;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    position: absolute;
   }
-  details li {
+  .kpopnav details li {
     display: flex;
     width: 100%;
     border-bottom: 1px solid white;
   }
-  details a {
+  .kpopnav details a {
     font-size: 14px;
     color: whitesmoke;
     text-align: right;
-    width: 95%;
+    width: 100%;
     padding: 1%;
+  }
+}
+@media (min-width: 200px) {
+  .kpopheader aside {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    padding: 1%;
+  }
+  .kpopheader aside a {
+    padding: 1%;
+    color: white;
+    background-color: #386150;
+  }
+}
+@media (min-width: 200px) {
+  .w-100 {
+    height: 50vh !important;
   }
 }
 @media (min-width: 200px) {
@@ -660,7 +678,7 @@ blockquote, p {
   }
 }
 @media (min-width: 200px) {
-  .about {
+  .kpopabout {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -669,7 +687,7 @@ blockquote, p {
     padding-bottom: 5%;
     padding-top: 10%;
   }
-  .about h2 {
+  .kpopabout h2 {
     font-size: 26px;
     text-align: center;
     text-transform: uppercase;
@@ -677,13 +695,13 @@ blockquote, p {
     -moz-column-gap: 1vh;
          column-gap: 1vh;
   }
-  .about > span {
+  .kpopabout > span {
     width: 15vh;
     height: 1vh;
     background-color: #CDE6F5;
     display: inline-block;
   }
-  .about article {
+  .kpopabout article {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -691,24 +709,24 @@ blockquote, p {
     flex-direction: column;
     row-gap: 2vh;
   }
-  .about article span {
+  .kpopabout article span {
     color: white;
     text-transform: uppercase;
   }
-  .about article a {
+  .kpopabout article a {
     background-color: #CDE6F5;
     padding: 1%;
     color: black;
     font-size: 12px;
     width: 20%;
   }
-  .about article a:hover {
+  .kpopabout article a:hover {
     color: #554640;
     background-color: white;
   }
 }
 @media (min-width: 200px) {
-  .calendar {
+  .kpopcalendar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -717,16 +735,16 @@ blockquote, p {
     padding-top: 10%;
     padding-bottom: 5%;
   }
-  .calendar > span {
+  .kpopcalendar > span {
     width: 15vh;
     height: 1vh;
     background-color: #386150;
     display: inline-block;
   }
-  .calendar h2 {
+  .kpopcalendar h2 {
     text-transform: uppercase;
   }
-  .calendar article {
+  .kpopcalendar article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -734,16 +752,15 @@ blockquote, p {
     row-gap: 5vh;
     width: 80%;
   }
-  .calendar article figure {
+  .kpopcalendar article figure {
     background-color: #CDE6F5;
     padding-bottom: 10%;
     border: 2px solid #554640;
   }
-  .calendar article figure img {
+  .kpopcalendar article figure img {
     width: 100%;
-    height: 30vh;
   }
-  .calendar article figure figcaption {
+  .kpopcalendar article figure figcaption {
     padding-top: 10%;
     justify-content: center;
     align-items: center;
@@ -753,21 +770,21 @@ blockquote, p {
     row-gap: 1vh;
     width: 95%;
   }
-  .calendar article figure figcaption h3, .calendar article figure figcaption small, .calendar article figure figcaption p {
+  .kpopcalendar article figure figcaption h3, .kpopcalendar article figure figcaption small, .kpopcalendar article figure figcaption p {
     width: 85%;
   }
-  .calendar article figure figcaption h3 {
+  .kpopcalendar article figure figcaption h3 {
     color: #4A442D;
     font-weight: 600;
     text-transform: uppercase;
   }
-  .calendar article figure figcaption small {
+  .kpopcalendar article figure figcaption small {
     font-size: 10px;
     color: #4E6E58;
   }
 }
 @media (min-width: 200px) {
-  .artists {
+  .kpopartists {
     display: flex;
     flex-direction: column;
     padding-top: 10%;
@@ -777,16 +794,16 @@ blockquote, p {
     justify-content: center;
     background-color: #386150;
   }
-  .artists > span {
+  .kpopartists > span {
     width: 15vh;
     height: 1vh;
     background-color: white;
     display: inline-block;
   }
-  .artists h2 {
+  .kpopartists h2 {
     text-transform: uppercase;
   }
-  .artists article {
+  .kpopartists article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -794,23 +811,47 @@ blockquote, p {
     width: 90%;
     row-gap: 10vh;
   }
-  .artists figure {
+  .kpopartists article figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
-  .artists figure img {
+  .kpopartists article figure img {
     width: 100%;
     height: 40vh;
   }
-  .artists aside, .artists figcaption {
+  .kpopartists article figure aside, .kpopartists article figure figcaption {
     display: none;
+  }
+  .kpopartists article figure a {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+  }
+  .kpopartists article figure a:hover > blockquote {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-color: rgba(50, 50, 50, 0.4);
+    position: absolute;
+  }
+  .kpopartists article figure blockquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ECEBF3;
+    font-size: 18px;
+    font-style: italic;
+  }
+  .kpopartists article figure img {
+    position: absolute;
   }
 }
 @media (min-width: 200px) {
-  .onsale {
+  .kpoponsale {
     display: flex;
     flex-direction: column;
     padding-top: 10%;
@@ -819,42 +860,49 @@ blockquote, p {
     align-items: center;
     row-gap: 2vh;
   }
-  .onsale > span {
+  .kpoponsale > span {
     width: 15vh;
     height: 1vh;
     background-color: #386150;
     display: inline-block;
   }
-  .onsale h2 {
+  .kpoponsale h2 {
     text-transform: uppercase;
   }
-  .onsale > article {
+  .kpoponsale > article {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
   }
-  .onsale figure {
+  .kpoponsale figure {
     display: flex;
+    padding-bottom: 5%;
     flex-direction: column;
     background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
   }
-  .onsale figure figcaption {
+  .kpoponsale figure figcaption {
     text-align: center;
   }
-  .onsale figure figcaption small {
-    color: tomato;
+  .kpoponsale figure figcaption small {
+    color: rgb(199, 42, 14);
     text-decoration: line-through;
   }
-  .onsale figure figcaption p {
+  .kpoponsale figure figcaption p {
     font-size: 18px;
     font-weight: 600;
   }
-  .onsale img {
+  .kpoponsale figure h6 {
+    font-size: 12px;
+    color: dimgray;
+  }
+  .kpoponsale img {
     height: 40vh;
   }
 }
 @media (min-width: 200px) {
-  .audition {
+  .kpopaudition {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -863,23 +911,55 @@ blockquote, p {
     justify-content: center;
     align-items: center;
     background-color: #8F91A2;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 5%;
   }
-  .audition > section {
+  .kpopaudition form {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    row-gap: 1vh;
+  }
+  .kpopaudition form ::-moz-placeholder {
+    font-size: 12px;
+  }
+  .kpopaudition form :-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .kpopaudition form ::placeholder {
+    font-size: 12px;
+  }
+  .kpopaudition form textarea {
+    height: 20vh;
+  }
+  .kpopaudition form [type=submit] {
+    width: 35%;
+    font-size: 12px;
+  }
+  .kpopaudition form > section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 200px) {
+  footer {
+    background-color: #4E6E58;
+    display: flex;
     justify-content: center;
-    align-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
-  .audition form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  footer p {
+    width: 80%;
+    color: white;
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: center;
   }
-  .audition form aside {
-    display: flex;
-    flex-direction: column;
+}
+@media (min-width: 200px) {
+  .progress {
+    width: 90%;
   }
 }
 @media (min-width: 600px) and (min-width: 600px) {

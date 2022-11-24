@@ -1,5 +1,4 @@
 .kpopfix{
-   
     background-color: #386150;
     aside{
         width:95%;
@@ -8,18 +7,21 @@
         a{
          color:white;
         :hover{
-            color:#8F91A2;
+            color:black;
         }
        }
-
     }
 }
+
 .kpoptitlepage{
     display:flex;
+    // flex-direction: column;
     height:10vh;
     padding-top:5%;
     column-gap: 2vh;
-    justify-content: center;
+    // justify-content: center;
+
+    
     img{
         width:5vh;
         height:5vh;
@@ -27,9 +29,75 @@
     h1{
         color:#4A442D;
         font-size:$dFontSize9;
-
     }
 }
+
+.kpopnav{
+    display: flex;
+    padding-left:2%;
+    position:relative;
+    justify-content: space-between;
+    align-items: center;
+    // height:20vh;
+    // width:100%;
+}
+
+.kpopnav>ul{
+    display: none;
+}
+
+.kpopnav details {
+        color:#386150;
+        text-align: right;
+        width:95%;
+        display: flex;
+        position:fixed;
+        z-index:3;
+    
+    ul{
+        @include NSflexcol;
+        width:100%;
+        // z-index:3;
+        background-color:#386150;
+        @include NSalignCenter;
+        position:absolute;
+     
+    }
+
+    li{
+        display: flex;
+        width:100%;
+        // z-index:3;
+        border-bottom:1px solid white;
+    }
+
+    a{
+        font-size:$dFontSize2;
+        color:whitesmoke;
+        text-align: right;
+        width:100%;
+        padding:1%;
+        // z-index:3;
+    }
+}
+.kpopheader{
+    aside{
+        display: flex;
+        // background-color: #386150;
+        width:100%;
+        justify-content: flex-end;
+        column-gap: 1vh;
+        padding:1%;
+      
+        a{
+            padding:1%;
+            color:white;
+            background-color: #386150;
+            ;
+        }
+    }
+}
+
 // img{
 //     width:30vh;
 //     height:30vh;
@@ -39,47 +107,7 @@
     // width: unset !important;
     height: 50vh !important;
 }
-nav>ul{
-    display: none;
-}
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-details {
-        color:#386150;
-        text-align: right;
-        width:95%;
-        display: flex;
-       
-      
-    
-    ul{
-        display: flex;
-        flex-direction: column;
-        width:100%;
-        background-color:#386150;
-        align-items: center;
-        justify-content: center;
-     
-    }
-    li{
-        display: flex;
-        width:100%;
-        border-bottom:1px solid white;
-        // justify-content: space-evenly;
-        // text-align: right;
-    }
-    a{
-        font-size:$dFontSize2;
-        color:whitesmoke;
-        text-align: right;
-        width:95%;
-        padding:1%;
-    }
-}
+
     .carousel-inner {
         h5{
             color:black; 
@@ -100,7 +128,7 @@ details {
     }
 
 
-    .about {
+    .kpopabout {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -149,25 +177,25 @@ details {
             }
         }
     }
-    .calendar{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            // text-align: center;
-            row-gap: 2vh;
-            padding-top:10%;
-            padding-bottom:5%;
-            
-            >span{
-                width:15vh;
-                height:1vh;
-                background-color:#386150;
-                display: inline-block;
-            }
-            h2{
-                text-transform: uppercase;
-            }
+.kpopcalendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    row-gap: 2vh;
+    padding-top:10%;
+    padding-bottom:5%;
+    
+        >span{
+            width:15vh;
+            height:1vh;
+            background-color:#386150;
+            display: inline-block;
+        }
+        h2{
+            text-transform: uppercase;
+        }
             article{
                 display: flex;
                 flex-direction: column;
@@ -177,18 +205,13 @@ details {
                 width:80%;
                
               
-                // background-color: #CDE6F5;
+            
                 figure{
                     background-color: #CDE6F5;
-                    // width:100%;
                     padding-bottom:10%;
-                    // display: flex;
-                    // flex-direction: column;
-                    // row-gap: 2vh;
                     border: 2px solid #554640;
                     img{
                         width:100%;
-                        height:30vh;
                     }
                     figcaption{
                         padding-top:10%;
@@ -212,12 +235,11 @@ details {
                             color:#4E6E58;
                         }
                     }
-                    
-
                 }
             }
-    }
-    .artists{
+}
+
+.kpopartists{
         display: flex;
         flex-direction: column;
         padding-top: 10%;
@@ -242,25 +264,62 @@ details {
             align-items: center;
             width:90%;
             row-gap: 10vh;
+
            
-        }
-        figure{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; 
-            width:100%;
-            img{
+        
+            figure{
+                // position:relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center; 
                 width:100%;
-                height:40vh;
-            } 
+                img{
+                    width:100%;
+                    height:40vh;
+                    // position:absolute;
+                } 
+            
+                // img:hover{
+                //     background-color: rgba(50,50,50, 1);
+                // }
+            
+            
+            
+                aside,figcaption{
+                    display: none;
+                }
+                a{
+                    position:relative;
+                    width:100%;
+                    height:40vh;
+                    display: flex;
+                }
+                a:hover > blockquote{
+                    // z-index:1;
+                    width:100%;
+                    height:40vh;
+                    display: flex;
+                    background-color: rgba(50,50,50,.4);
+                    position:absolute;
+                }
+                blockquote{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:#ECEBF3;
+                    font-size:$dFontSize4;
+                    font-style: italic;
+                }
+                img{
+                    position:absolute;
+                }
         }
-        aside,figcaption{
-            display: none;
-        }
-       
     }
-    .onsale{
+       
+}
+
+    .kpoponsale{
         display: flex;
         flex-direction: column;
         padding-top:10%;
@@ -286,12 +345,15 @@ details {
         }
         figure{
             display: flex;
+            padding-bottom:5%;
             flex-direction: column;
             background-color: cadetblue;
+            justify-content: center;
+            align-items: center;
             figcaption{
                 text-align: center;
                 small{
-                    color:tomato;
+                    color:rgb(199, 42, 14);
                     text-decoration: line-through;
                 }
                 p{
@@ -299,12 +361,16 @@ details {
                     font-weight: 600;
                 }
             }
+            h6{
+                font-size:$dFontSize1;
+                color:dimgray;
+            }
         }
         img{
             height:40vh;
         }
     }
-    .audition{
+.kpopaudition{
         display: flex;
         flex-direction: column;
         width:100%;
@@ -312,25 +378,58 @@ details {
         justify-content: center;
         align-items: center;
         background-color:#8F91A2;
-        padding-top:10%;
+        padding-top:5%;
         padding-bottom:5%;
-
-        >section{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-        }
         form{
+            width:90%;
             display: flex;
             flex-direction: column;
-            width:100%;
-            aside{
+            row-gap: 1vh;
+            // align-items: center;
+                
+
+                ::placeholder{
+                    font-size:12px;
+                }
+                textarea{
+                    height:20vh;
+                  
+
+                }
+                [type="submit"]{
+                    width:35%;
+                    font-size:$dFontSize1;
+                    // padding-top:2%;
+                    
+
+                }
+               
+            
+            >section{
                 display: flex;
                 flex-direction: column;
             }
-        }
-
-       
+        }   
+            
+}
+    
+footer{
+    background-color:#4E6E58;
+    display: flex;
+    justify-content: center;
+    padding-top:5%;
+    padding-bottom:5%;
+    p{
+        width:80%;
+        color:white;
+        line-height:1.5;
+        font-size:$dFontSize1;
+        text-align: center;
     }
+}
+.progress{
+    width:90%;
+}
+       
+    
 
