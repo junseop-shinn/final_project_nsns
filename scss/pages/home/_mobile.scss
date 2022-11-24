@@ -4,6 +4,7 @@
     position: relative;
     align-items: center;
     height: 16vh;
+    justify-content: flex-start;
 
     > article {
         display: none;
@@ -53,6 +54,7 @@
         width: 98%;
         @include NSflexcol;
         align-items: flex-end;
+        background-color: transparent;
 
         li {
             display: flex;
