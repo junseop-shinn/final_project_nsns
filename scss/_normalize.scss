@@ -41,10 +41,8 @@ blockquote, p {
 }
 
 @keyframes bts-op {
-    from {transform: scale(0.98);}
-    to {transform: scale(1);}
-    from {transform: rotate(-8deg);}
-    to {transform: rotate(8deg);}        
+    from {transform: scale(1.0);}
+    to {transform: scale(0.8);}
 }
 
 .nav_ani {
@@ -63,13 +61,11 @@ blockquote, p {
     animation-duration: 2s;
 }
 
-
-.home_header {
-    // animation-name: bts-op;
-    animation-direction: alternate;
-    animation-timing-function: ease;
+.title_ani {
+    animation-name: bts-op;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 1s;
 }
 
 
