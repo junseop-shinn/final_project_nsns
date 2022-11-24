@@ -1,0 +1,192 @@
+// kpop tablets scss starts
+.kpopfix{
+    height:8vh;
+    display: flex;
+    align-items: center;
+    aside{
+        a{
+            width:5vh;
+            height:5vh;
+            display: flex;
+            @include NSalignCenter;
+            font-size:2vh;
+            color:black;
+        }
+        a:hover{
+            background-color: white;
+            border-radius: 50%;
+            border:3px solid gray;
+        }
+    }
+}
+
+// kpop nav tablet starts
+
+.kpopnav{
+
+        h1{
+            font-size:5vh;
+            text-transform: uppercase;
+        }
+    
+    details{
+        font-size:3vh;
+        margin-top:1.4vh;
+        a{
+            font-size:$dFontSize3;
+            padding:2%;
+        }
+        a:hover{
+            background-color: #4A442D;
+            color:white;
+        }
+    }
+}
+
+// kpop header scss starts
+.kpopheader{
+    aside{
+        a{
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        
+        a:hover{
+            background-color: #A3C4BC;
+            color:#0e100f;
+            font-weight:600;
+            border:2px solid black;
+        }
+        
+    }
+
+}
+
+// kpopheader tablets scss starts
+.kpopheader{
+    padding-bottom: 3vh;
+}
+.w-100 {
+    height: 30vh !important;
+}
+
+.carousel-inner {
+    h5{
+        font-size:$dFontSize8;
+        font-style: italic;
+    }
+    p{
+        font-size: $dFontSize3;
+        padding:1%;
+    }
+}
+
+// kpopabout tablet scss starts
+.kpopabout{
+    height:30vh;
+  
+    h2{
+        display: flex;
+        font-size: 35px;
+    }
+    >span{
+        height:3px; 
+    }
+    article{
+        >p{
+        width:50%;
+        font-size:$dFontSize3;
+        }
+        a{
+            padding:2%;
+            font-size:$dFontSize4;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+
+    }
+}
+
+// kpopcalendar tablet scss starts
+.kpopcalendar{
+    >span{
+        height:3px; 
+    }
+    article{
+         flex-direction: row;
+         width:100%;
+         justify-content: center;
+         column-gap:1vh;
+
+         figure{
+            width:25%;
+            height:40vh;
+
+            img{
+                height:15vh;
+            }
+         }
+    }
+}
+
+// kpopartists tablet scss starts
+.kpopartists{
+    >span{
+        height:3px; 
+    }
+    article{
+        flex-direction: row;
+        column-gap: 2vh;
+        width:95%;
+        figure{
+            position:relative;
+            display: flex;
+            align-items: center;
+            width:90%;
+            // column-gap: 2vh;
+            img{
+                height:20vh;
+            }
+            a,a:hover blockquote{
+                height:20vh;
+            }
+            
+           
+            aside{
+                display: flex;
+                justify-content: space-evenly;
+                position:absolute;
+                // column-gap: 1vh;
+                // width:100%;
+                // a{
+                //     font-size:10px;
+                // }
+                i{
+                    font-size:15px;
+                    padding-top:2%;
+                }
+            }
+
+            // aside>a{
+            //     display: flex;
+            //     justify-content: center;
+            //     // height:0;
+            //     color:#A3C4BC;
+            //     :hover{
+            //         color:rgb(192, 97, 97);
+            //     }
+            // }
+            
+            // figcaption{
+            //     display: flex;
+            //     height:30vh;
+            //     width:20%;
+            //     small,p{
+            //         font-size: $dFontSize1;
+            //     }
+            // }
+        }
+    }
+}
+
+

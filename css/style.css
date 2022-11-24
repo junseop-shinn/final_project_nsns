@@ -845,7 +845,7 @@ blockquote, p {
     justify-content: center;
     align-items: center;
     width: 90%;
-    row-gap: 10vh;
+    row-gap: 2vh;
   }
   .kpopartists article figure {
     display: flex;
@@ -878,6 +878,7 @@ blockquote, p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: #ECEBF3;
     font-size: 18px;
     font-style: italic;
@@ -1733,6 +1734,132 @@ blockquote, p {
   }
   .home_footer p, .home_footer p > a {
     font-size: 25px;
+  }
+  .kpopfix {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+  }
+  .kpopfix aside a {
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    color: black;
+  }
+  .kpopfix aside a:hover {
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid gray;
+  }
+  .kpopnav h1 {
+    font-size: 5vh;
+    text-transform: uppercase;
+  }
+  .kpopnav details {
+    font-size: 3vh;
+    margin-top: 1.4vh;
+  }
+  .kpopnav details a {
+    font-size: 16px;
+    padding: 2%;
+  }
+  .kpopnav details a:hover {
+    background-color: #4A442D;
+    color: white;
+  }
+  .kpopheader aside a {
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  .kpopheader aside a:hover {
+    background-color: #A3C4BC;
+    color: #0e100f;
+    font-weight: 600;
+    border: 2px solid black;
+  }
+  .kpopheader {
+    padding-bottom: 3vh;
+  }
+  .w-100 {
+    height: 30vh !important;
+  }
+  .carousel-inner h5 {
+    font-size: 26px;
+    font-style: italic;
+  }
+  .carousel-inner p {
+    font-size: 16px;
+    padding: 1%;
+  }
+  .kpopabout {
+    height: 30vh;
+  }
+  .kpopabout h2 {
+    display: flex;
+    font-size: 35px;
+  }
+  .kpopabout > span {
+    height: 3px;
+  }
+  .kpopabout article > p {
+    width: 50%;
+    font-size: 16px;
+  }
+  .kpopabout article a {
+    padding: 2%;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .kpopcalendar > span {
+    height: 3px;
+  }
+  .kpopcalendar article {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .kpopcalendar article figure {
+    width: 25%;
+    height: 40vh;
+  }
+  .kpopcalendar article figure img {
+    height: 15vh;
+  }
+  .kpopartists > span {
+    height: 3px;
+  }
+  .kpopartists article {
+    flex-direction: row;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    width: 95%;
+  }
+  .kpopartists article figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+  }
+  .kpopartists article figure img {
+    height: 20vh;
+  }
+  .kpopartists article figure a, .kpopartists article figure a:hover blockquote {
+    height: 20vh;
+  }
+  .kpopartists article figure aside {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+  }
+  .kpopartists article figure aside i {
+    font-size: 15px;
+    padding-top: 2%;
   }
   .kfilm_nav h1 {
     font-size: 42px;

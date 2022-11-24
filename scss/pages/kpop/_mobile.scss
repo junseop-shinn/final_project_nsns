@@ -280,13 +280,14 @@
             @include NSflexcol;
             @include NSalignCenter;
             width:90%;
-            row-gap: 10vh;
+            row-gap: 2vh;
 
             figure{
                 // position:relative;
                 @include NSflexcol;
                 @include NSalignCenter;
                 width:100%;
+
                 img{
                     width:100%;
                     height:40vh;
@@ -317,6 +318,7 @@
                 blockquote{
                     @include NSflexcol;
                     align-items: center;
+                    justify-content: center;
                     color:#ECEBF3;
                     font-size:$dFontSize4;
                     font-style: italic;
