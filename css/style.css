@@ -938,6 +938,7 @@ blockquote, p {
     width: 96%;
     text-align: right;
     z-index: 1;
+    padding-top: 6vh;
   }
   .kfilm_nav details > ul {
     display: flex;
@@ -945,18 +946,23 @@ blockquote, p {
     position: fixed;
     width: 96%;
     text-align: right;
+    align-items: flex-end;
     z-index: 1;
     background-color: transparent;
   }
   .kfilm_nav details li {
     display: flex;
-    width: 100%;
+    width: 45%;
+    border-bottom: 1px whitesmoke solid;
+    border-right: 1px whitesmoke solid;
+    background-color: rgba(105, 105, 105, 0.6);
+    border-radius: 4px;
   }
   .kfilm_nav details a {
     width: 100%;
-    background-color: rgba(30, 30, 30, 0.8);
-    color: royalblue;
+    color: white;
     text-decoration: none;
+    text-align: center;
     text-transform: uppercase;
     padding: 1%;
   }

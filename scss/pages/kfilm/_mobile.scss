@@ -45,6 +45,7 @@
         width: 96%;
         text-align: right;
         z-index: 1;
+        padding-top: 6vh;
     }
 
     details > ul {
@@ -53,20 +54,25 @@
         position: fixed;
         width: 96%;
         text-align: right;
+        align-items: flex-end;
         z-index: 1;
         background-color: transparent;
     }
 
     details li {
         display: flex;
-        width: 100%;
+        width: 45%;
+        border-bottom: 1px whitesmoke solid;
+        border-right: 1px whitesmoke solid;
+        background-color: rgba(dimgray,.6);
+        border-radius: 4px;        
     }
 
     details a {
         width: 100%;
-        background-color: rgba(30,30,30,.8);
-        color: $dBlue5;
+        color: white;
         text-decoration: none;
+        text-align: center;
         text-transform: uppercase;
         padding: 1%;
     }
