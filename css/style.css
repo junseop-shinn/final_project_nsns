@@ -1981,6 +1981,10 @@ blockquote, p {
   .home_footer p, .home_footer p > a {
     font-size: 16px;
   }
+  .kfilm_nav {
+    height: 20vh;
+    align-items: flex-start;
+  }
   .kfilm_nav > details {
     display: none;
   }
@@ -1989,6 +1993,10 @@ blockquote, p {
     flex-direction: row;
     -moz-column-gap: 3vh;
          column-gap: 3vh;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
   }
   .kfilm_nav > section .dropdown-item {
     text-transform: uppercase;
@@ -1998,6 +2006,30 @@ blockquote, p {
   }
   .kfilm_nav > section aside > a {
     background-color: royalblue;
+  }
+  .kfilm_nav > section ul a:hover {
+    background-color: royalblue;
+    color: white;
+  }
+  .kfilm_nav figure {
+    height: 10vh;
+    width: 80%;
+    align-items: center;
+    padding-bottom: 1vh;
+  }
+  .kfilm_nav figure img {
+    width: 4vh;
+    height: 4vh;
+    border: 2px black solid;
+  }
+  .kfilm_nav figure h1 {
+    font-size: 24px;
+  }
+  .kfilm_nav h2 {
+    font-size: 18px;
+    border-top: 4px solid royalblue;
+    width: 100%;
+    padding-top: 1vh;
   }
   .kfilm_header {
     height: 70vh;
