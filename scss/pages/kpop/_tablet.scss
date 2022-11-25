@@ -3,7 +3,7 @@
     height:8vh;
     display: flex;
     align-items: center;
-    aside{
+    
         a{
             width:5vh;
             height:5vh;
@@ -17,8 +17,8 @@
             border-radius: 50%;
             border:3px solid gray;
         }
-    }
 }
+
 
 // kpop nav tablet starts
 
@@ -196,20 +196,21 @@
                 flex-direction: column;
                 width:100%;
                 row-gap:2vh;
-                small,p{
-                    font-size: $dFontSize1;
-                }
-                small{
-                    font-size:$dFontSize2;
-                    color:#A3C4BC;
-                    text-transform: uppercase;
-                    text-align: center;
-                }
-                p{
-                    text-align: center;
-                    font-size:$dFontSize1;
-                }
             }
+            small,p{
+                font-size: $dFontSize1;
+            }
+            small{
+                font-size:$dFontSize2;
+                color:#A3C4BC;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size:$dFontSize1;
+            }
+            
         }
     }
 }
@@ -227,11 +228,12 @@
     figure{
         border:3px solid #413C58;
         width:40%;
-        img{
-            width:100%;
-            height:15vh;
-        }
     }
+    img{
+        width:100%;
+        height:15vh;
+    }
+    
   
 }
 footer{

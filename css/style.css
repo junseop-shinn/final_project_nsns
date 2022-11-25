@@ -609,10 +609,10 @@ blockquote, p {
          column-gap: 3vh;
     justify-content: right;
   }
-  .kpopfix aside a {
+  .kpopfix a {
     color: white;
   }
-  .kpopfix aside a :hover {
+  .kpopfix a :hover {
     color: black;
   }
   .kpoptitlepage {
@@ -1740,7 +1740,7 @@ blockquote, p {
     display: flex;
     align-items: center;
   }
-  .kpopfix aside a {
+  .kpopfix a {
     width: 5vh;
     height: 5vh;
     display: flex;
@@ -1749,7 +1749,7 @@ blockquote, p {
     font-size: 2vh;
     color: black;
   }
-  .kpopfix aside a:hover {
+  .kpopfix a:hover {
     background-color: white;
     border-radius: 50%;
     border: 3px solid gray;
@@ -1875,16 +1875,16 @@ blockquote, p {
     width: 100%;
     row-gap: 2vh;
   }
-  .kpopartists article figure figcaption small, .kpopartists article figure figcaption p {
+  .kpopartists article figure small, .kpopartists article figure p {
     font-size: 12px;
   }
-  .kpopartists article figure figcaption small {
+  .kpopartists article figure small {
     font-size: 14px;
     color: #A3C4BC;
     text-transform: uppercase;
     text-align: center;
   }
-  .kpopartists article figure figcaption p {
+  .kpopartists article figure p {
     text-align: center;
     font-size: 12px;
   }
@@ -1901,7 +1901,7 @@ blockquote, p {
     border: 3px solid #413C58;
     width: 40%;
   }
-  .kpoponsale figure img {
+  .kpoponsale img {
     width: 100%;
     height: 15vh;
   }
@@ -2301,8 +2301,8 @@ blockquote, p {
     flex-direction: row;
     -moz-column-gap: 3vh;
          column-gap: 3vh;
-    width: 95%;
-    justify-content: flex-end;
+    width: 60%;
+    justify-content: center;
     align-items: center;
     height: 12vh;
   }
@@ -2315,6 +2315,7 @@ blockquote, p {
   .kpopnav > article aside > a {
     background-color: #386150;
     border: transparent;
+    font-size: 3vh;
   }
   .kpopnav > article ul a:hover {
     background-color: #F297B3;
@@ -2322,6 +2323,69 @@ blockquote, p {
   }
   .kpopheader aside {
     display: none;
+  }
+  .kpopfix aside a {
+    font-size: 3vh;
+    color: azure;
+  }
+  .kpopnav {
+    height: 20vh;
+  }
+  .kpoptitlepage h1 {
+    font-size: 8vh;
+    color: #386150;
+    font-style: italic;
+  }
+  .kpoptitlepage img {
+    width: 8vh;
+    height: 8vh;
+  }
+  .w-100 {
+    height: 50vh !important;
+  }
+  .kpopabout {
+    height: 40vh;
+    row-gap: 3vh;
+  }
+  .kpopabout h2 {
+    font-size: 5vh;
+  }
+  .kpopabout article a {
+    font-size: 2vh;
+    width: 25%;
+    padding: 1%;
+  }
+  .kpopcalendar article {
+    flex-wrap: wrap;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .kpopcalendar article figure {
+    width: 43%;
+  }
+  .kpopartists article {
+    flex-direction: row;
+  }
+  .kpopartists article figure {
+    width: 18%;
+  }
+  .kpopartists article figure blockquote {
+    text-align: start;
+    color: black;
+  }
+  .kpopartists a {
+    font-size: 3vh;
+  }
+  .kpopartists figcaption small, .kpopartists figcaption p {
+    font-size: 18px;
+  }
+  .kpopartists .kpopsale figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .kpopartists .kpopsale figure img {
+    height: 20vh;
   }
   .kfilm_nav > details {
     display: none;

@@ -7,8 +7,8 @@
 
     > article {
         @include NSflexrowcol(3vh);
-        width: 95%;
-        justify-content: flex-end;
+        width: 60%;
+        justify-content: center;
         align-items: center;
         height: 12vh;
 
@@ -23,6 +23,7 @@
         aside > a {
             background-color:#386150;
             border: transparent;
+            font-size:3vh;
         }
 
         ul a:hover {
@@ -37,5 +38,98 @@
 
     aside {
         display: none;
+    }
+}
+
+.kpopfix {
+    aside{
+        a{
+           font-size:3vh;
+           color:azure;
+        }
+    }
+}
+
+.kpopnav{
+    height:20vh;
+}
+
+.kpoptitlepage{
+    h1{
+        font-size: 8vh;
+        color:#386150;
+        font-style: italic;
+    }
+    img{
+        width:8vh;
+        height:8vh;
+    }
+}
+.w-100 {
+    height: 50vh !important;
+}
+
+.kpopabout{
+    height:40vh;
+    row-gap:3vh;
+    h2{
+        font-size:5vh;
+    }
+    article{
+        a{
+            font-size: 2vh;
+            width:25%;
+            padding:1%;
+        }
+    }
+}
+
+.kpopcalendar{
+  
+    article{
+        flex-wrap: wrap;
+        column-gap: 3vh;
+        figure{
+            width:43%;
+        }
+    }
+}
+
+.kpopartists{
+    article{
+        flex-direction: row;
+        
+        figure{
+            width:18%;
+
+            blockquote{
+                text-align:start;
+                color:black;
+            }
+                
+        }
+    }
+        
+        a{
+            font-size: 3vh;
+        }
+        figcaption{
+                small,p{
+                font-size:18px;
+            }
+        }
+    
+    .kpopsale{
+        figure{
+            display: flex;
+            flex-direction: column;
+            row-gap:5vh;
+
+
+            img{
+            height:20vh;
+
+            }
+        }
     }
 }

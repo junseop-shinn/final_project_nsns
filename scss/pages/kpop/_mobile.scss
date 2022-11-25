@@ -5,14 +5,14 @@
     aside{
         width:95%;
        @include NSflexrowcol(3vh);
-        justify-content:right;
-        a{
-         color:white;
+        justify-content:right;}
+    a{
+        color:white;
         :hover{
             color:black;
         }
-       }
     }
+    
 }
 
 // kpop title page scss
