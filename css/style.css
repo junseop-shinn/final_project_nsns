@@ -2565,6 +2565,12 @@ blockquote, p {
   }
   .kpopnav {
     height: 25vh;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .kpopnav span {
+    width: 100%;
   }
   .kpopnav details {
     display: none;
@@ -2574,13 +2580,16 @@ blockquote, p {
     flex-direction: row;
     -moz-column-gap: 3vh;
          column-gap: 3vh;
-    width: 60%;
-    justify-content: center;
+    width: 98%;
+    justify-content: right;
     align-items: center;
     height: 12vh;
   }
   .kpopnav > article .dropdown-item {
     text-transform: uppercase;
+  }
+  .kpopnav > article .dropdown ul a {
+    font-size: 3vh;
   }
   .kpopnav > article aside:last-child li {
     text-align: right;
@@ -2618,7 +2627,8 @@ blockquote, p {
   }
   .kpopabout {
     height: 40vh;
-    row-gap: 3vh;
+    row-gap: 1vh;
+    padding-top: 6%;
   }
   .kpopabout h2 {
     font-size: 5vh;
@@ -2635,12 +2645,25 @@ blockquote, p {
   }
   .kpopcalendar article figure {
     width: 43%;
+    height: 65vh;
+  }
+  .kpopcalendar article figure img {
+    height: 30vh;
+  }
+  .kpopcalendar article figcaption p, .kpopcalendar article figcaption small, .kpopcalendar article figcaption h3 {
+    font-size: 25px;
   }
   .kpopartists article {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    -moz-column-gap: 4vh;
+         column-gap: 4vh;
+    row-gap: 4vh;
   }
   .kpopartists article figure {
-    width: 18%;
+    width: 30%;
+    row-gap: 3vh;
   }
   .kpopartists article figure blockquote {
     text-align: start;
@@ -2649,16 +2672,22 @@ blockquote, p {
   .kpopartists a {
     font-size: 3vh;
   }
-  .kpopartists figcaption small, .kpopartists figcaption p {
+  .kpopartists figcaption small,
+.kpopartists figcaption p {
     font-size: 18px;
   }
-  .kpopartists .kpopsale figure {
+  .kpoponsale figure {
     display: flex;
     flex-direction: column;
-    row-gap: 5vh;
+    row-gap: 3vh;
   }
-  .kpopartists .kpopsale figure img {
-    height: 20vh;
+  .kpoponsale figure img, .kpoponsale figure a {
+    height: 40vh;
+  }
+  .kpoponsale figure small,
+.kpoponsale figure p,
+.kpoponsale figure h6 {
+    font-size: 24px;
   }
   .kfilm_nav {
     height: 24vh;
