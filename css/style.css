@@ -1925,19 +1925,27 @@ blockquote, p {
     display: flex;
     align-items: center;
   }
-  .kpopfix a {
-    width: 5vh;
-    height: 5vh;
+  .kpopfix aside {
+    width: 50%;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .kpopfix aside i {
+    font-size: 3vh;
+  }
+  .kpopfix aside a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vh;
     color: black;
   }
-  .kpopfix a:hover {
+  .kpopfix aside a:hover {
     background-color: white;
     border-radius: 50%;
     border: 3px solid gray;
+  }
+  .kpopnav span {
+    width: 30%;
   }
   .kpopnav h1 {
     font-size: 5vh;
@@ -1947,13 +1955,19 @@ blockquote, p {
     font-size: 3vh;
     margin-top: 1.4vh;
   }
+  .kpopnav details summary {
+    font-size: 4vh;
+  }
   .kpopnav details a {
-    font-size: 16px;
+    font-size: 26px;
     padding: 2%;
   }
   .kpopnav details a:hover {
     background-color: #4A442D;
     color: white;
+  }
+  .kpoptitlepage {
+    row-gap: 1vh;
   }
   .kpopheader aside a {
     border-radius: 5px;
@@ -1980,7 +1994,7 @@ blockquote, p {
     padding: 1%;
   }
   .kpopabout {
-    height: 30vh;
+    height: 40vh;
   }
   .kpopabout h2 {
     display: flex;
@@ -1990,11 +2004,11 @@ blockquote, p {
     height: 3px;
   }
   .kpopabout article > p {
-    width: 50%;
-    font-size: 16px;
+    width: 70%;
+    font-size: 24px;
   }
   .kpopabout article a {
-    padding: 2%;
+    padding: 1%;
     font-size: 18px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -2022,9 +2036,11 @@ blockquote, p {
   .kpopartists article {
     flex-wrap: wrap;
     flex-direction: row;
-    -moz-column-gap: 2vh;
-         column-gap: 2vh;
+    justify-content: space-evenly;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
     width: 95%;
+    align-items: flex-start;
   }
   .kpopartists article figure {
     display: flex;
@@ -2032,18 +2048,19 @@ blockquote, p {
     width: 35%;
   }
   .kpopartists article figure img {
-    height: 20vh;
+    height: 25vh;
   }
-  .kpopartists article figure a, .kpopartists article figure a:hover blockquote {
-    height: 20vh;
+  .kpopartists article figure a,
+.kpopartists article figure a:hover blockquote {
+    height: 25vh;
   }
   .kpopartists article figure aside {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
   }
   .kpopartists article figure aside i {
-    font-size: 15px;
+    font-size: 25px;
   }
   .kpopartists article figure aside a {
     color: gray;
@@ -2060,18 +2077,15 @@ blockquote, p {
     width: 100%;
     row-gap: 2vh;
   }
-  .kpopartists article figure small, .kpopartists article figure p {
-    font-size: 12px;
-  }
-  .kpopartists article figure small {
-    font-size: 14px;
+  .kpopartists article figure figcaption small {
+    font-size: 18px;
     color: #A3C4BC;
     text-transform: uppercase;
     text-align: center;
   }
-  .kpopartists article figure p {
+  .kpopartists article figure figcaption p {
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
   }
   .kpoponsale {
     width: 100%;
@@ -2086,9 +2100,74 @@ blockquote, p {
     border: 3px solid #413C58;
     width: 40%;
   }
-  .kpoponsale img {
+  .kpoponsale figure img,
+.kpoponsale figure a {
     width: 100%;
-    height: 15vh;
+    height: 25vh;
+  }
+  .kpoponsale figure small,
+.kpoponsale figure p,
+.kpoponsale figure h6 {
+    font-size: 20px;
+  }
+  .kpoponsale figure .progress {
+    height: 2vh;
+    font-size: 20px;
+  }
+  .kpopaudition form blockquote {
+    font-size: 22px;
+  }
+  .kpopaudition form blockquote input {
+    width: 1.5vh;
+    height: 1.5vh;
+  }
+  .kpopaudition form blockquote input[type=text] {
+    height: 5vh;
+  }
+  .kpopaudition form blockquote ::-moz-placeholder {
+    font-size: 22px;
+  }
+  .kpopaudition form blockquote :-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .kpopaudition form blockquote ::placeholder {
+    font-size: 22px;
+  }
+  .kpopaudition form aside {
+    font-size: 22px;
+  }
+  .kpopaudition form aside input {
+    width: 1.5vh;
+    height: 1.5vh;
+  }
+  .kpopaudition form label,
+.kpopaudition form h4 {
+    font-size: 25px;
+  }
+  .kpopaudition form section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .kpopaudition form section label:first-child,
+.kpopaudition form section label:nth-child(3) {
+    width: 30%;
+  }
+  .kpopaudition form section [type=text], .kpopaudition form section [type=email] {
+    width: 70%;
+  }
+  .kpopaudition form section label:nth-child(5),
+.kpopaudition form section label:nth-child(6) {
+    width: 100%;
+  }
+  .kpopaudition form section [type=date], .kpopaudition form section [type=message], .kpopaudition form section textarea {
+    width: 100%;
+  }
+  .kpopaudition form section [type=date] {
+    height: 5vh;
+  }
+  .kpopaudition form [type=submit] {
+    font-size: 22px;
   }
   footer p {
     font-size: 20px;

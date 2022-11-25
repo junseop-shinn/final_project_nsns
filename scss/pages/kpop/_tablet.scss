@@ -1,105 +1,132 @@
 // kpop tablets scss starts
-.kpopfix{
-    height:8vh;
+.kpopfix {
+    height: 8vh;
     display: flex;
     align-items: center;
-    
-        a{
-            width:5vh;
-            height:5vh;
+
+    aside {
+        width: 50%;
+        column-gap: 2vh;
+
+        i {
+            font-size: 3vh;
+        }
+
+
+        a {
             display: flex;
             @include NSalignCenter;
-            font-size:2vh;
-            color:black;
+            // font-size:2vh;
+            color: black;
         }
-        a:hover{
+
+        a:hover {
             background-color: white;
             border-radius: 50%;
-            border:3px solid gray;
+            border: 3px solid gray;
         }
+    }
 }
 
 
 // kpop nav tablet starts
 
-.kpopnav{
+.kpopnav {
+    span {
+        width: 30%;
+    }
 
-        h1{
-            font-size:5vh;
-            text-transform: uppercase;
+    h1 {
+        font-size: 5vh;
+        text-transform: uppercase;
+    }
+
+    details {
+        summary {
+            font-size: 4vh;
         }
-    
-    details{
+
         font-size:3vh;
         margin-top:1.4vh;
-        a{
-            font-size:$dFontSize3;
-            padding:2%;
+
+        a {
+            font-size: $dFontSize8;
+            padding: 2%;
         }
-        a:hover{
+
+        a:hover {
             background-color: #4A442D;
-            color:white;
+            color: white;
         }
     }
 }
 
+.kpoptitlepage {
+    row-gap: 1vh;
+}
+
 // kpop header scss starts
-.kpopheader{
-    aside{
-        a{
+.kpopheader {
+    aside {
+        a {
             border-radius: 5px;
             text-transform: uppercase;
         }
-        
-        a:hover{
+
+        a:hover {
             background-color: #A3C4BC;
-            color:#0e100f;
-            font-weight:600;
-            border:2px solid black;
+            color: #0e100f;
+            font-weight: 600;
+            border: 2px solid black;
         }
-        
+
     }
 
 }
 
 // kpopheader tablets scss starts
-.kpopheader{
+.kpopheader {
     padding-bottom: 3vh;
 }
+
 .w-100 {
     height: 30vh !important;
 }
 
 .carousel-inner {
-    h5{
-        font-size:$dFontSize8;
+    h5 {
+        font-size: $dFontSize8;
         font-style: italic;
     }
-    p{
+
+    p {
         font-size: $dFontSize3;
-        padding:1%;
+        padding: 1%;
     }
 }
 
 // kpopabout tablet scss starts
-.kpopabout{
-    height:30vh;
-  
-    h2{
+.kpopabout {
+    height: 40vh;
+
+    h2 {
         display: flex;
         font-size: 35px;
     }
-    >span{
-        height:3px; 
+
+    >span {
+        height: 3px;
     }
-    article{
-        >p{
-        width:50%;
-        font-size:$dFontSize3;
+
+    article {
+        >p {
+            width: 70%;
+            font-size: $dFontSize7;
         }
-        a{
-            padding:2%;
-            font-size:$dFontSize4;
+
+        a {
+            padding: 1%;
+            font-size: $dFontSize4;
             text-transform: uppercase;
             border-radius: 5px;
         }
@@ -108,77 +135,88 @@
 }
 
 // kpopcalendar tablet scss starts
-.kpopcalendar{
-    >span{
-        height:3px; 
+.kpopcalendar {
+    >span {
+        height: 3px;
     }
-    article{
-         flex-direction: row;
-         width:100%;
-         justify-content: center;
-         column-gap:1vh;
 
-         figure{
-            width:25%;
-            height:40vh;
+    article {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        column-gap: 1vh;
 
-            img{
-                height:15vh;
+        figure {
+            width: 25%;
+            height: 40vh;
+
+            img {
+                height: 15vh;
             }
-         }
+        }
     }
 }
 
 // kpopartists tablet scss starts
-.kpopartists{
-   
-    >span{
-        height:3px; 
+.kpopartists {
+
+    >span {
+        height: 3px;
     }
-    article{
+
+    article {
         flex-wrap: wrap;
         flex-direction: row;
-        column-gap: 2vh;
-        width:95%;
-        figure{
+        justify-content: space-evenly;
+        column-gap: 1vh;
+        width: 95%;
+        align-items: flex-start;
+
+        figure {
             // position:relative;
             display: flex;
             align-items: center;
-            width:35%;
+            width: 35%;
+
             // column-gap: 2vh;
-            img{
-                height:20vh;
+            img {
+                height: 25vh;
             }
-            a,a:hover blockquote{
-                height:20vh;
+
+            a,
+            a:hover blockquote {
+                height: 25vh;
             }
-            
-           
-            aside{
-                width:100%;
+
+
+            aside {
+                width: 50%;
                 display: flex;
                 justify-content: space-evenly;
+
                 // position:absolute;
                 // column-gap: 1vh;
                 // width:100%;
                 // a{
                 //     font-size:10px;
                 // }
-                i{
-                    font-size:15px;
+                i {
+                    font-size: 25px;
                     // padding-top:2%;
                 }
-                a{
-                    color:gray;
-                    height:3vh;
+
+                a {
+                    color: gray;
+                    height: 3vh;
                     justify-content: center;
-                    padding-top:5%;
+                    padding-top: 5%;
                 }
-                a:hover{
-                    color:white;
+
+                a:hover {
+                    color: white;
 
                 }
-             
+
             }
 
             // aside>a{
@@ -190,60 +228,143 @@
             //         color:rgb(192, 97, 97);
             //     }
             // }
-            
-            figcaption{
+
+            figcaption {
                 display: flex;
                 flex-direction: column;
-                width:100%;
-                row-gap:2vh;
+                width: 100%;
+                row-gap: 2vh;
+
+
+                small {
+                    font-size: $dFontSize4;
+                    color: #A3C4BC;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: $dFontSize4;
+                }
             }
-            small,p{
-                font-size: $dFontSize1;
-            }
-            small{
-                font-size:$dFontSize2;
-                color:#A3C4BC;
-                text-transform: uppercase;
-                text-align: center;
-            }
-            p{
-                text-align: center;
-                font-size:$dFontSize1;
-            }
-            
+
         }
     }
 }
+
 .kpoponsale {
-    width:100%;
-    >article{
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:90%;
-    justify-content: space-evenly;
-   
-   
+    width: 100%;
+
+    >article {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-evenly;
+
+
     }
-  
-    figure{
-        border:3px solid #413C58;
-        width:40%;
+
+    figure {
+        border: 3px solid #413C58;
+        width: 40%;
+
+        img,
+        a {
+            width: 100%;
+            height: 25vh;
+        }
+
+        small,
+        p,
+        h6 {
+            font-size: 20px;
+
+        }
+
+        .progress {
+            height: 2vh;
+            font-size: 20px;
+        }
     }
-    img{
-        width:100%;
-        height:15vh;
-    }
+
     
-  
+    
+    
 }
-footer{
-    p{
-        font-size:$dFontSize5;
-    }
-    a{
-        color:white;
-        font-size:2vh;
+.kpopaudition {
+    form {
+
+        blockquote {
+            font-size: 22px;
+            input {
+                width: 1.5vh;
+                height: 1.5vh;
+            }
+
+            input[type="text"] {
+                height: 5vh;
+            }
+            ::placeholder{
+                font-size:22px;
+            }
+        }
+        aside {
+                font-size: 22px;
+                input {
+                    width: 1.5vh;
+                    height: 1.5vh;
+                }
+        }
+
+        label,
+        h4 {
+            font-size: 25px;
+        }
+        section{
+           flex-wrap:wrap;
+           flex-direction: row;
+           justify-content: space-between;
+
+           label:first-child,
+           label:nth-child(3){
+            width: 30%;
+           }
+
+           [type="text"],[type="email"] {
+            width: 70%;
+           }
+
+           label:nth-child(5),
+           label:nth-child(6){
+            width: 100%;
+
+           }
+
+           [type="date"],[type="message"],textarea {
+            width: 100%;
+           }
+
+           [type="date"] {
+            height: 5vh;
+           }
+        
+        }
+        [type="submit"]
+        {
+         font-size:22px;
+        }
+
     }
 }
 
+footer {
+    p {
+        font-size: $dFontSize5;
+    }
 
+    a {
+        color: white;
+        font-size: 2vh;
+    }
+}
