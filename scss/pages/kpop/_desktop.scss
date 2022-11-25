@@ -1,0 +1,178 @@
+.kpopnav {
+    height: 25vh;
+    width:100%;
+    flex-direction: column;
+    row-gap:2vh;
+
+    span {
+        width: 100%;
+    }
+
+
+
+    details {
+        display: none;
+    }
+
+    >article {
+        @include NSflexrowcol(3vh);
+        width: 98%;
+        justify-content: right;
+        align-items: center;
+        height: 12vh;
+
+        .dropdown-item {
+            text-transform: uppercase;
+        }
+
+        .dropdown ul a{
+            font-size:3vh;
+        }
+        aside:last-child li {
+            text-align: right;
+        }
+
+        aside>a {
+            background-color: #386150;
+            border: transparent;
+            font-size: 3vh;
+        }
+
+        ul a:hover {
+            background-color: $dPink4;
+            color: white;
+
+        }
+    }
+
+}
+
+.kpopheader {
+
+    aside {
+        display: none;
+    }
+}
+
+.kpopfix {
+    aside {
+        a {
+            font-size: 3vh;
+            color: azure;
+        }
+    }
+}
+
+.kpopnav {
+    height: 20vh;
+}
+
+.kpoptitlepage {
+    h1 {
+        font-size: 8vh;
+        color: #386150;
+        font-style: italic;
+    }
+
+    img {
+        width: 8vh;
+        height: 8vh;
+    }
+}
+
+.w-100 {
+    height: 50vh !important;
+}
+
+.kpopabout {
+    height: 40vh;
+    row-gap: 1vh;
+    padding-top:6%;
+
+    h2 {
+        font-size: 5vh;
+    }
+
+    article {
+        a {
+            font-size: 2vh;
+            width: 25%;
+            padding: 1%;
+        }
+    }
+}
+
+.kpopcalendar {
+
+    article {
+        flex-wrap: wrap;
+        column-gap: 3vh;
+
+        figure {
+            width: 43%;
+            height:65vh;
+            img{
+                height:30vh;
+            }
+        }
+        figcaption{
+            p,small,h3{
+                font-size:25px;
+            }
+        }
+    }
+}
+
+.kpopartists {
+    article {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        column-gap:4vh;
+        row-gap:4vh;
+
+        figure {
+            width: 30%;
+            row-gap:3vh;
+
+            blockquote {
+                text-align: start;
+                color: black;
+            }
+
+        }
+    }
+
+    a {
+        font-size: 3vh;
+    }
+
+    figcaption {
+      
+        small,
+        p {
+            font-size: 18px;
+        }
+    }
+
+}
+.kpoponsale {
+    figure {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+
+
+        img,a {
+            height: 40vh;
+
+        }
+        small,
+        p,
+        h6 {
+            font-size: 24px;
+
+        }
+
+    }
+}

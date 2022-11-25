@@ -63,36 +63,70 @@ blockquote, p {
 }
 @-webkit-keyframes kfilm-color {
   0% {
-    border-top: 5px solid #C9EAF3;
+    border-top: 4px solid #C9EAF3;
   }
   25% {
-    border-top: 5px solid #9ED6E7;
+    border-top: 4px solid #9ED6E7;
   }
   50% {
-    border-top: 5px solid #7CC4DC;
+    border-top: 4px solid #7CC4DC;
   }
   75% {
-    border-top: 5px solid #62B3D1;
+    border-top: 4px solid #62B3D1;
   }
   100% {
-    border-top: 5px solid royalblue;
+    border-top: 4px solid royalblue;
   }
 }
 @keyframes kfilm-color {
   0% {
-    border-top: 5px solid #C9EAF3;
+    border-top: 4px solid #C9EAF3;
   }
   25% {
-    border-top: 5px solid #9ED6E7;
+    border-top: 4px solid #9ED6E7;
   }
   50% {
-    border-top: 5px solid #7CC4DC;
+    border-top: 4px solid #7CC4DC;
   }
   75% {
-    border-top: 5px solid #62B3D1;
+    border-top: 4px solid #62B3D1;
   }
   100% {
-    border-top: 5px solid royalblue;
+    border-top: 4px solid royalblue;
+  }
+}
+@-webkit-keyframes kpop-color {
+  0% {
+    border-top: 4px solid #f3f7f5;
+  }
+  25% {
+    border-top: 4px solid yellowgreen;
+  }
+  50% {
+    border-top: 4px solid #1c583f;
+  }
+  75% {
+    border-top: 4px solid green;
+  }
+  100% {
+    border-top: 4px solid forestgreen;
+  }
+}
+@keyframes kpop-color {
+  0% {
+    border-top: 4px solid #f3f7f5;
+  }
+  25% {
+    border-top: 4px solid yellowgreen;
+  }
+  50% {
+    border-top: 4px solid #1c583f;
+  }
+  75% {
+    border-top: 4px solid green;
+  }
+  100% {
+    border-top: 4px solid forestgreen;
   }
 }
 @-webkit-keyframes bts-op {
@@ -127,6 +161,19 @@ blockquote, p {
 .kfilm_ani {
   -webkit-animation-name: kfilm-color;
           animation-name: kfilm-color;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.kpop_ani {
+  -webkit-animation-name: kpop-color;
+          animation-name: kpop-color;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: ease;
@@ -655,6 +702,10 @@ blockquote, p {
   }
   .kpopfix {
     background-color: #386150;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .kpopfix aside {
     width: 95%;
@@ -662,92 +713,147 @@ blockquote, p {
     flex-direction: row;
     -moz-column-gap: 3vh;
          column-gap: 3vh;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
   }
-  .kpopfix aside a {
+  .kpopfix a {
     color: white;
   }
-  .kpopfix aside a :hover {
-    color: #8F91A2;
+  .kpopfix a :hover {
+    color: black;
+  }
+  .kpopfix i {
+    font-size: 20px;
   }
   .kpoptitlepage {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 10vh;
-    padding-top: 5%;
+    padding-top: 3%;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
-    justify-content: center;
+    width: 90%;
+    row-gap: 2vh;
+  }
+  .kpoptitlepage aside {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .kpoptitlepage span {
+    width: 90%;
+    height: 1vh;
   }
   .kpoptitlepage img {
     width: 5vh;
     height: 5vh;
+    border: 3px solid black;
+    border-radius: 50%;
   }
   .kpoptitlepage h1 {
     color: #4A442D;
     font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .kpopnav {
+    display: flex;
+    padding-left: 2%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .kpopnav > article {
+    display: none;
+  }
+  .kpopnav details {
+    color: #386150;
+    text-align: right;
+    width: 98%;
+    display: flex;
+    position: fixed;
+    padding-right: 1%;
+    z-index: 3;
+  }
+  .kpopnav details summary {
+    font-size: 30px;
+  }
+  .kpopnav details ul {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    align-items: flex-end;
+    padding-right: 1%;
+  }
+  .kpopnav details li {
+    display: flex;
+    width: 45%;
+    border-bottom: 1px whitesmoke solid;
+    border-right: 1px whitesmoke solid;
+    background-color: rgba(105, 105, 105, 0.6);
+    border-radius: 4px;
+  }
+  .kpopnav details a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    color: white;
+  }
+  .kpopnav details a:hover {
+    color: #386150;
+    background-color: white;
+  }
+  .kpopheader aside {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    padding: 1%;
+  }
+  .kpopheader aside a {
+    padding: 1%;
+    color: white;
+    background-color: #386150;
   }
   .w-100 {
     height: 50vh !important;
   }
-  nav > ul {
-    display: none;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  details {
-    color: #386150;
-    text-align: right;
-    width: 95%;
-    display: flex;
-  }
-  details ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #386150;
-    align-items: center;
-    justify-content: center;
-  }
-  details li {
-    display: flex;
-    width: 100%;
-    border-bottom: 1px solid white;
-  }
-  details a {
-    font-size: 14px;
-    color: whitesmoke;
-    text-align: right;
-    width: 95%;
-    padding: 1%;
-  }
   .carousel-inner h5 {
     color: black;
     font-weight: 600;
+    font-size: 20px;
   }
   .carousel-inner p {
-    color: black;
-    border: 1px solid grau;
-    background-color: antiquewhite;
-    border-radius: 5%;
+    color: white;
+    font-size: 12px;
+    border: 1px solid gray;
+    background-color: rgba(120, 149, 137, 0.8);
+    padding: 2%;
+    border-radius: 10px;
   }
   .d-none {
     display: flex !important;
     flex-direction: column;
   }
-  .about {
+  .kpopabout {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 1vh;
+    row-gap: 3vh;
     background-color: #4E6E58;
     padding-bottom: 5%;
     padding-top: 10%;
   }
-  .about h2 {
+  .kpopabout h2 {
     font-size: 26px;
     text-align: center;
     text-transform: uppercase;
@@ -755,36 +861,46 @@ blockquote, p {
     -moz-column-gap: 1vh;
          column-gap: 1vh;
   }
-  .about > span {
+  .kpopabout h2 i {
+    color: whitesmoke;
+  }
+  .kpopabout > span {
     width: 15vh;
     height: 1vh;
     background-color: #CDE6F5;
     display: inline-block;
+    border-radius: 10px;
   }
-  .about article {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  .kpopabout article {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     row-gap: 2vh;
   }
-  .about article span {
+  .kpopabout article span {
     color: white;
     text-transform: uppercase;
+    font-style: normal;
   }
-  .about article a {
+  .kpopabout article p {
+    line-height: 1.5;
+    font-size: 12px;
+    font-style: italic;
+  }
+  .kpopabout article a {
     background-color: #CDE6F5;
     padding: 1%;
     color: black;
     font-size: 12px;
     width: 20%;
   }
-  .about article a:hover {
+  .kpopabout article a:hover {
     color: #554640;
     background-color: white;
   }
-  .calendar {
+  .kpopcalendar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -793,16 +909,18 @@ blockquote, p {
     padding-top: 10%;
     padding-bottom: 5%;
   }
-  .calendar > span {
+  .kpopcalendar > span {
     width: 15vh;
     height: 1vh;
     background-color: #386150;
     display: inline-block;
+    border-radius: 10px;
   }
-  .calendar h2 {
+  .kpopcalendar h2 {
     text-transform: uppercase;
+    color: #413C58;
   }
-  .calendar article {
+  .kpopcalendar article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -810,146 +928,272 @@ blockquote, p {
     row-gap: 5vh;
     width: 80%;
   }
-  .calendar article figure {
+  .kpopcalendar figure {
     background-color: #CDE6F5;
     padding-bottom: 10%;
     border: 2px solid #554640;
   }
-  .calendar article figure img {
+  .kpopcalendar figure img {
     width: 100%;
-    height: 30vh;
   }
-  .calendar article figure figcaption {
+  .kpopcalendar figure figcaption {
     padding-top: 10%;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     row-gap: 1vh;
     width: 95%;
   }
-  .calendar article figure figcaption h3, .calendar article figure figcaption small, .calendar article figure figcaption p {
+  .kpopcalendar figure figcaption h3,
+.kpopcalendar figure figcaption small,
+.kpopcalendar figure figcaption p {
     width: 85%;
   }
-  .calendar article figure figcaption h3 {
+  .kpopcalendar figure figcaption h3 {
     color: #4A442D;
     font-weight: 600;
     text-transform: uppercase;
   }
-  .calendar article figure figcaption small {
+  .kpopcalendar figure figcaption small {
     font-size: 10px;
     color: #4E6E58;
   }
-  .artists {
+  .kpopartists {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 10%;
     padding-bottom: 10%;
-    align-items: center;
     row-gap: 2vh;
-    justify-content: center;
-    background-color: #386150;
+    background-color: #64a78b;
   }
-  .artists > span {
+  .kpopartists > span {
     width: 15vh;
     height: 1vh;
     background-color: white;
-    display: inline-block;
+    border-radius: 10px;
   }
-  .artists h2 {
+  .kpopartists h2 {
     text-transform: uppercase;
+    color: whitesmoke;
   }
-  .artists article {
+  .kpopartists article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
-    row-gap: 10vh;
+    row-gap: 2vh;
   }
-  .artists figure {
+  .kpopartists article figure {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
   }
-  .artists figure img {
+  .kpopartists article figure img {
     width: 100%;
     height: 40vh;
   }
-  .artists aside, .artists figcaption {
+  .kpopartists article figure aside,
+.kpopartists article figure figcaption {
     display: none;
   }
-  .onsale {
+  .kpopartists article figure a {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+  }
+  .kpopartists article figure a:hover > blockquote {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    background-color: rgba(50, 50, 50, 0.4);
+    position: absolute;
+  }
+  .kpopartists article figure blockquote {
     display: flex;
     flex-direction: column;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    color: #ECEBF3;
+    font-size: 18px;
+    font-style: italic;
+  }
+  .kpopartists article figure img {
+    position: absolute;
+  }
+  .kpoponsale {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
     row-gap: 2vh;
   }
-  .onsale > span {
+  .kpoponsale > span {
     width: 15vh;
     height: 1vh;
     background-color: #386150;
     display: inline-block;
   }
-  .onsale h2 {
+  .kpoponsale h2 {
     text-transform: uppercase;
   }
-  .onsale > article {
+  .kpoponsale > article {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
   }
-  .onsale figure {
+  .kpoponsale figure {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
     background-color: cadetblue;
   }
-  .onsale figure figcaption {
+  .kpoponsale figure img {
+    height: 100%;
+    width: 100%;
+  }
+  .kpoponsale figure a {
+    height: 40vh;
+    width: 100%;
+  }
+  .kpoponsale figure figcaption {
     text-align: center;
   }
-  .onsale figure figcaption small {
-    color: tomato;
+  .kpoponsale figure figcaption small {
+    color: rgb(106, 20, 5);
     text-decoration: line-through;
   }
-  .onsale figure figcaption p {
+  .kpoponsale figure figcaption p {
     font-size: 18px;
     font-weight: 600;
   }
-  .onsale img {
-    height: 40vh;
+  .kpoponsale figure h6 {
+    font-size: 12px;
+    color: dimgray;
+    padding-bottom: 1vh;
   }
-  .audition {
+  .kpoponsale .progress {
+    width: 90%;
+  }
+  .kpopaudition {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
-    justify-content: center;
-    align-items: center;
-    background-color: #8F91A2;
-    padding-top: 10%;
+    background-color: #64a78b;
+    padding-top: 5%;
     padding-bottom: 5%;
   }
-  .audition > section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  .kpopaudition h3 {
+    color: #363222;
+    text-transform: uppercase;
+    padding-bottom: 3vh;
   }
-  .audition form {
+  .kpopaudition form {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    row-gap: 2vh;
+  }
+  .kpopaudition form input,
+.kpopaudition form textarea {
+    border: 3px solid #BFD7B5;
+  }
+  .kpopaudition form label, .kpopaudition form h4 {
+    color: #363222;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 1vh;
+  }
+  .kpopaudition form ::-moz-placeholder {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .kpopaudition form :-ms-input-placeholder {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .kpopaudition form ::placeholder {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .kpopaudition form textarea {
+    height: 20vh;
+  }
+  .kpopaudition form [type=submit] {
+    border: transparent;
+    width: 35%;
+    text-transform: uppercase;
+    padding: 1%;
+    font-size: 12px;
+  }
+  .kpopaudition form [type=submit]:hover {
+    color: whitesmoke;
+    background-color: #386150;
+  }
+  .kpopaudition form > section {
+    display: flex;
+    flex-direction: column;
+  }
+  .kpopaudition blockquote {
     width: 100%;
   }
-  .audition form aside {
+  .kpopaudition blockquote input:last-child {
+    width: 100%;
+  }
+  .kpopaudition blockquote ::-moz-placeholder {
+    text-align: left;
+    padding-left: 2%;
+  }
+  .kpopaudition blockquote :-ms-input-placeholder {
+    text-align: left;
+    padding-left: 2%;
+  }
+  .kpopaudition blockquote ::placeholder {
+    text-align: left;
+    padding-left: 2%;
+  }
+  footer {
+    background-color: #4E6E58;
     display: flex;
     flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  footer p {
+    width: 80%;
+    color: white;
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: center;
+  }
+  footer > article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 95%;
+  }
+  footer a {
+    color: gray;
+    font-weight: 600;
   }
   .kfilm_nav {
     display: flex;
@@ -1676,6 +1920,262 @@ blockquote, p {
   .home_footer p, .home_footer p > a {
     font-size: 25px;
   }
+  .kpopfix {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+  }
+  .kpopfix aside {
+    width: 50%;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  .kpopfix aside i {
+    font-size: 3vh;
+  }
+  .kpopfix aside a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  .kpopfix aside a:hover {
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid gray;
+  }
+  .kpopnav span {
+    width: 30%;
+  }
+  .kpopnav h1 {
+    font-size: 5vh;
+    text-transform: uppercase;
+  }
+  .kpopnav details {
+    font-size: 3vh;
+    margin-top: 1.4vh;
+  }
+  .kpopnav details summary {
+    font-size: 4vh;
+  }
+  .kpopnav details a {
+    font-size: 26px;
+    padding: 2%;
+  }
+  .kpopnav details a:hover {
+    background-color: #4A442D;
+    color: white;
+  }
+  .kpoptitlepage {
+    row-gap: 1vh;
+  }
+  .kpopheader aside a {
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  .kpopheader aside a:hover {
+    background-color: #A3C4BC;
+    color: #0e100f;
+    font-weight: 600;
+    border: 2px solid black;
+  }
+  .kpopheader {
+    padding-bottom: 3vh;
+  }
+  .w-100 {
+    height: 30vh !important;
+  }
+  .carousel-inner h5 {
+    font-size: 26px;
+    font-style: italic;
+  }
+  .carousel-inner p {
+    font-size: 16px;
+    padding: 1%;
+  }
+  .kpopabout {
+    height: 40vh;
+  }
+  .kpopabout h2 {
+    display: flex;
+    font-size: 35px;
+  }
+  .kpopabout > span {
+    height: 3px;
+  }
+  .kpopabout article > p {
+    width: 70%;
+    font-size: 24px;
+  }
+  .kpopabout article a {
+    padding: 1%;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .kpopcalendar > span {
+    height: 3px;
+  }
+  .kpopcalendar article {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .kpopcalendar article figure {
+    width: 25%;
+    height: 40vh;
+  }
+  .kpopcalendar article figure img {
+    height: 15vh;
+  }
+  .kpopartists > span {
+    height: 3px;
+  }
+  .kpopartists article {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    width: 95%;
+    align-items: flex-start;
+  }
+  .kpopartists article figure {
+    display: flex;
+    align-items: center;
+    width: 35%;
+  }
+  .kpopartists article figure img {
+    height: 25vh;
+  }
+  .kpopartists article figure a,
+.kpopartists article figure a:hover blockquote {
+    height: 25vh;
+  }
+  .kpopartists article figure aside {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .kpopartists article figure aside i {
+    font-size: 25px;
+  }
+  .kpopartists article figure aside a {
+    color: gray;
+    height: 3vh;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  .kpopartists article figure aside a:hover {
+    color: white;
+  }
+  .kpopartists article figure figcaption {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2vh;
+  }
+  .kpopartists article figure figcaption small {
+    font-size: 18px;
+    color: #A3C4BC;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .kpopartists article figure figcaption p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .kpoponsale {
+    width: 100%;
+  }
+  .kpoponsale > article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .kpoponsale figure {
+    border: 3px solid #413C58;
+    width: 40%;
+  }
+  .kpoponsale figure img,
+.kpoponsale figure a {
+    width: 100%;
+    height: 25vh;
+  }
+  .kpoponsale figure small,
+.kpoponsale figure p,
+.kpoponsale figure h6 {
+    font-size: 20px;
+  }
+  .kpoponsale figure .progress {
+    height: 2vh;
+    font-size: 20px;
+  }
+  .kpopaudition form blockquote {
+    font-size: 22px;
+  }
+  .kpopaudition form blockquote input {
+    width: 1.5vh;
+    height: 1.5vh;
+  }
+  .kpopaudition form blockquote input[type=text] {
+    height: 5vh;
+  }
+  .kpopaudition form blockquote ::-moz-placeholder {
+    font-size: 22px;
+  }
+  .kpopaudition form blockquote :-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .kpopaudition form blockquote ::placeholder {
+    font-size: 22px;
+  }
+  .kpopaudition form aside {
+    font-size: 22px;
+  }
+  .kpopaudition form aside input {
+    width: 1.5vh;
+    height: 1.5vh;
+  }
+  .kpopaudition form label,
+.kpopaudition form h4 {
+    font-size: 25px;
+  }
+  .kpopaudition form section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .kpopaudition form section label:first-child,
+.kpopaudition form section label:nth-child(3) {
+    width: 30%;
+  }
+  .kpopaudition form section [type=text], .kpopaudition form section [type=email] {
+    width: 70%;
+  }
+  .kpopaudition form section label:nth-child(5),
+.kpopaudition form section label:nth-child(6) {
+    width: 100%;
+  }
+  .kpopaudition form section [type=date], .kpopaudition form section [type=message], .kpopaudition form section textarea {
+    width: 100%;
+  }
+  .kpopaudition form section [type=date] {
+    height: 5vh;
+  }
+  .kpopaudition form [type=submit] {
+    font-size: 22px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  footer a {
+    color: white;
+    font-size: 2vh;
+  }
   .kfilm_nav h1 {
     font-size: 42px;
     letter-spacing: 3px;
@@ -2062,6 +2562,132 @@ blockquote, p {
   }
   .home_footer p, .home_footer p > a {
     font-size: 16px;
+  }
+  .kpopnav {
+    height: 25vh;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .kpopnav span {
+    width: 100%;
+  }
+  .kpopnav details {
+    display: none;
+  }
+  .kpopnav > article {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    width: 98%;
+    justify-content: right;
+    align-items: center;
+    height: 12vh;
+  }
+  .kpopnav > article .dropdown-item {
+    text-transform: uppercase;
+  }
+  .kpopnav > article .dropdown ul a {
+    font-size: 3vh;
+  }
+  .kpopnav > article aside:last-child li {
+    text-align: right;
+  }
+  .kpopnav > article aside > a {
+    background-color: #386150;
+    border: transparent;
+    font-size: 3vh;
+  }
+  .kpopnav > article ul a:hover {
+    background-color: #F297B3;
+    color: white;
+  }
+  .kpopheader aside {
+    display: none;
+  }
+  .kpopfix aside a {
+    font-size: 3vh;
+    color: azure;
+  }
+  .kpopnav {
+    height: 20vh;
+  }
+  .kpoptitlepage h1 {
+    font-size: 8vh;
+    color: #386150;
+    font-style: italic;
+  }
+  .kpoptitlepage img {
+    width: 8vh;
+    height: 8vh;
+  }
+  .w-100 {
+    height: 50vh !important;
+  }
+  .kpopabout {
+    height: 40vh;
+    row-gap: 1vh;
+    padding-top: 6%;
+  }
+  .kpopabout h2 {
+    font-size: 5vh;
+  }
+  .kpopabout article a {
+    font-size: 2vh;
+    width: 25%;
+    padding: 1%;
+  }
+  .kpopcalendar article {
+    flex-wrap: wrap;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+  }
+  .kpopcalendar article figure {
+    width: 43%;
+    height: 65vh;
+  }
+  .kpopcalendar article figure img {
+    height: 30vh;
+  }
+  .kpopcalendar article figcaption p, .kpopcalendar article figcaption small, .kpopcalendar article figcaption h3 {
+    font-size: 25px;
+  }
+  .kpopartists article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    -moz-column-gap: 4vh;
+         column-gap: 4vh;
+    row-gap: 4vh;
+  }
+  .kpopartists article figure {
+    width: 30%;
+    row-gap: 3vh;
+  }
+  .kpopartists article figure blockquote {
+    text-align: start;
+    color: black;
+  }
+  .kpopartists a {
+    font-size: 3vh;
+  }
+  .kpopartists figcaption small,
+.kpopartists figcaption p {
+    font-size: 18px;
+  }
+  .kpoponsale figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .kpoponsale figure img, .kpoponsale figure a {
+    height: 40vh;
+  }
+  .kpoponsale figure small,
+.kpoponsale figure p,
+.kpoponsale figure h6 {
+    font-size: 24px;
   }
   .kfilm_nav {
     height: 24vh;
