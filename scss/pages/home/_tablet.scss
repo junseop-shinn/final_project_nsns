@@ -43,6 +43,11 @@
             font-size: $dFontSize5;
         }
     }
+
+    > section:hover {
+        @include NSimgset(40vh);
+    }    
+
 }
 // 2.HOME TABLET HEADER END
 // 3.HOME TABLET MAIN START

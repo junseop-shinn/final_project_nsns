@@ -47,7 +47,6 @@
     span{
         width:90%;
         height:1vh;
-        background-color: #363222;
         
     }
 
@@ -149,10 +148,7 @@
     }
 }
 
-// img{
-//     width:30vh;
-//     height:30vh;
-// }
+
 
 
 // bootstrap carousel scss changes
@@ -189,7 +185,7 @@
 .kpopabout {
     @include NSflexcol;
     align-items: center;
-    row-gap: 1vh;
+    row-gap: 3vh;
     background-color: #4E6E58;
     padding-bottom: 5%;
     padding-top: 10%;
@@ -212,6 +208,8 @@
         height: 1vh;
         background-color: #CDE6F5;
         display: inline-block;
+        border-radius: 10px;
+      
     }
 
     article {
@@ -262,6 +260,7 @@
         height: 1vh;
         background-color: #386150;
         display: inline-block;
+        border-radius: 10px;
     }
 
     h2 {
@@ -274,40 +273,40 @@
         @include NSalignCenter;
         row-gap: 5vh;
         width: 80%;
+    }
 
-        figure {
-            background-color: #CDE6F5;
-            padding-bottom: 10%;
-            border: 2px solid #554640;
+    figure {
+        background-color: #CDE6F5;
+        padding-bottom: 10%;
+        border: 2px solid #554640;
 
-            img {
-                width: 100%;
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            padding-top: 10%;
+            @include NSflexcol;
+            @include NSalignCenter;
+            text-align: left;
+            row-gap: 1vh;
+            width: 95%;
+
+            h3,
+            small,
+            p {
+                width: 85%;
             }
 
-            figcaption {
-                padding-top: 10%;
-                @include NSflexcol;
-                @include NSalignCenter;
-                text-align: left;
-                row-gap: 1vh;
-                width: 95%;
+            h3 {
+                color: #4A442D;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
 
-                h3,
-                small,
-                p {
-                    width: 85%;
-                }
-
-                h3 {
-                    color: #4A442D;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                }
-
-                small {
-                    font-size: 10px;
-                    color: #4E6E58;
-                }
+            small {
+                font-size: 10px;
+                color: #4E6E58;
             }
         }
     }
@@ -320,13 +319,14 @@
     padding-top: 10%;
     padding-bottom: 10%;
     row-gap: 2vh;
-    background-color: #386150;
+    background-color: #64a78b;
 
     >span {
         width: 15vh;
         height: 1vh;
         background-color: white;
-        display: inline-block;
+        // display: inline-block;
+        border-radius: 10px;
     }
 
     h2 {
@@ -341,7 +341,6 @@
         row-gap: 2vh;
 
         figure {
-            // position:relative;
             @include NSflexcol;
             @include NSalignCenter;
             width: 100%;
@@ -349,12 +348,7 @@
             img {
                 width: 100%;
                 height: 40vh;
-                // position:absolute;
             }
-
-            // img:hover{
-            //     background-color: rgba(50,50,50, 1);
-            // }
 
             aside,
             figcaption {
@@ -369,7 +363,6 @@
             }
 
             a:hover>blockquote {
-                // z-index:1;
                 width: 100%;
                 height: 40vh;
                 display: flex;
@@ -426,7 +419,13 @@
         background-color: cadetblue;
 
         img {
+            height: 100%;
+            width:100%;
+        }
+
+        a {
             height: 40vh;
+            width: 100%;
         }
 
         figcaption {
@@ -446,6 +445,7 @@
         h6 {
             font-size: $dFontSize1;
             color: dimgray;
+            padding-bottom:1vh;
         }
     }
 
@@ -461,20 +461,20 @@
     @include NSalignCenter;
     width: 100%;
     column-gap: 2vh;
-    background-color: #8F91A2;
+    background-color: #64a78b;
     padding-top: 5%;
     padding-bottom: 5%;
 
     h3 {
         color: #363222;
         text-transform: uppercase;
+        padding-bottom: 3vh;
     }
 
     form {
         width: 90%;
         @include NSflexcol;
-        row-gap: 1vh;
-        // align-items: center;
+        row-gap: 2vh;
 
         input,
         textarea {
@@ -482,15 +482,18 @@
 
         }
 
-        label {
+        label,h4 {
             color: #363222;
             text-transform: uppercase;
+            font-size: $dFontSize3;
+            font-weight:400;
+            padding-top: 1vh;
         }
 
-        h4 {
-            color: #363222;
-            font-size: $dFontSize3;
-        }
+        // h4 {
+        //     color: #363222;
+        //     font-size: $dFontSize3;
+        // }
 
         ::placeholder {
             font-size: 12px;
@@ -500,8 +503,6 @@
 
         textarea {
             height: 20vh;
-
-
         }
 
         [type="submit"] {
@@ -517,11 +518,24 @@
             background-color: #386150;
         }
 
-
         >section {
-            @include NSflexcol
+            @include NSflexcol;
         }
     }
+
+    blockquote {
+        width: 100%;
+
+        input:last-child {
+            width: 100%;
+        }
+
+        ::placeholder {
+            text-align: left;
+            padding-left: 2%;
+        }
+    }
+
 
 }
 

@@ -1,11 +1,18 @@
 // 1.(desktop) KFILM NAV START
 .kfilm_nav {
+    height:24vh;
+    align-items: flex-start;
+    
     > details {
         display: none;
     }
 
     > section {
         @include NSflexrowcol(3vh);
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        height: 12vh;
 
         .dropdown-item {
             text-transform: uppercase;
@@ -18,8 +25,34 @@
         aside > a {
             background-color: $dBlue5;
         }
+
+        ul a:hover {
+            background-color: $dBlue5;
+            color: white;
+        }
     }
 
+    figure {
+        height: 12vh;
+        width: 80%;
+        align-items: center;
+        padding-bottom: 1vh;
+
+        img {
+            @include NSsize(4vh, 4vh);
+            border: 2px black solid;
+        }
+        
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    h2 {
+        font-size: 18px;
+        border-top: 4px solid $dBlue5;
+        width: 100%;
+    }
 }
 // 1.(desktop) KFILM NAV END
 // 2.(desktop) KFILM HEADER START

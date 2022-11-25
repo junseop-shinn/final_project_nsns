@@ -56,9 +56,13 @@
     background-position: center;
 
     > section {
-        background-color: rgba(244, 219, 232, 0.7);
         justify-content: center;
     }
+
+    > section:hover {
+        @include NSimgset(60vh);
+        background-position: center;
+    }        
 }
 // 2.HOME DESKTOP HEADER END
 // 3.HOME DESKTOP MAIN START

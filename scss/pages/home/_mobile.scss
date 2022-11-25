@@ -4,6 +4,7 @@
     position: relative;
     align-items: center;
     height: 16vh;
+    justify-content: flex-start;
 
     > article {
         display: none;
@@ -53,6 +54,7 @@
         width: 98%;
         @include NSflexcol;
         align-items: flex-end;
+        background-color: transparent;
 
         li {
             display: flex;
@@ -86,8 +88,6 @@
     @include NSimgset(60vh);
     background-image: url("/img/bg-header.png");
     align-items: center;
-    row-gap: 2vh;
-    padding-bottom: 2vh;
 
     aside {
         @include NSflexrowcol(1vh);
@@ -120,31 +120,47 @@
     }
 
     > section {
-        background-color: rgba(244, 219, 232, 0.5);
-        border-radius: 20px;
-        @include NSsize(90%,90%);
-        @include NSflexcolrow(3vh);
+        height: 100%;
+        @include NSflexcolrow(0vh);
         align-items: center;
         justify-content: center;
         
-        h1 {
-            @include NSfont($dFontSize8,600);
-            @include NSpadding(2%,2%,0,0);
-            width: 70%;
-            text-align: center;
-        }
+        blockquote {
+            @include NSflexcol;
+            @include NSalignCenter;
 
-        p {
-            font-size: $dFontSize2;
-            width: 70%;
-            text-align: justify;
-
-            span {
-                @include NSfont($dFontSize2,500);
-                color: royalblue;
-                text-transform: uppercase;
+            h1 {
+                @include NSfont($dFontSize8,600);
+                @include NSpadding(2%,2%,0,0);
+                width: 70%;
+                text-align: center;
+                background-color: rgba(lightgray,0.7);
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+    
+            p {
+                background-color: rgba(lightgray,0.7);
+                font-size: $dFontSize2;
+                color: dimgray;
+                width: 70%;
+                text-align: justify;
+                padding: 2%;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                
+                span {
+                    @include NSfont($dFontSize2,500);
+                    color: royalblue;
+                    text-transform: uppercase;
+                }
             }
         }
+    }
+
+    > section:hover {
+        background-image: url("/img/bg-header-black.png");
+        @include NSimgset(60vh);
     }
 }
 // 2.HOME HEADER END

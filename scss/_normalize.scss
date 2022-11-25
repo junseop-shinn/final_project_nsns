@@ -32,11 +32,25 @@ blockquote, p {
   100% {border-top :10px solid $dPink5;}
 }
 
+@keyframes kfilm-color {
+    0% {border-top :4px solid $dBlue1;}
+   25% {border-top :4px solid $dBlue2;}
+   50% {border-top :4px solid $dBlue3;}
+   75% {border-top :4px solid $dBlue4;}
+  100% {border-top :4px solid $dBlue5;}
+}
+
+@keyframes kpop-color {
+    0% {border-top :4px solid #f3f7f5;}
+   25% {border-top :4px solid yellowgreen;}
+   50% {border-top :4px solid #1c583f;}
+   75% {border-top :4px solid green;}
+  100% {border-top :4px solid forestgreen;}
+}
+
 @keyframes bts-op {
-    from {transform: scale(0.98);}
-    to {transform: scale(1);}
-    from {transform: rotate(-8deg);}
-    to {transform: rotate(8deg);}        
+    from {transform: scale(1.0) rotate(-5deg);}
+    to {transform: scale(0.8) rotate(5deg);}
 }
 
 .nav_ani {
@@ -47,12 +61,26 @@ blockquote, p {
     animation-duration: 2s;
 }
 
-.home_header {
-    // animation-name: bts-op;
+.kfilm_ani {
+    animation-name: kfilm-color;
     animation-direction: alternate;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 2s;
 }
 
+.kpop_ani {
+    animation-name: kpop-color;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
 
+.title_ani {
+    animation-name: bts-op;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
