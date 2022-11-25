@@ -600,6 +600,10 @@ blockquote, p {
   }
   .kpopfix {
     background-color: #386150;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .kpopfix aside {
     width: 95%;
@@ -607,7 +611,8 @@ blockquote, p {
     flex-direction: row;
     -moz-column-gap: 3vh;
          column-gap: 3vh;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
   }
   .kpopfix a {
     color: white;
@@ -615,21 +620,42 @@ blockquote, p {
   .kpopfix a :hover {
     color: black;
   }
+  .kpopfix i {
+    font-size: 20px;
+  }
   .kpoptitlepage {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 10vh;
     padding-top: 3%;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
+    width: 90%;
+    row-gap: 2vh;
+  }
+  .kpoptitlepage aside {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .kpoptitlepage span {
+    width: 90%;
+    height: 1vh;
+    background-color: #363222;
   }
   .kpoptitlepage img {
     width: 5vh;
     height: 5vh;
+    border: 3px solid black;
+    border-radius: 50%;
   }
   .kpoptitlepage h1 {
     color: #4A442D;
     font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
   }
   .kpopnav {
     display: flex;
@@ -644,31 +670,41 @@ blockquote, p {
   .kpopnav details {
     color: #386150;
     text-align: right;
-    width: 95%;
+    width: 98%;
     display: flex;
     position: fixed;
+    padding-right: 1%;
     z-index: 3;
+  }
+  .kpopnav details summary {
+    font-size: 30px;
   }
   .kpopnav details ul {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: #386150;
+    width: 98%;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    align-items: flex-end;
+    padding-right: 1%;
   }
   .kpopnav details li {
     display: flex;
-    width: 100%;
-    border-bottom: 1px solid white;
+    width: 45%;
+    border-bottom: 1px whitesmoke solid;
+    border-right: 1px whitesmoke solid;
+    background-color: rgba(105, 105, 105, 0.6);
+    border-radius: 4px;
   }
   .kpopnav details a {
-    font-size: 14px;
-    color: whitesmoke;
-    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
     width: 100%;
-    padding: 1%;
+    padding: 2%;
+    color: white;
   }
   .kpopnav details a:hover {
     color: #386150;
@@ -807,7 +843,9 @@ blockquote, p {
     row-gap: 1vh;
     width: 95%;
   }
-  .kpopcalendar article figure figcaption h3, .kpopcalendar article figure figcaption small, .kpopcalendar article figure figcaption p {
+  .kpopcalendar article figure figcaption h3,
+.kpopcalendar article figure figcaption small,
+.kpopcalendar article figure figcaption p {
     width: 85%;
   }
   .kpopcalendar article figure figcaption h3 {
@@ -858,7 +896,8 @@ blockquote, p {
     width: 100%;
     height: 40vh;
   }
-  .kpopartists article figure aside, .kpopartists article figure figcaption {
+  .kpopartists article figure aside,
+.kpopartists article figure figcaption {
     display: none;
   }
   .kpopartists article figure a {
@@ -960,7 +999,8 @@ blockquote, p {
     flex-direction: column;
     row-gap: 1vh;
   }
-  .kpopaudition form input, .kpopaudition form textarea {
+  .kpopaudition form input,
+.kpopaudition form textarea {
     border: 3px solid #BFD7B5;
   }
   .kpopaudition form label {

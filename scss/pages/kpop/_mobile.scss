@@ -1,106 +1,150 @@
 // kpop fix scss
-.kpopfix{
+.kpopfix {
     background-color: #386150;
+    height:8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    aside{
-        width:95%;
-       @include NSflexrowcol(3vh);
-        justify-content:right;}
-    a{
-        color:white;
-        :hover{
-            color:black;
+    aside {
+        width: 95%;
+        @include NSflexrowcol(3vh);
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        color: white;
+
+        :hover {
+            color: black;
         }
     }
-    
+
+    i{
+        font-size:20px;
+    }
+
 }
 
 // kpop title page scss
-.kpoptitlepage{
-    display:flex;
+.kpoptitlepage {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    height:10vh;
-    padding-top:3%;
+    align-items: center;
+    height: 10vh;
+    padding-top: 3%;
     column-gap: 2vh;
+    width:90%;
+    row-gap:2vh;
 
-    
-    img{
-        width:5vh;
-        height:5vh;
+    aside{
+        display: flex;
+        column-gap: 1vh;
     }
-    h1{
-        color:#4A442D;
-        font-size:$dFontSize9;
+
+    span{
+        width:90%;
+        height:1vh;
+        background-color: #363222;
+        
+    }
+
+    img {
+        width: 5vh;
+        height: 5vh;
+        border:3px solid black;
+        border-radius:50%;
+    }
+
+    h1 {
+        color: #4A442D;
+        font-size: $dFontSize9;
+        text-transform: uppercase;
+        font-weight:600;
     }
 }
+
 // kpop nav scss
-.kpopnav{
+.kpopnav {
     display: flex;
-    padding-left:2%;
-    position:relative;
+    padding-left: 2%;
+    position: relative;
     justify-content: space-between;
     align-items: center;
 
+  
 
-    >article{
-    display: none;
+
+    >article {
+        display: none;
     }
 
 
     details {
-        color:#386150;
+        color: #386150;
         text-align: right;
-        width:95%;
+        width: 98%;
         display: flex;
-        position:fixed;
-        z-index:3;
-    
-            ul{
-                @include NSflexcol;
-                width:100%;
-                // z-index:3;
-                background-color:#386150;
-                @include NSalignCenter;
-                position:absolute;
-            
-            }
+        position: fixed;
+        padding-right:1%;
+        z-index: 3;
 
-            li{
-                display: flex;
-                width:100%;
-                // z-index:3;
-                border-bottom:1px solid white;
-            }
+        summary{
+            font-size:30px;
+        }
 
-            a{
-                font-size:$dFontSize2;
-                color:whitesmoke;
-                text-align: right;
-                width:100%;
-                padding:1%;
-                // z-index:3;
-            }
-            a:hover{
-                color:#386150;
-                background-color: white;
-            }
+        ul {
+            @include NSflexcol;
+            width: 98%;
+            @include NSalignCenter;
+            position: fixed;
+            align-items: flex-end;
+            padding-right:1%;
+
+        }
+
+        li {
+            display: flex;
+            width: 45%;
+            border-bottom: 1px whitesmoke solid;
+            border-right: 1px whitesmoke solid;
+            background-color: rgba(dimgray,.6);
+            border-radius: 4px;
+        }
+
+        a {
+            @include NSfont($dFontSize3,400);
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            padding: 2%;
+            color: white;
+        }
+
+        a:hover {
+            color: #386150;
+            background-color: white;
+        }
     }
 }
+
 // kpop header scss
-.kpopheader{
-    aside{
+.kpopheader {
+    aside {
         display: flex;
         // background-color: #386150;
-        width:100%;
+        width: 100%;
         justify-content: flex-end;
         column-gap: 1vh;
-        padding:1%;
-      
-        a{
-            padding:1%;
-            color:white;
+        padding: 1%;
+
+        a {
+            padding: 1%;
+            color: white;
             background-color: #386150;
-            
+
         }
     }
 }
@@ -118,24 +162,25 @@
 }
 
 .carousel-inner {
-    h5{
-        color:black; 
+    h5 {
+        color: black;
         font-weight: 600;
-        font-size:$dFontSize5;
+        font-size: $dFontSize5;
     }
-    p{
-        color:white;
+
+    p {
+        color: white;
         font-size: $dFontSize1;
-        border:1px solid gray;
-        background-color:rgba(#789589,0.8);
-        padding:2%;
+        border: 1px solid gray;
+        background-color: rgba(#789589, 0.8);
+        padding: 2%;
         border-radius: 10px;
     }
 }
-     
+
 
 .d-none {
-    display: flex!important;
+    display: flex !important;
     flex-direction: column;
 }
 
@@ -145,55 +190,59 @@
     @include NSflexcol;
     align-items: center;
     row-gap: 1vh;
-    background-color:#4E6E58;
+    background-color: #4E6E58;
     padding-bottom: 5%;
     padding-top: 10%;
 
-    h2{
+    h2 {
         font-size: $dFontSize8;
-        text-align:center;
+        text-align: center;
         text-transform: uppercase;
         display: flex;
         column-gap: 1vh;
+
         // padding-top:5%;
-        i{
-            color:whitesmoke;
+        i {
+            color: whitesmoke;
         }
     }
-    >span{
-        width:15vh;
-        height:1vh;
+
+    >span {
+        width: 15vh;
+        height: 1vh;
         background-color: #CDE6F5;
         display: inline-block;
     }
-    article{
+
+    article {
         @include NSflexcol;
         @include NSalignCenter;
         text-align: center;
         row-gap: 2vh;
-        
-        span{
-            color:white;
+
+        span {
+            color: white;
             text-transform: uppercase;
-            font-style:normal;
+            font-style: normal;
         }
-        p{
-            line-height:1.5;
-            font-size:$dFontSize1;
+
+        p {
+            line-height: 1.5;
+            font-size: $dFontSize1;
             font-style: italic;
         }
-        
-        a{
+
+        a {
             background-color: #CDE6F5;
             padding: 1%;
-            color:black;
+            color: black;
             font-size: $dFontSize1;
-            width:20%;
+            width: 20%;
 
         }
-        
-        a:hover{
-            color:#554640;
+
+        a:hover {
+            color: #554640;
             background-color: white;
         }
     }
@@ -205,278 +254,300 @@
     @include NSalignCenter;
     // text-align: center;
     row-gap: 2vh;
-    padding-top:10%;
-    padding-bottom:5%;
-    
-        >span{
-            width:15vh;
-            height:1vh;
-            background-color:#386150;
-            display: inline-block;
-        }
-        h2{
-            text-transform: uppercase;
-            color:#413C58;
-        }
-        article{
-            @include NSflexcol;
-            @include NSalignCenter;
-            row-gap: 5vh;
-            width:80%;
-               
-            figure{
-                background-color: #CDE6F5;
-                padding-bottom:10%;
-                border: 2px solid #554640;
+    padding-top: 10%;
+    padding-bottom: 5%;
 
-                img{
-                    width:100%;
-                }
-                figcaption{
-                    padding-top:10%;
-                    @include NSflexcol;
-                    @include NSalignCenter;
-                    text-align: left;
-                    row-gap: 1vh;
-                    width:95%;
-
-                    h3,small,p{
-                        width:85%;
-                    }
-                    h3{
-                        color:#4A442D;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                    }
-                    small{
-                        font-size:10px;
-                        color:#4E6E58;
-                    }
-                }
-            }
-        }
-}
-
-// kpop artists scss
-.kpopartists{
-        @include NSflexcol;
-        @include NSalignCenter;
-        padding-top: 10%;
-        padding-bottom:10%;
-        row-gap: 2vh;
-        background-color:#386150;
-
-        >span{
-            width:15vh;
-            height:1vh;
-            background-color:white;
-            display: inline-block;
-        }
-        h2{
-            text-transform: uppercase;
-            color:whitesmoke;
-        }
-        article{
-            @include NSflexcol;
-            @include NSalignCenter;
-            width:90%;
-            row-gap: 2vh;
-
-            figure{
-                // position:relative;
-                @include NSflexcol;
-                @include NSalignCenter;
-                width:100%;
-
-                img{
-                    width:100%;
-                    height:40vh;
-                    // position:absolute;
-                } 
-            
-                // img:hover{
-                //     background-color: rgba(50,50,50, 1);
-                // }
-            
-                aside,figcaption{
-                    display: none;
-                }
-                a{
-                    position:relative;
-                    width:100%;
-                    height:40vh;
-                    display: flex;
-                }
-                a:hover > blockquote{
-                    // z-index:1;
-                    width:100%;
-                    height:40vh;
-                    display: flex;
-                    background-color: rgba(50,50,50,.4);
-                    position:absolute;
-                }
-                blockquote{
-                    @include NSflexcol;
-                    align-items: center;
-                    justify-content: center;
-                    color:#ECEBF3;
-                    font-size:$dFontSize4;
-                    font-style: italic;
-                }
-                img{
-                    position:absolute;
-                }
-            }
-        }
-       
-}
-// kpop sale scss
-.kpoponsale{
-    @include NSflexcol;
-    @include NSalignCenter;
-    padding-top:10%;
-    padding-bottom:5%;
-    row-gap: 2vh;
-    
-
-    >span{
-        width:15vh;
-        height:1vh;
-        background-color:#386150;
+    >span {
+        width: 15vh;
+        height: 1vh;
+        background-color: #386150;
         display: inline-block;
     }
-    h2{
+
+    h2 {
         text-transform: uppercase;
+        color: #413C58;
     }
-    >article{
-        @include NSflexcol;
-        row-gap: 3vh;
-    }
-    figure{
+
+    article {
         @include NSflexcol;
         @include NSalignCenter;
-        padding-bottom:5%;
-        background-color: cadetblue;
+        row-gap: 5vh;
+        width: 80%;
 
-        img{
-            height:40vh;
-        }
+        figure {
+            background-color: #CDE6F5;
+            padding-bottom: 10%;
+            border: 2px solid #554640;
 
-        figcaption{
-            text-align: center;
-            small{
-                color:rgb(106, 20, 5);
-                text-decoration: line-through;
-            }
-            p{
-                font-size:$dFontSize4;
-                font-weight: 600;
-            }
-        }
-        h6{
-            font-size:$dFontSize1;
-            color:dimgray;
-        }
-    }
-    .progress{
-        width:90%;
-    }
-    
-}
-// kpop audition scss 
-.kpopaudition{
-        @include NSflexcol;
-        @include NSalignCenter;
-        width:100%;
-        column-gap: 2vh;
-        background-color:#8F91A2;
-        padding-top:5%;
-        padding-bottom:5%;
-
-        h3{
-            color:#363222;
-            text-transform: uppercase;
-        }
-
-        form{
-            width:90%;
-            @include NSflexcol;
-            row-gap: 1vh;
-            // align-items: center;
-
-            input,textarea{
-                border:3px solid #BFD7B5;
-
+            img {
+                width: 100%;
             }
 
-            label{
-                color:#363222;
-                text-transform: uppercase;
-            }
+            figcaption {
+                padding-top: 10%;
+                @include NSflexcol;
+                @include NSalignCenter;
+                text-align: left;
+                row-gap: 1vh;
+                width: 95%;
 
-            h4{
-                color:#363222;
-                font-size: $dFontSize3;
-            }
-                
-                ::placeholder{
-                    font-size:12px;
-                    text-align: center;
+                h3,
+                small,
+                p {
+                    width: 85%;
+                }
+
+                h3 {
+                    color: #4A442D;
+                    font-weight: 600;
                     text-transform: uppercase;
                 }
 
-            textarea{
-                height:20vh;
-                
-
+                small {
+                    font-size: 10px;
+                    color: #4E6E58;
+                }
             }
-            [type="submit"]{
-                border:transparent;
-                width:35%;
-                text-transform: uppercase;
-                padding:1%;
-                font-size:$dFontSize1;
-            }
-
-            [type="submit"]:hover{
-                color:whitesmoke;
-                background-color:#386150;
-            }
-            
-            
-            >section{
-                @include NSflexcol
-            }
-        }   
-            
+        }
+    }
 }
-    
-footer{
-    background-color:#4E6E58;
-    @include NSflexcol;
-    padding-top:5%;
-    padding-bottom:5%;
 
-    p{
-        width:80%;
-        color:white;
-        line-height:1.5;
-        font-size:$dFontSize1;
+// kpop artists scss
+.kpopartists {
+    @include NSflexcol;
+    @include NSalignCenter;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    row-gap: 2vh;
+    background-color: #386150;
+
+    >span {
+        width: 15vh;
+        height: 1vh;
+        background-color: white;
+        display: inline-block;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: whitesmoke;
+    }
+
+    article {
+        @include NSflexcol;
+        @include NSalignCenter;
+        width: 90%;
+        row-gap: 2vh;
+
+        figure {
+            // position:relative;
+            @include NSflexcol;
+            @include NSalignCenter;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 40vh;
+                // position:absolute;
+            }
+
+            // img:hover{
+            //     background-color: rgba(50,50,50, 1);
+            // }
+
+            aside,
+            figcaption {
+                display: none;
+            }
+
+            a {
+                position: relative;
+                width: 100%;
+                height: 40vh;
+                display: flex;
+            }
+
+            a:hover>blockquote {
+                // z-index:1;
+                width: 100%;
+                height: 40vh;
+                display: flex;
+                background-color: rgba(50, 50, 50, .4);
+                position: absolute;
+            }
+
+            blockquote {
+                @include NSflexcol;
+                align-items: center;
+                justify-content: center;
+                color: #ECEBF3;
+                font-size: $dFontSize4;
+                font-style: italic;
+            }
+
+            img {
+                position: absolute;
+            }
+        }
+    }
+
+}
+
+// kpop sale scss
+.kpoponsale {
+    @include NSflexcol;
+    @include NSalignCenter;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    row-gap: 2vh;
+
+
+    >span {
+        width: 15vh;
+        height: 1vh;
+        background-color: #386150;
+        display: inline-block;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    >article {
+        @include NSflexcol;
+        row-gap: 3vh;
+    }
+
+    figure {
+        @include NSflexcol;
+        @include NSalignCenter;
+        padding-bottom: 5%;
+        background-color: cadetblue;
+
+        img {
+            height: 40vh;
+        }
+
+        figcaption {
+            text-align: center;
+
+            small {
+                color: rgb(106, 20, 5);
+                text-decoration: line-through;
+            }
+
+            p {
+                font-size: $dFontSize4;
+                font-weight: 600;
+            }
+        }
+
+        h6 {
+            font-size: $dFontSize1;
+            color: dimgray;
+        }
+    }
+
+    .progress {
+        width: 90%;
+    }
+
+}
+
+// kpop audition scss 
+.kpopaudition {
+    @include NSflexcol;
+    @include NSalignCenter;
+    width: 100%;
+    column-gap: 2vh;
+    background-color: #8F91A2;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    h3 {
+        color: #363222;
+        text-transform: uppercase;
+    }
+
+    form {
+        width: 90%;
+        @include NSflexcol;
+        row-gap: 1vh;
+        // align-items: center;
+
+        input,
+        textarea {
+            border: 3px solid #BFD7B5;
+
+        }
+
+        label {
+            color: #363222;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            color: #363222;
+            font-size: $dFontSize3;
+        }
+
+        ::placeholder {
+            font-size: 12px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        textarea {
+            height: 20vh;
+
+
+        }
+
+        [type="submit"] {
+            border: transparent;
+            width: 35%;
+            text-transform: uppercase;
+            padding: 1%;
+            font-size: $dFontSize1;
+        }
+
+        [type="submit"]:hover {
+            color: whitesmoke;
+            background-color: #386150;
+        }
+
+
+        >section {
+            @include NSflexcol
+        }
+    }
+
+}
+
+footer {
+    background-color: #4E6E58;
+    @include NSflexcol;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    p {
+        width: 80%;
+        color: white;
+        line-height: 1.5;
+        font-size: $dFontSize1;
         text-align: center;
     }
-    >article{
+
+    >article {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width:95%;
+        width: 95%;
     }
-    a{
-        color:gray;
-        font-weight:600;
+
+    a {
+        color: gray;
+        font-weight: 600;
     }
 }
-
-
-       
-    
-
