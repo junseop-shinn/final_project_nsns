@@ -1835,16 +1835,16 @@ blockquote, p {
     height: 3px;
   }
   .kpopartists article {
+    flex-wrap: wrap;
     flex-direction: row;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
     width: 95%;
   }
   .kpopartists article figure {
-    position: relative;
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 35%;
   }
   .kpopartists article figure img {
     height: 20vh;
@@ -1853,13 +1853,64 @@ blockquote, p {
     height: 20vh;
   }
   .kpopartists article figure aside {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
   }
   .kpopartists article figure aside i {
     font-size: 15px;
-    padding-top: 2%;
+  }
+  .kpopartists article figure aside a {
+    color: gray;
+    height: 3vh;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  .kpopartists article figure aside a:hover {
+    color: white;
+  }
+  .kpopartists article figure figcaption {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2vh;
+  }
+  .kpopartists article figure figcaption small, .kpopartists article figure figcaption p {
+    font-size: 12px;
+  }
+  .kpopartists article figure figcaption small {
+    font-size: 14px;
+    color: #A3C4BC;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .kpopartists article figure figcaption p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .kpoponsale {
+    width: 100%;
+  }
+  .kpoponsale > article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .kpoponsale figure {
+    border: 3px solid #413C58;
+    width: 40%;
+  }
+  .kpoponsale figure img {
+    width: 100%;
+    height: 15vh;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  footer a {
+    color: white;
+    font-size: 2vh;
   }
   .kfilm_nav h1 {
     font-size: 42px;

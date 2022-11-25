@@ -131,18 +131,20 @@
 
 // kpopartists tablet scss starts
 .kpopartists{
+   
     >span{
         height:3px; 
     }
     article{
+        flex-wrap: wrap;
         flex-direction: row;
         column-gap: 2vh;
         width:95%;
         figure{
-            position:relative;
+            // position:relative;
             display: flex;
             align-items: center;
-            width:90%;
+            width:35%;
             // column-gap: 2vh;
             img{
                 height:20vh;
@@ -153,9 +155,10 @@
             
            
             aside{
+                width:100%;
                 display: flex;
                 justify-content: space-evenly;
-                position:absolute;
+                // position:absolute;
                 // column-gap: 1vh;
                 // width:100%;
                 // a{
@@ -163,8 +166,19 @@
                 // }
                 i{
                     font-size:15px;
-                    padding-top:2%;
+                    // padding-top:2%;
                 }
+                a{
+                    color:gray;
+                    height:3vh;
+                    justify-content: center;
+                    padding-top:5%;
+                }
+                a:hover{
+                    color:white;
+
+                }
+             
             }
 
             // aside>a{
@@ -177,15 +191,56 @@
             //     }
             // }
             
-            // figcaption{
-            //     display: flex;
-            //     height:30vh;
-            //     width:20%;
-            //     small,p{
-            //         font-size: $dFontSize1;
-            //     }
-            // }
+            figcaption{
+                display: flex;
+                flex-direction: column;
+                width:100%;
+                row-gap:2vh;
+                small,p{
+                    font-size: $dFontSize1;
+                }
+                small{
+                    font-size:$dFontSize2;
+                    color:#A3C4BC;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    font-size:$dFontSize1;
+                }
+            }
         }
+    }
+}
+.kpoponsale {
+    width:100%;
+    >article{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:90%;
+    justify-content: space-evenly;
+   
+   
+    }
+  
+    figure{
+        border:3px solid #413C58;
+        width:40%;
+        img{
+            width:100%;
+            height:15vh;
+        }
+    }
+  
+}
+footer{
+    p{
+        font-size:$dFontSize5;
+    }
+    a{
+        color:white;
+        font-size:2vh;
     }
 }
 
